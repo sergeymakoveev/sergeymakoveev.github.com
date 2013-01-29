@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title: Тренды фронтэнда. Javascript APIs для мобильных устройств.
 categories:
@@ -13,6 +14,7 @@ tags:
 - mdn
 - mozilla
 - w3c
+
 ---
 Презентация к докладу [http://goo.gl/2CkWb][0]
 

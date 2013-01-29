@@ -55,7 +55,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 ## Battery Status API
 Служит для отображения информации о состоянии батарей клиентской машины.
 Реализован с браузерным префиксом.
-{% highlight javascript %}
+{% highlight js linenos %}
 //объект, содержащий информацию о батареях
 var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
 

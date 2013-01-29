@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="full">
+  <h1 class="entry-title">
+    <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
+  </h1>
+  <div class="entry-content full-content">
+    {{ content }}
+  </div>
+  <p>
+    Posted in&nbsp;
+    {% for category in page.categories %}
+    <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
+    {% endfor %}
+  </p>
+  <p>
+    <span class="date full-date">
+      <abbr class="published" title="{{ page.date }}">{{ page.date | date_to_string }}</abbr>
+    </span>
+  </p>
+</div>

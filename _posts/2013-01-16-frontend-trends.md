@@ -6,19 +6,9 @@ layout: post
 
 title: Тренды фронтэнда. Javascript APIs для мобильных устройств
 
-categories:
-- javascript
+categories: [javascript]
 
-tags:
-- js
-- api
-- js api
-- frontend
-- html
-- interface
-- mdn
-- mozilla
-- w3c
+tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 ---
 Презентация к докладу [http://goo.gl/2CkWb][presentation]

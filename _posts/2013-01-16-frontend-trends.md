@@ -54,7 +54,7 @@ tags:
 
 
 # JavaScript APIs
-Еще в июле 2009 года в рамках World Wide Web Consortium (W3C) была создана "[Device APIs Working Group (GAP)][w3c-gap]", целью которой является создание client-side API для взаимодействия веб-приложений с сервисами устройств (камера, календарь, контакты, ...). <a href="http://www.w3.org/2009/dap/#roadmap" target="_blank">Здесь</a> можно увидеть текущие направления разработок группы. Некоторые из них уже реализованы в браузерах.
+Еще в июле 2009 года в рамках World Wide Web Consortium (W3C) была создана "[Device APIs Working Group (DAP)][w3c-dap]", целью которой является создание client-side API для взаимодействия веб-приложений с сервисами устройств (камера, календарь, контакты, ...). <a href="http://www.w3.org/2009/dap/#roadmap" target="_blank">Здесь</a> можно увидеть текущие направления разработок группы. Некоторые из них уже реализованы в браузерах.
 
 <u>Внимание</u>: тестовые примеры написаны для <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta" target="_blank">Firefox mobile beta</a>.
 
@@ -401,4 +401,4 @@ document.mozCancelFullScreen();
 </ul>
 
 [presentation]: http://goo.gl/2CkWb
-[w3c-gap]: http://www.w3.org/2009/dap/
+[w3c-dap]: http://www.w3.org/2009/dap/

@@ -102,9 +102,9 @@ battery.addEventListener("dischargingtimechange", ondischargingtimechange);
 
 
 
-<h3>Vibration API</h3>
-Предназначен для управления вибросигналом устройства.<br />
-<br />
+##Vibration API
+Предназначен для управления вибросигналом устройства.
+
 <input type="button" value="vibrate 1 sec"
        onclick="
             if( 'vibrate' in navigator )
@@ -175,7 +175,7 @@ navigator.vibrate([]);
 
 
 
-<h3>Screen Orientation API</h3>
+##Screen Orientation API
 Предназначен для получения событий изменения ориентации экрана устройства, информации о текущем состоянии ориентации экрана.<br />
 Реализован с браузерным префиксом.
 <br />
@@ -203,7 +203,7 @@ screen.addEventListener(
 
 
 
-<h3>Device Orientation API</h3>
+##Device Orientation API
 Предназначен для получения событий изменения ориентации устройства.
 <pre>// window.ondeviceorientation - событие смены ориентации устройства
 // e.alpha, e.beta, e.gamma - текущее значение ориентации экрана

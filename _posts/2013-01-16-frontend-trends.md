@@ -57,10 +57,9 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Реализован с браузерным префиксом.
 
 {% highlight js linenos %}
-<pre><code>
 
-//объект, содержащий информацию о батареях
-var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
+    //объект, содержащий информацию о батареях
+    var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
 
 //battery.level - уровень заряда батарей (значение в диапазоне 0...1)
 var onlevelchange = function(e) {

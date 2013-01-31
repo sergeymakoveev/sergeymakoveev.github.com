@@ -402,5 +402,7 @@ document.mozCancelFullScreen();
                    "Device APIs Working Group (DAP): направления"
 [firefox mobile beta]: https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta
                        "Google Play: Firefox mobile beta"
+[adobe]: https://adobe.com
+         "Adobe"
 [adobe creative cloud]: https://creative.adobe.com
                         "Adobe Creative Cloud"

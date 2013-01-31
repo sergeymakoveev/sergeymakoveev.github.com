@@ -219,7 +219,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 {% endhighlight %}
 
 **Пример**:
-[Screen Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.screenorientation.html).
+[Screen Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.screenorientation.html).  
 **Источники**:
 [W3C/Screen Orientation API](http://www.w3.org/TR/screen-orientation/),
 [MDN/orientationchange event](https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/orientationchange).
@@ -245,7 +245,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 **Примеры**:
 [Device Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.deviceorientation.html),
-[Opera/compass](http://people.opera.com/richt/release/demos/orientation/marinecompass/).
+[Opera/compass](http://people.opera.com/richt/release/demos/orientation/marinecompass/).  
 **Источники**:
 [W3C/deviceorientation](http://www.w3.org/TR/orientation-event/#deviceorientation/),
 [MDN/Orientation and motion data explained](https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained),
@@ -256,21 +256,24 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 ##Device Motion API
 Предназначен для получения событий датчика-акселерометра о перемещении устройства.
 
-<pre>// window.ondevicemotion - событие перемещения устройства
-// ускорение по осям x, y, z соответственно:
-// e.acceleration.x, e.acceleration.y, e.acceleration.z
-// значение ускорения по осям x, y, z (с учетом гравитации) соответственно:
-// e.accelerationIncludingGravity.x, e.accelerationIncludingGravity.y, e.accelerationIncludingGravity.z
-// значение угловой скорости вращения по осям z, x, y (в градусах) соответственно:
-// e.rotationRate.alpha, e.rotationRate.beta, e.rotationRate.gamma
-window.addEventListener( "devicemotion",
-                         function(e){ console.dir(e.acceleration);
-                                      console.dir(e.accelerationIncludingGravity);
-                                      console.dir(e.rotationRate); }; );
-</pre>
-**Пример**:
-[Device Motion API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.devicemotion.html)
+{% highlight js linenos %}
 
+    // window.ondevicemotion - событие перемещения устройства
+    // ускорение по осям x, y, z соответственно:
+    // e.acceleration.x, e.acceleration.y, e.acceleration.z
+    // значение ускорения по осям x, y, z (с учетом гравитации) соответственно:
+    // e.accelerationIncludingGravity.x, e.accelerationIncludingGravity.y, e.accelerationIncludingGravity.z
+    // значение угловой скорости вращения по осям z, x, y (в градусах) соответственно:
+    // e.rotationRate.alpha, e.rotationRate.beta, e.rotationRate.gamma
+    window.addEventListener( "devicemotion",
+                             function(e){ console.dir(e.acceleration);
+                                          console.dir(e.accelerationIncludingGravity);
+                                          console.dir(e.rotationRate); }; );
+
+{% endhighlight %}
+
+**Пример**:
+[Device Motion API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.devicemotion.html).  
 **Источники**:
 [W3C/devicemotion](http://www.w3.org/TR/orientation-event/#devicemotion),
 [MDN/Orientation and motion data explained](https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained),

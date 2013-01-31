@@ -191,7 +191,6 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 **Примеры**:
 [Vibration API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.vibration.html),
 [David Walsh/Vibration API/Example](http://davidwalsh.name/demo/vibrate.php).
-
 **Источники**:
 [W3C Vibration API](http://www.w3.org/TR/vibration/),
 [MDN/window.navigator.vibrate](https://developer.mozilla.org/en-US/docs/DOM/window.navigator.vibrate),
@@ -204,6 +203,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Реализован с браузерным префиксом.
 
 {% highlight js linenos %}
+
     // screen.orientation - текущее значение ориентации экрана
     
     console.log("orientation: " + screen.mozOrientation);
@@ -216,15 +216,14 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
             console.log("orientation: " + screen.mozOrientation);
         }
     );
+
 {% endhighlight %}
 
 **Пример**:
 [Screen Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.screenorientation.html).
-
 **Источники**:
 [W3C/Screen Orientation API](http://www.w3.org/TR/screen-orientation/),
 [MDN/orientationchange event](https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/orientationchange).
-
 
 
 
@@ -232,6 +231,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Предназначен для получения событий изменения ориентации устройства.
 
 {% highlight js linenos %}
+
     // window.ondeviceorientation - событие смены ориентации устройства
     // e.alpha, e.beta, e.gamma - текущее значение ориентации экрана
     //                            по осям x, y, z соответственно
@@ -241,12 +241,12 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
             console.log(e.alpha, e.beta, e.gamma);
         }
     );
+
 {% endhighlight %}
 
 **Примеры**:
 [Device Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.deviceorientation.html),
 [Opera/compass](http://people.opera.com/richt/release/demos/orientation/marinecompass/).
-
 **Источники**:
 [W3C/deviceorientation](http://www.w3.org/TR/orientation-event/#deviceorientation/),
 [MDN/Orientation and motion data explained](https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained),

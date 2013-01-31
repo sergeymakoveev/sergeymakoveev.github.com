@@ -203,55 +203,60 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Предназначен для получения событий изменения ориентации экрана устройства, информации о текущем состоянии ориентации экрана.  
 Реализован с браузерным префиксом.
 
-<pre>
-// screen.orientation - текущее значение ориентации экрана
+{% highlight js linenos %}
+    // screen.orientation - текущее значение ориентации экрана
+    
+    console.log("orientation: " + screen.mozOrientation);
+    
+    // screen.onorientationchange - событие изменения ориентации экрана устройства
+    
+    screen.addEventListener(
+        "mozorientationchange",
+        function() {
+            console.log("orientation: " + screen.mozOrientation);
+        }
+    );
+{% endhighlight %}
 
-console.log("orientation: " + screen.mozOrientation);
+**Пример**:
+[Screen Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.screenorientation.html).
 
-// screen.onorientationchange - событие изменения ориентации экрана устройства
+**Источники**:
+[W3C/Screen Orientation API](http://www.w3.org/TR/screen-orientation/),
+[MDN/orientationchange event](https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/orientationchange).
 
-screen.addEventListener(
-    "mozorientationchange",
-    function() {
-        console.log("orientation: " + screen.mozOrientation);
-    }
-);
-</pre>
-<b>Пример</b>:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.screenorientation.html" target="_blank">Screen Orientation API example</a>.
-<br />
-<b>Источники</b>:
-<a href="http://www.w3.org/TR/screen-orientation/" target="_blank">W3C/Screen Orientation API</a>,
-<a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/orientationchange" target="_blank">MDN/orientationchange event</a>.
-<br />
 
 
 
 ##Device Orientation API
 Предназначен для получения событий изменения ориентации устройства.
-<pre>// window.ondeviceorientation - событие смены ориентации устройства
-// e.alpha, e.beta, e.gamma - текущее значение ориентации экрана
-//                            по осям x, y, z соответственно
-window.addEventListener(
-    "deviceorientation",
-    function(e){
-        console.log(e.alpha, e.beta, e.gamma);
-    }
-);
-</pre>
-<b>Примеры</b>:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.deviceorientation.html" target="_blank">Device Orientation API example</a>,
-<a href="http://people.opera.com/richt/release/demos/orientation/marinecompass/" target="_blank">Opera/compass</a>.
-<br />
-<b>Источники</b>:
-<a href="http://www.w3.org/TR/orientation-event/#deviceorientation/" target="_blank">W3C/deviceorientation</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained" target="_blank">MDN/Orientation and motion data explained</a>,
-<a href="http://dev.opera.com/articles/view/w3c-device-orientation-api/" target="_blank">Opera/Orientation API</a>.
+
+{% highlight js linenos %}
+    // window.ondeviceorientation - событие смены ориентации устройства
+    // e.alpha, e.beta, e.gamma - текущее значение ориентации экрана
+    //                            по осям x, y, z соответственно
+    window.addEventListener(
+        "deviceorientation",
+        function(e){
+            console.log(e.alpha, e.beta, e.gamma);
+        }
+    );
+{% endhighlight %}
+
+**Примеры**:
+[Device Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.deviceorientation.html),
+[Opera/compass](http://people.opera.com/richt/release/demos/orientation/marinecompass/).
+
+**Источники**:
+[W3C/deviceorientation](http://www.w3.org/TR/orientation-event/#deviceorientation/),
+[MDN/Orientation and motion data explained](https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained),
+[Opera/Orientation API](http://dev.opera.com/articles/view/w3c-device-orientation-api/).
 
 
 
 ###Device Motion API
 Предназначен для получения событий датчика-акселерометра о перемещении устройства.
+
 <pre>// window.ondevicemotion - событие перемещения устройства
 // ускорение по осям x, y, z соответственно:
 // e.acceleration.x, e.acceleration.y, e.acceleration.z

@@ -59,7 +59,9 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 {% highlight js linenos %}
 
     //объект, содержащий информацию о батареях
-    var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
+    var battery = navigator.battery ||
+                  navigator.webkitBattery ||
+                  navigator.mozBattery;
     
     //battery.level - уровень заряда батарей (значение в диапазоне 0...1)
     var onlevelchange = function(e) {
@@ -109,19 +111,27 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
             if( 'vibrate' in navigator )
                 navigator.vibrate(1000);
        " />
-<pre>
-//вибросигнал длительностью 1 сек
-navigator.vibrate(1000);
-</pre>
+
+{% highlight js linenos %}
+    
+    //вибросигнал длительностью 1 сек
+    navigator.vibrate(1000);
+    
+{% endhighlight %}
+
 <input type="button" value="vibrate 0.5 sec, wait 0.1 sec, vibrate 0.3 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate([500, 100, 300]);
        " />
-<pre><code>
-//последовательность: вибросигнал 0.5 сек, пауза 1 сек, вибросигнал 0.3 сек
-navigator.vibrate([500, 1000, 300]);
-</code></pre>
+
+{% highlight js linenos %}
+
+    //последовательность: вибросигнал 0.5 сек, пауза 1 сек, вибросигнал 0.3 сек
+    navigator.vibrate([500, 1000, 300]);
+
+{% endhighlight %}
+
 <input type="button" value="vibrate many times"
        onclick="
             if( 'vibrate' in navigator )
@@ -129,48 +139,63 @@ navigator.vibrate([500, 1000, 300]);
                                     '111111111111111111').split('')
                                                          .map(function(){ return 300;}) )
        " />
-<pre>
-//последовательность множества сигналов
-navigator.vibrate( ('111111111111111111'+
-                    '111111111111111111').split('')
-                                         .map(function(){ return 300; }) );
-</pre>
+
+{% highlight js linenos %}
+    
+    //последовательность множества сигналов
+    navigator.vibrate( ('111111111111111111'+
+                        '111111111111111111').split('')
+                                             .map(function(){ return 300; }) );
+    
+{% endhighlight %}
+
 <input type="button" value="vibrate stop"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(0);
        " />
-<pre>
-//остановить вибросигнал
-navigator.vibrate(0);
-</pre>
+
+{% highlight js linenos %}
+    
+    //остановить вибросигнал
+    navigator.vibrate(0);
+    
+{% endhighlight %}
+
 <input type="button" value="vibrate 10 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(10000);
        " />
-<pre>
-//вибросигнал длительностью 10 сек
-navigator.vibrate(10000);
-</pre>
+
+{% highlight js linenos %}
+    
+    //вибросигнал длительностью 10 сек
+    navigator.vibrate(10000);
+    
+{% endhighlight %}
+
 <input type="button" value="vibrate stop"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate([]);
        " />
-<pre>
-//остановить вибросигнал
-navigator.vibrate([]);
-</pre>
-<b>Примеры</b>:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.vibration.html" target="_blank">Vibration API example</a>,
-<a href="http://davidwalsh.name/demo/vibrate.php" target="_blank">David Walsh/Vibration API/Example</a>.
-<br />
-<b>Источники</b>:
-<a href="http://www.w3.org/TR/vibration/" target="_blank">W3C Vibration API</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/window.navigator.vibrate" target="_blank">MDN/window.navigator.vibrate</a>,
-<a href="http://davidwalsh.name/vibration-api" target="_blank">David Walsh/Vibration API</a>
-<br />
+
+{% highlight js linenos %}
+    
+    //остановить вибросигнал
+    navigator.vibrate([]);
+    
+{% endhighlight %}
+
+**Примеры**:
+[Vibration API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.vibration.html),
+[David Walsh/Vibration API/Example](http://davidwalsh.name/demo/vibrate.php).
+
+**Источники**:
+[W3C Vibration API](http://www.w3.org/TR/vibration/),
+[MDN/window.navigator.vibrate](https://developer.mozilla.org/en-US/docs/DOM/window.navigator.vibrate),
+[David Walsh/Vibration API](http://davidwalsh.name/vibration-api)
 
 
 

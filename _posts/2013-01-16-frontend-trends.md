@@ -278,7 +278,7 @@ window.addEventListener(
 
 
 
-<h3>Proximity Events</h3>
+###Proximity Events
 События датчика приближения устройства.
 <pre>window.addEventListener(
     "deviceproximity",
@@ -325,12 +325,12 @@ document.addEventListener( 'mozvisibilitychange',
                            function(){console.log( document.mozHidden,
                                                    document.mozVisibilityState );} );
 </pre>
-<b>Примеры</b>:
+**Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.pagevisibility.html" target="_blank">Page Visibility API example</a>,
 <a href="http://davidwalsh.name/demo/page-visibility.php" target="_blank">David Walsh/Page Visibility API/Example</a>,
 <a href="http://www.samdutton.com/pageVisibility/" target="_blank">Mozilla/Page Visibility API/Example</a>.
-<br />
-<b>Источники</b>:
+
+**Источники**:
 <a href="http://www.w3.org/TR/page-visibility/" target="_blank">W3C Page Visibility</a>,
 <a href="http://davidwalsh.name/page-visibility" target="_blank">David Walsh/Page Visibility API</a>,
 <a href="https://developers.google.com/chrome/whitepapers/pagevisibility" target="_blank">Chrome/Page Visibility API</a>,
@@ -338,10 +338,10 @@ document.addEventListener( 'mozvisibilitychange',
 
 
 
-<h3>Fullscreen API</h3>
-Предоставляет возможности работы с полноэкранным режимом.<br />
+###Fullscreen API
+Предоставляет возможности работы с полноэкранным режимом.
 Реализован с браузерным префиксом.
-<br />
+
 <pre>
 // доступность полноэкранного режима:
 // document.fullScreenEnabled = (true|false)
@@ -375,14 +375,12 @@ document.mozCancelFullScreen();
 
 
 
-<h2>Итог</h2>
+##Итог
 Обобщая развитие веб-стандартов в сфере фронтенд-технологий (css, js, html), можно увидеть общую тенденцию инновационных разработок, конечной целью которых является становление веб-интерфейсов как стандарта де-факто в качестве интерфейсов приложений.
-Уже сейчас можно воспользоваться новыми API при помощи <a href="http://modernizr.com/download/" target="_blank">Modernizr</a>.
-<br />
+Уже сейчас можно воспользоваться новыми API при помощи [Modernizr](http://modernizr.com/download/).
 
 
-
-<h2>Links</h2>
+##Links
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference" target="_blank">MDN/Mozilla event reference</a>;</li><li><a href="https://developer.mozilla.org/en-US/docs/tag/DOM" target="_blank">MDN/DOM</a>;</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference" target="_blank">MDN/Mozilla event reference</a>;</li>

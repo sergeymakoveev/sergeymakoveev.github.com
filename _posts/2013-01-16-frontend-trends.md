@@ -15,9 +15,9 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 В настоящее время нельзя не заметить общую тенденцию к миграции сервисов и приложений в веб, что подкрепляется появлением множества онлайн-сервисов, которые <s>претендуют называться</s> однозначно можно назвать веб-приложениями. Как следствие, теряют популярность standalone-приложения, функционал которых не предусматривает связи с массовыми веб-сервисами. Таким приложением приходится либо видоизменяться, добавляя в себя функционал для интеграции с внешним миром, либо мигрировать в веб.
 
-Интересны разные пути развития приложений и сервисов. Яркими примерами являются [Adobe][adobe] с его [Adobe Creative Cloud][adobe creative cloud], Microsoft с его SkyDrive и Microsoft Office Web App - здесь популярные приложения мигрировали в веб. Другой путь развития - развитие сервисов, когда веб-сервисы, набирая популяность, "обрастают" приложениями - GMail, Youtube.
+Интересны разные пути развития приложений и сервисов. Яркими примерами являются [Adobe][adobe] с его [Adobe Creative Cloud][adobe creative cloud], Microsoft с его SkyDrive и Microsoft Office Web App - здесь популярные приложения мигрировали в веб. Другой путь развития - развитие сервисов, когда веб-сервисы, набирая популяность, «обрастают» приложениями - GMail, Youtube.
 
-Таким образом, приложение (сервис), целью которого является "быть качественным, удобным и популярным", в настоящее время содержит в своей структуре:
+Таким образом, приложение (сервис), целью которого является «быть качественным, удобным и популярным», в настоящее время содержит в своей структуре:
 
 *   клиентские приложения для популярных OS (iOS, Android, Windows, Linux, ...);
 *   расширения для популярных браузеров;
@@ -32,7 +32,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 *   многократно усложняется введение нового функционала в сервис (поддержка которого должна быть одновременно и единообразно реализована во всех его структурных частях);
 *   подобная структура изначально расположена к появлению ошибок в следствии рассогласования взаимодействия ее составляющих, вызванных в первую очередь разнообразием клиентских приложений и разнообразием их версий на устройствах пользователей.
 
-Бесспорно что трудоемкость (и, как следствие, стоимость) поддержки и развития такого приложения будет несравнимо больше по-сравнению с "pure-web-application". Структура такого приложения выглядит гораздо лаконичней:
+Бесспорно что трудоемкость и, как следствие, стоимость поддержки и развития такого приложения будет несравнимо больше по-сравнению с «pure-web-application». Структура такого приложения выглядит гораздо лаконичней:
 
 *   веб-итерфейс;
 *   клиентские приложения для популярных OS, расширения и букмарклеты для популярных браузеров представляют собой тривиальную "оболочку", в которую "упакован" веб-интерфейс;
@@ -46,7 +46,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 
 # JavaScript APIs
-Еще в июле 2009 года в рамках World Wide Web Consortium (W3C) была создана "[Device APIs Working Group (DAP)][w3c-dap]", целью которой является создание client-side API для взаимодействия веб-приложений с сервисами устройств (камера, календарь, контакты, ...). <a href="http://www.w3.org/2009/dap/#roadmap" target="_blank">Здесь</a> можно увидеть текущие направления разработок группы. Некоторые из них уже реализованы в браузерах.
+Еще в июле 2009 года в рамках World Wide Web Consortium (W3C) была создана "[Device APIs Working Group (DAP)][w3c-dap]", целью которой является создание client-side API для взаимодействия веб-приложений с сервисами устройств (камера, календарь, контакты, ...). [Здесь][w3c-dap-roadmap] можно увидеть текущие направления разработок группы. Некоторые из них уже реализованы в браузерах.
 
 *Внимание*: тестовые примеры написаны для [Firefox mobile beta][firefox mobile beta].
 
@@ -176,9 +176,11 @@ navigator.vibrate([]);
 
 
 ##Screen Orientation API
-Предназначен для получения событий изменения ориентации экрана устройства, информации о текущем состоянии ориентации экрана.<br />
+Предназначен для получения событий изменения ориентации экрана устройства, информации о текущем состоянии ориентации экрана.
+
 Реализован с браузерным префиксом.
-<br />
+
+
 <pre>
 // screen.orientation - текущее значение ориентации экрана
 
@@ -226,7 +228,7 @@ window.addEventListener(
 
 
 
-<h3>Device Motion API</h3>
+###Device Motion API
 Предназначен для получения событий датчика-акселерометра о перемещении устройства.
 <pre>// window.ondevicemotion - событие перемещения устройства
 // ускорение по осям x, y, z соответственно:
@@ -240,20 +242,20 @@ window.addEventListener( "devicemotion",
                                       console.dir(e.accelerationIncludingGravity);
                                       console.dir(e.rotationRate); }; );
 </pre>
-<b>Пример</b>:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.devicemotion.html" target="_blank">Device Motion API example</a>.
-<br />
-<b>Источники</b>:
-<a href="http://www.w3.org/TR/orientation-event/#devicemotion" target="_blank">W3C/devicemotion</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained" target="_blank">MDN/Orientation and motion data explained</a>,
-<a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/devicemotion" target="_blank">MDN/devicemotion</a>,
-<a href="http://dev.opera.com/articles/view/w3c-device-orientation-api/" target="_blank">Opera/Orientation API</a>.
+**Пример**:
+[Device Motion API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.devicemotion.html)
+
+**Источники**:
+[W3C/devicemotion](http://www.w3.org/TR/orientation-event/#devicemotion),
+[MDN/Orientation and motion data explained](https://developer.mozilla.org/en-US/docs/DOM/Orientation_and_motion_data_explained),
+[MDN/devicemotion](https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/devicemotion),
+[Opera/Orientation API](http://dev.opera.com/articles/view/w3c-device-orientation-api/).
 
 
 
-<h3>Ambient Light Events</h3>
+###Ambient Light Events
 Предназначены для получения событий датчика освещенности устройства.
-<br />
+
 <pre>window.addEventListener(
     "devicelight",
     //e.value - значение освещенности в люксах
@@ -265,11 +267,11 @@ window.addEventListener(
     function(e) { console.log('lightlevel: ' + e.value); }
 );
 </pre>
-<b>Примеры</b>:
+**Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html" target="_blank">Ambient Light API example</a>,
 <a href="http://dl.dropbox.com/u/8727858/mozilla/light/light.html" target="_blank">Doug Turner/Ambient Light Events/Example</a>.
-<br />
-<b>Источники</b>:
+
+**Источники**:
 <a href="http://www.w3.org/TR/ambient-light/" target="_blank">W3C Ambient Light Events</a>,
 <a href="https://developer.mozilla.org/en-US/docs/DOM/DeviceLightEvent" target="_blank">MDN/DeviceLightEvent</a>,
 <a href="http://dougturner.wordpress.com/2012/03/26/device-light-sensor/" target="_blank">Doug Turner/Ambient Light Events</a>.
@@ -293,11 +295,11 @@ window.addEventListener(
     )}
 );
 </pre>
-<b>Примеры</b>:
+**Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.proximity.html" target="_blank">Proximity Events example</a>,
 <a href="http://dl.dropbox.com/u/8727858/mozilla/proximity/pro.html" target="_blank">Doug Turner/Device Proximity/Exapmle</a>.
-<br />
-<b>Источники</b>:
+
+**Источники**:
 <a href="http://www.w3.org/TR/proximity/" target="_blank">W3C Proximity Events</a>,
 <a href="https://developer.mozilla.org/en-US/docs/DOM/DeviceProximityEvent" target="_blank">MDN/DeviceProximityEvent</a>,
 <a href="https://developer.mozilla.org/en-US/docs/DOM/UserProximityEvent" target="_blank">MDN/UserProximityEvent</a>,
@@ -306,7 +308,7 @@ window.addEventListener(
 
 
 
-<h3>Page Visibility API</h3>
+###Page Visibility API
 Позволяет определить отображается ли страница на экране устройства.<br />
 Реализован с браузерным префиксом.
 <pre>
@@ -398,6 +400,8 @@ document.mozCancelFullScreen();
 [presentation]: http://goo.gl/2CkWb
 [w3c-dap]: http://www.w3.org/2009/dap/
            "Device APIs Working Group (DAP)"
+[w3c-dap-roadmap]: http://www.w3.org/2009/dap/#roadmap
+                   "Device APIs Working Group (DAP): направления"
 [firefox mobile beta]: https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta
                        "Google Play: Firefox mobile beta"
 [adobe creative cloud]: https://creative.adobe.com

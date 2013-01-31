@@ -94,8 +94,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 {% endhighlight %}
 
 **Пример**:
-[David Walsh/Battery Status API/Example](http://davidwalsh.name/demo/battery-api.php).
-
+[David Walsh/Battery Status API/Example](http://davidwalsh.name/demo/battery-api.php).  
 **Источники**:
 [W3C Battery Status API](http://www.w3.org/TR/battery-status/),
 [MDN/window.navigator.battery](https://developer.mozilla.org/en-US/docs/DOM/window.navigator.battery),
@@ -190,7 +189,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 **Примеры**:
 [Vibration API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.vibration.html),
-[David Walsh/Vibration API/Example](http://davidwalsh.name/demo/vibrate.php).
+[David Walsh/Vibration API/Example](http://davidwalsh.name/demo/vibrate.php).  
 **Источники**:
 [W3C Vibration API](http://www.w3.org/TR/vibration/),
 [MDN/window.navigator.vibrate](https://developer.mozilla.org/en-US/docs/DOM/window.navigator.vibrate),

@@ -254,7 +254,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 
 
-###Device Motion API
+##Device Motion API
 Предназначен для получения событий датчика-акселерометра о перемещении устройства.
 
 <pre>// window.ondevicemotion - событие перемещения устройства
@@ -280,7 +280,7 @@ window.addEventListener( "devicemotion",
 
 
 
-###Ambient Light Events
+##Ambient Light Events
 Предназначены для получения событий датчика освещенности устройства.
 
 <pre>window.addEventListener(
@@ -305,7 +305,7 @@ window.addEventListener(
 
 
 
-###Proximity Events
+##Proximity Events
 События датчика приближения устройства.
 <pre>window.addEventListener(
     "deviceproximity",
@@ -335,7 +335,7 @@ window.addEventListener(
 
 
 
-###Page Visibility API
+##Page Visibility API
 Позволяет определить отображается ли страница на экране устройства.<br />
 Реализован с браузерным префиксом.
 <pre>
@@ -365,7 +365,7 @@ document.addEventListener( 'mozvisibilitychange',
 
 
 
-###Fullscreen API
+##Fullscreen API
 Предоставляет возможности работы с полноэкранным режимом.
 Реализован с браузерным префиксом.
 
@@ -402,12 +402,12 @@ document.mozCancelFullScreen();
 
 
 
-##Итог
+#Итог
 Обобщая развитие веб-стандартов в сфере фронтенд-технологий (css, js, html), можно увидеть общую тенденцию инновационных разработок, конечной целью которых является становление веб-интерфейсов как стандарта де-факто в качестве интерфейсов приложений.
 Уже сейчас можно воспользоваться новыми API при помощи [Modernizr](http://modernizr.com/download/).
 
 
-##Links
+#Links
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference" target="_blank">MDN/Mozilla event reference</a>;</li><li><a href="https://developer.mozilla.org/en-US/docs/tag/DOM" target="_blank">MDN/DOM</a>;</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference" target="_blank">MDN/Mozilla event reference</a>;</li>

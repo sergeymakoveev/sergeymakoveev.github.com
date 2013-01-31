@@ -97,9 +97,9 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 [http://davidwalsh.name/demo/battery-api.php](David Walsh/Battery Status API/Example).
 
 **Источники**:
-[http://www.w3.org/TR/battery-status/](W3C Battery Status API),
-[https://developer.mozilla.org/en-US/docs/DOM/window.navigator.battery](MDN/window.navigator.battery),
-[http://davidwalsh.name/battery-api](David Walsh/Battery Status API).
+    [http://www.w3.org/TR/battery-status/](W3C Battery Status API),
+    [https://developer.mozilla.org/en-US/docs/DOM/window.navigator.battery](MDN/window.navigator.battery),
+    [http://davidwalsh.name/battery-api](David Walsh/Battery Status API).
 
 
 

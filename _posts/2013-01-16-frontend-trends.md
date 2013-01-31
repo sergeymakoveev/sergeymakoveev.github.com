@@ -48,7 +48,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 # JavaScript APIs
 Еще в июле 2009 года в рамках World Wide Web Consortium (W3C) была создана "[Device APIs Working Group (DAP)][w3c-dap]", целью которой является создание client-side API для взаимодействия веб-приложений с сервисами устройств (камера, календарь, контакты, ...). [Здесь][w3c-dap-roadmap] можно увидеть текущие направления разработок группы. Некоторые из них уже реализованы в браузерах.
 
-*Внимание*: тестовые примеры написаны для [Firefox mobile beta][firefox mobile beta].
+**Внимание**: тестовые примеры написаны для [Firefox mobile beta][firefox mobile beta].
 
 
 
@@ -57,7 +57,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Реализован с браузерным префиксом.
 
 {% highlight js linenos %}
-
+<pre><code>
 //объект, содержащий информацию о батареях
 var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
 
@@ -90,15 +90,15 @@ var ondischargingtimechange = function() {
 battery.addEventListener("dischargingtimechange", ondischargingtimechange);
 
 {% endhighlight %}
+</code></pre>
 
-<b>Пример</b>:
-<a href="http://davidwalsh.name/demo/battery-api.php" target="_blank">David Walsh/Battery Status API/Example</a>.
-<br />
-<b>Источники</b>:
-<a href="http://www.w3.org/TR/battery-status/" target="_blank">W3C Battery Status API</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/window.navigator.battery" target="_blank">MDN/window.navigator.battery</a>,
-<a href="http://davidwalsh.name/battery-api" target="_blank">David Walsh/Battery Status API</a>.
-<br />
+**Пример**:
+[http://davidwalsh.name/demo/battery-api.php](David Walsh/Battery Status API/Example).
+
+**Источники**:
+[http://www.w3.org/TR/battery-status/](W3C Battery Status API),
+[https://developer.mozilla.org/en-US/docs/DOM/window.navigator.battery](MDN/window.navigator.battery),
+[http://davidwalsh.name/battery-api](David Walsh/Battery Status API).
 
 
 
@@ -119,10 +119,10 @@ navigator.vibrate(1000);
             if( 'vibrate' in navigator )
                 navigator.vibrate([500, 100, 300]);
        " />
-<pre>
+<pre><code>
 //последовательность: вибросигнал 0.5 сек, пауза 1 сек, вибросигнал 0.3 сек
 navigator.vibrate([500, 1000, 300]);
-</pre>
+</code></pre>
 <input type="button" value="vibrate many times"
        onclick="
             if( 'vibrate' in navigator )

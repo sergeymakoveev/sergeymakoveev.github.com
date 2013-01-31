@@ -88,9 +88,8 @@ var ondischargingtimechange = function() {
 };
 //dischargingtimechange - событие изменения времени до полного разряда
 battery.addEventListener("dischargingtimechange", ondischargingtimechange);
-
-{% endhighlight %}
 </code></pre>
+{% endhighlight %}
 
 **Пример**:
 [http://davidwalsh.name/demo/battery-api.php](David Walsh/Battery Status API/Example).

@@ -15,7 +15,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 В настоящее время нельзя не заметить общую тенденцию к миграции сервисов и приложений в веб, что подкрепляется появлением множества онлайн-сервисов, которые <s>претендуют называться</s> однозначно можно назвать веб-приложениями. Как следствие, теряют популярность standalone-приложения, функционал которых не предусматривает связи с массовыми веб-сервисами. Таким приложением приходится либо видоизменяться, добавляя в себя функционал для интеграции с внешним миром, либо мигрировать в веб.
 
-Интересны разные пути развития приложений и сервисов. Яркими примерами являются Adobe с его <a href="https://creative.adobe.com/" target="_blank">Adobe Creative Cloud</a> , Microsoft с его SkyDrive и Microsoft Office Web App - здесь популярные приложения мигрировали в веб. Другой путь развития - развитие сервисов, когда веб-сервисы, набирая популяность, "обрастают" приложениями - GMail, Youtube.
+Интересны разные пути развития приложений и сервисов. Яркими примерами являются [Adobe][adobe] с его [Adobe Creative Cloud][adobe creative cloud], Microsoft с его SkyDrive и Microsoft Office Web App - здесь популярные приложения мигрировали в веб. Другой путь развития - развитие сервисов, когда веб-сервисы, набирая популяность, "обрастают" приложениями - GMail, Youtube.
 
 Таким образом, приложение (сервис), целью которого является "быть качественным, удобным и популярным", в настоящее время содержит в своей структуре:
 
@@ -400,3 +400,5 @@ document.mozCancelFullScreen();
            "Device APIs Working Group (DAP)"
 [firefox mobile beta]: https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta
                        "Google Play: Firefox mobile beta"
+[adobe creative cloud]: https://creative.adobe.com
+                        "Adobe Creative Cloud"

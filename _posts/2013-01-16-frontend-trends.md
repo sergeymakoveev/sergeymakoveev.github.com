@@ -105,11 +105,15 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 ##Vibration API
 Предназначен для управления вибросигналом устройства.
 
+{% raw %}
+
 <input type="button" value="vibrate 1 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(1000);
        " />
+
+{% endraw %}
 
 {% highlight js linenos %}
     

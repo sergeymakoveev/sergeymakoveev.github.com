@@ -48,7 +48,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 # JavaScript APIs
 Еще в июле 2009 года в рамках World Wide Web Consortium (W3C) была создана "[Device APIs Working Group (DAP)][w3c-dap]", целью которой является создание client-side API для взаимодействия веб-приложений с сервисами устройств (камера, календарь, контакты, ...). [Здесь][w3c-dap-roadmap] можно увидеть текущие направления разработок группы. Некоторые из них уже реализованы в браузерах.
 
-*Внимание*: тестовые примеры написаны для [Firefox mobile beta][firefox mobile beta].
+**Внимание**: тестовые примеры написаны для [Firefox mobile beta][firefox mobile beta].
 
 
 
@@ -105,15 +105,14 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 ##Vibration API
 Предназначен для управления вибросигналом устройства.
 
-{% raw %}
-
+<div>
 <input type="button" value="vibrate 1 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(1000);
        " />
 
-{% endraw %}
+</div>
 
 {% highlight js linenos %}
     

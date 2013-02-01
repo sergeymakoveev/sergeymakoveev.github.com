@@ -221,6 +221,13 @@ form {
   
 }
 
+em {
+    font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+strong {
+    font-weight: bold;
+}
 
 /* GENERAL ELEMENT TYPE STYLES */
 

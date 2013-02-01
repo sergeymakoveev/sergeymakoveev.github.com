@@ -56,7 +56,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Служит для отображения информации о состоянии батарей клиентской машины.  
 Реализован с браузерным префиксом.
 
-{% highlight js linenos %}
+{% highlight js linenos stripall %}
 
     //объект, содержащий информацию о батареях
     var battery = navigator.battery ||

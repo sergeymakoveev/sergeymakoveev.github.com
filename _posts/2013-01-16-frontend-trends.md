@@ -105,22 +105,21 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 ##Vibration API
 Предназначен для управления вибросигналом устройства.
 
-<div  markdown="0">
-<input type="button" value="vibrate 1 sec"
+<input markdown="0" type="button" value="vibrate 1 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(1000);
        " />
-</div>
+
 
 {% highlight js linenos %}
-    
+
     //вибросигнал длительностью 1 сек
     navigator.vibrate(1000);
-    
+
 {% endhighlight %}
 
-<input type="button" value="vibrate 0.5 sec, wait 0.1 sec, vibrate 0.3 sec"
+<input markdown="0" type="button" value="vibrate 0.5 sec, wait 0.1 sec, vibrate 0.3 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate([500, 100, 300]);
@@ -133,7 +132,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 
 {% endhighlight %}
 
-<input type="button" value="vibrate many times"
+<input markdown="0" type="button" value="vibrate many times"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate( ('111111111111111111'+
@@ -142,51 +141,51 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
        " />
 
 {% highlight js linenos %}
-    
+
     //последовательность множества сигналов
     navigator.vibrate( ('111111111111111111'+
                         '111111111111111111').split('')
                                              .map(function(){ return 300; }) );
-    
+
 {% endhighlight %}
 
-<input type="button" value="vibrate stop"
+<input markdown="0" type="button" value="vibrate stop"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(0);
        " />
 
 {% highlight js linenos %}
-    
+
     //остановить вибросигнал
     navigator.vibrate(0);
-    
+
 {% endhighlight %}
 
-<input type="button" value="vibrate 10 sec"
+<input markdown="0" type="button" value="vibrate 10 sec"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(10000);
        " />
 
 {% highlight js linenos %}
-    
+
     //вибросигнал длительностью 10 сек
     navigator.vibrate(10000);
-    
+
 {% endhighlight %}
 
-<input type="button" value="vibrate stop"
+<input markdown="0" type="button" value="vibrate stop"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate([]);
        " />
 
 {% highlight js linenos %}
-    
+
     //остановить вибросигнал
     navigator.vibrate([]);
-    
+
 {% endhighlight %}
 
 **Примеры**:

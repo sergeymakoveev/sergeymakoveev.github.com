@@ -22,3 +22,6 @@ tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
             "Markdown syntax"
 [maruku]: http://maruku.rubyforge.org/maruku.html
           "Maruku - интерпретатор markdown-разметки"
+
+##On/Off markdown for HTML-elements
+`markdown="0|1"`

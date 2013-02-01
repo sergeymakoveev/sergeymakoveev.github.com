@@ -155,7 +155,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 {% endhighlight %}
 
 <div markdown="0">
-<inpu type="button" value="vibrate stop"
+<input type="button" value="vibrate stop"
        onclick="
             if( 'vibrate' in navigator )
                 navigator.vibrate(0);

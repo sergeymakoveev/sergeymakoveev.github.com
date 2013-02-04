@@ -56,8 +56,6 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Служит для отображения информации о состоянии батарей клиентской машины.  
 Реализован с браузерным префиксом.
 
-{% highlight js linenos stripall %}
-
     //объект, содержащий информацию о батареях
     var battery = navigator.battery ||
                   navigator.webkitBattery ||
@@ -91,7 +89,6 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
     //dischargingtimechange - событие изменения времени до полного разряда
     battery.addEventListener("dischargingtimechange", ondischargingtimechange);
 
-{% endhighlight %}
 
 **Пример**:
 [David Walsh/Battery Status API/Example](http://davidwalsh.name/demo/battery-api.php).  

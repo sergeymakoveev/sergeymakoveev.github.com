@@ -30,10 +30,10 @@ tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 
 ##Syntax highlighting
 
-###Js
-http://alexgorbatchev.com/SyntaxHighlighter/
-http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html
-http://softwaremaniacs.org/soft/highlight/
+###Js highlighters
+*   [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)
+*   [google-code-prettify](http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html)
+*   [Highlight.js](http://softwaremaniacs.org/soft/highlight/)
 
 **_config.yml**:
 ```
@@ -42,6 +42,8 @@ markdown: redcarpet
 
 
 ###Pygments
+
+[Pygments](http://pygments.org/)
 
 **_config.yml**:
 ```

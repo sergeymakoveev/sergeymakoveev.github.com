@@ -395,7 +395,6 @@ document.mozCancelFullScreen();
 [Fullscreen API/Example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.fullscreen.html),
 [MDN/Fullscreen API/Example](https://developer.mozilla.org/samples/domref/fullscreen.html),
 [David Walsh/Fullscreen API/Example](http://davidwalsh.name/demo/fullscreen.php).
-
 **Источники**:
 [W3C Fullscreen](http://www.w3.org/TR/fullscreen/),
 [MDN/Using fullscreen mode](https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode),

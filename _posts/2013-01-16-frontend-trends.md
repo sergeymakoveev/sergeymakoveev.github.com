@@ -13,6 +13,9 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 ---
 Презентация к докладу [http://goo.gl/2CkWb][presentation]
 
+*  This will become a table of contents (this text will be scraped).
+{:toc}
+
 В настоящее время нельзя не заметить общую тенденцию к миграции сервисов и приложений в веб, что подкрепляется появлением множества онлайн-сервисов, которые <s>претендуют называться</s> однозначно можно назвать веб-приложениями. Как следствие, теряют популярность standalone-приложения, функционал которых не предусматривает связи с массовыми веб-сервисами. Таким приложением приходится либо видоизменяться, добавляя в себя функционал для интеграции с внешним миром, либо мигрировать в веб.
 
 Интересны разные пути развития приложений и сервисов. Яркими примерами являются [Adobe][] с его [Adobe Creative Cloud][], Microsoft с его SkyDrive и Microsoft Office Web App - здесь популярные приложения мигрировали в веб. Другой путь развития - развитие сервисов, когда веб-сервисы, набирая популяность, «обрастают» приложениями - GMail, Youtube.
@@ -56,6 +59,8 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Служит для отображения информации о состоянии батарей клиентской машины.  
 Реализован с браузерным префиксом.
 
+{% highlight js linenos stripall %}
+
     //объект, содержащий информацию о батареях
     var battery = navigator.battery ||
                   navigator.webkitBattery ||
@@ -89,6 +94,7 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
     //dischargingtimechange - событие изменения времени до полного разряда
     battery.addEventListener("dischargingtimechange", ondischargingtimechange);
 
+{% endhighlight %}
 
 **Пример**:
 [David Walsh/Battery Status API/Example](http://davidwalsh.name/demo/battery-api.php).  

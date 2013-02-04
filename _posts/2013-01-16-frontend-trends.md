@@ -254,7 +254,9 @@ window.addEventListener(
 // ускорение по осям x, y, z соответственно:
 // e.acceleration.x, e.acceleration.y, e.acceleration.z
 // значение ускорения по осям x, y, z (с учетом гравитации) соответственно:
-// e.accelerationIncludingGravity.x, e.accelerationIncludingGravity.y, e.accelerationIncludingGravity.z
+// - e.accelerationIncludingGravity.x
+// - e.accelerationIncludingGravity.y
+// - e.accelerationIncludingGravity.z
 // значение угловой скорости вращения по осям z, x, y (в градусах) соответственно:
 // e.rotationRate.alpha, e.rotationRate.beta, e.rotationRate.gamma
 window.addEventListener( "devicemotion",

@@ -56,40 +56,38 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 Реализован с браузерным префиксом.
 
 ```js
+//объект, содержащий информацию о батареях
+var battery = navigator.battery ||
+              navigator.webkitBattery ||
+              navigator.mozBattery;
 
-    //объект, содержащий информацию о батареях
-    var battery = navigator.battery ||
-                  navigator.webkitBattery ||
-                  navigator.mozBattery;
-    
-    //battery.level - уровень заряда батарей (значение в диапазоне 0...1)
-    var onlevelchange = function(e) {
-        console.warn("Battery level change: ", battery.level);
-    };
-    //levelchange - событие изменения уровня заряда
-    battery.addEventListener("levelchange", onlevelchange);
-    
-    //battery.charging - статус заряда (true - заряжается, false - не заряжается)
-    var onchargingchange = function() {
-        console.warn("Battery charge change: ", battery.charging);
-    };
-    //chargingchange - событие изменения статуса заряда
-    battery.addEventListener("chargingchange", onchargingchange);
-    
-    //battery.chargingTime - оставшееся время до полного заряда
-    var onchargingtimechange = function() {
-        console.warn("Battery charge time change: ", battery.chargingTime);
-    };
-    //chargingchange - событие изменения времени до полного заряда
-    battery.addEventListener("chargingtimechange", onchargingtimechange);
-    
-    //battery.dischargingTime - оставшееся время до полного разряда
-    var ondischargingtimechange = function() {
-        console.warn("Battery discharging time change: ", battery.dischargingTime);
-    };
-    //dischargingtimechange - событие изменения времени до полного разряда
-    battery.addEventListener("dischargingtimechange", ondischargingtimechange);
+//battery.level - уровень заряда батарей (значение в диапазоне 0...1)
+var onlevelchange = function(e) {
+    console.warn("Battery level change: ", battery.level);
+};
+//levelchange - событие изменения уровня заряда
+battery.addEventListener("levelchange", onlevelchange);
 
+//battery.charging - статус заряда (true - заряжается, false - не заряжается)
+var onchargingchange = function() {
+    console.warn("Battery charge change: ", battery.charging);
+};
+//chargingchange - событие изменения статуса заряда
+battery.addEventListener("chargingchange", onchargingchange);
+
+//battery.chargingTime - оставшееся время до полного заряда
+var onchargingtimechange = function() {
+    console.warn("Battery charge time change: ", battery.chargingTime);
+};
+//chargingchange - событие изменения времени до полного заряда
+battery.addEventListener("chargingtimechange", onchargingtimechange);
+
+//battery.dischargingTime - оставшееся время до полного разряда
+var ondischargingtimechange = function() {
+    console.warn("Battery discharging time change: ", battery.dischargingTime);
+};
+//dischargingtimechange - событие изменения времени до полного разряда
+battery.addEventListener("dischargingtimechange", ondischargingtimechange);
 ```
 
 **Пример**:
@@ -113,10 +111,8 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 </div>
 
 ```js
-
-    //вибросигнал длительностью 1 сек
-    navigator.vibrate(1000);
-
+//вибросигнал длительностью 1 сек
+navigator.vibrate(1000);
 ```
 
 <div markdown="0">
@@ -128,10 +124,8 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 </div>
 
 ```js
-
-    //последовательность: вибросигнал 0.5 сек, пауза 1 сек, вибросигнал 0.3 сек
-    navigator.vibrate([500, 1000, 300]);
-
+//последовательность: вибросигнал 0.5 сек, пауза 1 сек, вибросигнал 0.3 сек
+navigator.vibrate([500, 1000, 300]);
 ```
 
 <div markdown="0">
@@ -145,12 +139,10 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 </div>
 
 ```js
-
-    //последовательность множества сигналов
-    navigator.vibrate( ('111111111111111111'+
-                        '111111111111111111').split('')
-                                             .map(function(){ return 300; }) );
-
+//последовательность множества сигналов
+navigator.vibrate( ('111111111111111111'+
+                    '111111111111111111').split('')
+                                         .map(function(){ return 300; }) );
 ```
 
 <div markdown="0">
@@ -162,10 +154,8 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 </div>
 
 ```js
-
-    //остановить вибросигнал
-    navigator.vibrate(0);
-
+//остановить вибросигнал
+navigator.vibrate(0);
 ```
 
 <div markdown="0">
@@ -177,10 +167,8 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
 </div>
 
 ```js
-
-    //вибросигнал длительностью 10 сек
-    navigator.vibrate(10000);
-
+//вибросигнал длительностью 10 сек
+navigator.vibrate(10000);
 ```
 
 <div markdown="0">

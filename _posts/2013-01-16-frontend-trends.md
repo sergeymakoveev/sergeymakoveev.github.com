@@ -302,7 +302,9 @@ window.addEventListener(
 
 ##Proximity Events
 События датчика приближения устройства.
-<pre>window.addEventListener(
+
+```js
+window.addEventListener(
     "deviceproximity",
     function(e){console.log(
         e.value, // текущая дистанция до датчика в сантиметрах (!)
@@ -316,7 +318,8 @@ window.addEventListener(
         e.near //true - близко, false - далеко
     )}
 );
-</pre>
+```
+
 **Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.proximity.html" target="_blank">Proximity Events example</a>,
 <a href="http://dl.dropbox.com/u/8727858/mozilla/proximity/pro.html" target="_blank">Doug Turner/Device Proximity/Exapmle</a>.
@@ -333,7 +336,8 @@ window.addEventListener(
 ##Page Visibility API
 Позволяет определить отображается ли страница на экране устройства.<br />
 Реализован с браузерным префиксом.
-<pre>
+
+```js
 // Поля, содержащие состояние отображаемости страницы:
 // document.hidden = (true|false)
 // document.visibilityState = ("hidden"|"visible"|"prerender"|"unloaded")
@@ -346,7 +350,8 @@ console.log( document.mozHidden, document.mozVisibilityState );
 document.addEventListener( 'mozvisibilitychange',
                            function(){console.log( document.mozHidden,
                                                    document.mozVisibilityState );} );
-</pre>
+```
+
 **Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.pagevisibility.html" target="_blank">Page Visibility API example</a>,
 <a href="http://davidwalsh.name/demo/page-visibility.php" target="_blank">David Walsh/Page Visibility API/Example</a>,
@@ -364,7 +369,7 @@ document.addEventListener( 'mozvisibilitychange',
 Предоставляет возможности работы с полноэкранным режимом.
 Реализован с браузерным префиксом.
 
-<pre>
+```js
 // доступность полноэкранного режима:
 // document.fullScreenEnabled = (true|false)
 
@@ -384,7 +389,8 @@ console.log('fullscreenElement:', document.mozFullscreenElement);
 // document.cancelFullScreen();
 
 document.mozCancelFullScreen();
-</pre>
+```
+
 <b>Примеры</b>:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.fullscreen.html" target="_blank">Fullscreen API/Example</a>,
 <a href="https://developer.mozilla.org/samples/domref/fullscreen.html" target="_blank">MDN/Fullscreen API/Example</a>,

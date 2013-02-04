@@ -179,12 +179,10 @@ navigator.vibrate(10000);
        " />
 </div>
 
-{% highlight js linenos %}
-
-    //остановить вибросигнал
-    navigator.vibrate([]);
-
-{% endhighlight %}
+```js
+//остановить вибросигнал
+navigator.vibrate([]);
+```
 
 **Примеры**:
 [Vibration API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.vibration.html),
@@ -200,22 +198,20 @@ navigator.vibrate(10000);
 Предназначен для получения событий изменения ориентации экрана устройства, информации о текущем состоянии ориентации экрана.  
 Реализован с браузерным префиксом.
 
-{% highlight js linenos %}
+```js
+// screen.orientation - текущее значение ориентации экрана
 
-    // screen.orientation - текущее значение ориентации экрана
-    
-    console.log("orientation: " + screen.mozOrientation);
-    
-    // screen.onorientationchange - событие изменения ориентации экрана устройства
-    
-    screen.addEventListener(
-        "mozorientationchange",
-        function() {
-            console.log("orientation: " + screen.mozOrientation);
-        }
-    );
+console.log("orientation: " + screen.mozOrientation);
 
-{% endhighlight %}
+// screen.onorientationchange - событие изменения ориентации экрана устройства
+
+screen.addEventListener(
+    "mozorientationchange",
+    function() {
+        console.log("orientation: " + screen.mozOrientation);
+    }
+);
+```
 
 **Пример**:
 [Screen Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.screenorientation.html).  
@@ -228,19 +224,17 @@ navigator.vibrate(10000);
 ##Device Orientation API
 Предназначен для получения событий изменения ориентации устройства.
 
-{% highlight js linenos %}
-
-    // window.ondeviceorientation - событие смены ориентации устройства
-    // e.alpha, e.beta, e.gamma - текущее значение ориентации экрана
-    //                            по осям x, y, z соответственно
-    window.addEventListener(
-        "deviceorientation",
-        function(e){
-            console.log(e.alpha, e.beta, e.gamma);
-        }
-    );
-
-{% endhighlight %}
+```js
+// window.ondeviceorientation - событие смены ориентации устройства
+// e.alpha, e.beta, e.gamma - текущее значение ориентации экрана
+//                            по осям x, y, z соответственно
+window.addEventListener(
+    "deviceorientation",
+    function(e){
+        console.log(e.alpha, e.beta, e.gamma);
+    }
+);
+```
 
 **Примеры**:
 [Device Orientation API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.deviceorientation.html),
@@ -255,21 +249,19 @@ navigator.vibrate(10000);
 ##Device Motion API
 Предназначен для получения событий датчика-акселерометра о перемещении устройства.
 
-{% highlight js linenos %}
-
-    // window.ondevicemotion - событие перемещения устройства
-    // ускорение по осям x, y, z соответственно:
-    // e.acceleration.x, e.acceleration.y, e.acceleration.z
-    // значение ускорения по осям x, y, z (с учетом гравитации) соответственно:
-    // e.accelerationIncludingGravity.x, e.accelerationIncludingGravity.y, e.accelerationIncludingGravity.z
-    // значение угловой скорости вращения по осям z, x, y (в градусах) соответственно:
-    // e.rotationRate.alpha, e.rotationRate.beta, e.rotationRate.gamma
-    window.addEventListener( "devicemotion",
-                             function(e){ console.dir(e.acceleration);
-                                          console.dir(e.accelerationIncludingGravity);
-                                          console.dir(e.rotationRate); }; );
-
-{% endhighlight %}
+```js
+// window.ondevicemotion - событие перемещения устройства
+// ускорение по осям x, y, z соответственно:
+// e.acceleration.x, e.acceleration.y, e.acceleration.z
+// значение ускорения по осям x, y, z (с учетом гравитации) соответственно:
+// e.accelerationIncludingGravity.x, e.accelerationIncludingGravity.y, e.accelerationIncludingGravity.z
+// значение угловой скорости вращения по осям z, x, y (в градусах) соответственно:
+// e.rotationRate.alpha, e.rotationRate.beta, e.rotationRate.gamma
+window.addEventListener( "devicemotion",
+                         function(e){ console.dir(e.acceleration);
+                                      console.dir(e.accelerationIncludingGravity);
+                                      console.dir(e.rotationRate); }; );
+```
 
 **Пример**:
 [Device Motion API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.devicemotion.html).  
@@ -283,8 +275,8 @@ navigator.vibrate(10000);
 
 ##Ambient Light Events
 Предназначены для получения событий датчика освещенности устройства.
-
-<pre>window.addEventListener(
+```js
+window.addEventListener(
     "devicelight",
     //e.value - значение освещенности в люксах
     function(e){ console.log(e.value); }
@@ -294,7 +286,7 @@ window.addEventListener(
     // e.value = ("normal"|"dim"|"bright")
     function(e) { console.log('lightlevel: ' + e.value); }
 );
-</pre>
+```
 **Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html" target="_blank">Ambient Light API example</a>,
 <a href="http://dl.dropbox.com/u/8727858/mozilla/light/light.html" target="_blank">Doug Turner/Ambient Light Events/Example</a>.

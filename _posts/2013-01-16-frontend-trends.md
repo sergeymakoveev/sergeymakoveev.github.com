@@ -291,8 +291,7 @@ window.addEventListener(
 
 **Примеры**:
 [Ambient Light API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html),
-[Doug Turner/Ambient Light Events/Example](http://dl.dropbox.com/u/8727858/mozilla/light/light.html).
-
+[Doug Turner/Ambient Light Events/Example](http://dl.dropbox.com/u/8727858/mozilla/light/light.html).  
 **Источники**:
 [W3C Ambient Light Events](http://www.w3.org/TR/ambient-light/),
 [MDN/DeviceLightEvent](https://developer.mozilla.org/en-US/docs/DOM/DeviceLightEvent),
@@ -322,8 +321,7 @@ window.addEventListener(
 
 **Примеры**:
 [Proximity Events example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.proximity.html),
-[Doug Turner/Device Proximity/Exapmle](http://dl.dropbox.com/u/8727858/mozilla/proximity/pro.html).
-
+[Doug Turner/Device Proximity/Exapmle](http://dl.dropbox.com/u/8727858/mozilla/proximity/pro.html).  
 **Источники**:
 [W3C Proximity Events](http://www.w3.org/TR/proximity/),
 [MDN/DeviceProximityEvent](https://developer.mozilla.org/en-US/docs/DOM/DeviceProximityEvent),
@@ -355,8 +353,7 @@ document.addEventListener( 'mozvisibilitychange',
 **Примеры**:
 [Page Visibility API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.pagevisibility.html),
 [David Walsh/Page Visibility API/Example](http://davidwalsh.name/demo/page-visibility.php),
-[Mozilla/Page Visibility API/Example](http://www.samdutton.com/pageVisibility/).
-
+[Mozilla/Page Visibility API/Example](http://www.samdutton.com/pageVisibility/).  
 **Источники**:
 [W3C Page Visibility](http://www.w3.org/TR/page-visibility/),
 [David Walsh/Page Visibility API](http://davidwalsh.name/page-visibility),

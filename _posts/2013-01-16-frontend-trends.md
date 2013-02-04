@@ -407,19 +407,25 @@ document.mozCancelFullScreen();
 
 
 #Links
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference" target="_blank">MDN/Mozilla event reference</a>;</li><li><a href="https://developer.mozilla.org/en-US/docs/tag/DOM" target="_blank">MDN/DOM</a>;</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference" target="_blank">MDN/Mozilla event reference</a>;</li>
-<li><a href="http://www.opera.com/docs/specs/productspecs/" target="_blank">Opera/Web specifications</a>;</li>
-<li><a href="http://html5demos.com/" target="_blank">HTML 5 Demos and Examples</a>;</li>
-<li><a href="http://davidwalsh.name/" target="_blank">David Walsh</a>;</li>
-<li><a href="https://dougturner.wordpress.com/" target="_blank">Doug Turner</a>;</li>
-<li><a href="https://hacks.mozilla.org/" target="_blank">hacks.mozilla.org</a>;</li>
-<li><a href="http://web-standards.ru/category/articles/" target="_blank">Веб-стандарты/Статьи;</a></li>
-<li><a href="http://www.w3.org/2009/dap/#roadmap" target="_blank">W3C Device APIs Working Group</a>;</li>
-<li><a href="https://dvcs.w3.org/hg/dap/file/" target="_blank">W3C Device APIs Working Group/Mercurial</a>;</li>
-<li><a href="http://modernizr.com/download/" target="_blank">Modernizr</a>.</li>
-</ul>
+*   [W3C Device APIs Working Group](http://www.w3.org/2009/dap/#roadmap)
+*   [W3C Device APIs Working Group/Mercurial](https://dvcs.w3.org/hg/dap/file/)
+*   [Dev.Opera](http://dev.opera.com/)
+*   [Opera/Web specifications](http://www.opera.com/docs/specs/productspecs/)
+*   [HTML 5 Demos and Examples](http://html5demos.com/)
+*   [HTML5Labs](http://html5labs.interoperabilitybridges.com/)
+*   [MDN/DOM](https://developer.mozilla.org/en-US/docs/tag/DOM)
+*   [MDN/HTML5](https://developer.mozilla.org/en-US/docs/HTML/HTML5)
+*   [MDN/Mozilla event reference](https://developer.mozilla.org/en-US/docs/Mozilla_event_reference)
+*   [hacks.mozilla.org](https://hacks.mozilla.org/)
+*   [HTML5 ROCKS](http://www.html5rocks.com)
+*   [HTML5 Doctor](http://html5doctor.com/)
+*   [Web Platform](http://www.webplatform.org/)
+*   [Web Platform Team Blog](http://blogs.adobe.com/webplatform/)
+*   [WHATWG](http://www.whatwg.org/)
+*   [Веб-стандарты/Статьи](http://web-standards.ru/category/articles/)
+*   [David Walsh](http://davidwalsh.name/)
+*   [Doug Turner](https://dougturner.wordpress.com/)
+*   [Modernizr](http://modernizr.com/download/)
 
 [presentation]: http://goo.gl/2CkWb
 [w3c-dap]: http://www.w3.org/2009/dap/

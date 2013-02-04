@@ -2,6 +2,8 @@
 
 published: true
 
+Use numbered headers: true
+
 layout: post
 
 title: Тренды фронтэнда. Javascript APIs для мобильных устройств

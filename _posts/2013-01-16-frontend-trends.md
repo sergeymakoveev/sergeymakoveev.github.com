@@ -290,13 +290,13 @@ window.addEventListener(
 ```
 
 **Примеры**:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html" target="_blank">Ambient Light API example</a>,
-<a href="http://dl.dropbox.com/u/8727858/mozilla/light/light.html" target="_blank">Doug Turner/Ambient Light Events/Example</a>.
+[Ambient Light API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html),
+[Doug Turner/Ambient Light Events/Example](http://dl.dropbox.com/u/8727858/mozilla/light/light.html).
 
 **Источники**:
-<a href="http://www.w3.org/TR/ambient-light/" target="_blank">W3C Ambient Light Events</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/DeviceLightEvent" target="_blank">MDN/DeviceLightEvent</a>,
-<a href="http://dougturner.wordpress.com/2012/03/26/device-light-sensor/" target="_blank">Doug Turner/Ambient Light Events</a>.
+[W3C Ambient Light Events](http://www.w3.org/TR/ambient-light/),
+[MDN/DeviceLightEvent](https://developer.mozilla.org/en-US/docs/DOM/DeviceLightEvent),
+[Doug Turner/Ambient Light Events](http://dougturner.wordpress.com/2012/03/26/device-light-sensor/).
 
 
 
@@ -321,15 +321,15 @@ window.addEventListener(
 ```
 
 **Примеры**:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.proximity.html" target="_blank">Proximity Events example</a>,
-<a href="http://dl.dropbox.com/u/8727858/mozilla/proximity/pro.html" target="_blank">Doug Turner/Device Proximity/Exapmle</a>.
+[Proximity Events example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.proximity.html),
+[Doug Turner/Device Proximity/Exapmle](http://dl.dropbox.com/u/8727858/mozilla/proximity/pro.html).
 
 **Источники**:
-<a href="http://www.w3.org/TR/proximity/" target="_blank">W3C Proximity Events</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/DeviceProximityEvent" target="_blank">MDN/DeviceProximityEvent</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/UserProximityEvent" target="_blank">MDN/UserProximityEvent</a>,
-<a href="https://dougturner.wordpress.com/2012/03/22/device-proximity-sensor/" target="_blank">Doug Turner/Device Proximity</a>,
-<a href="http://dougturner.wordpress.com/2012/05/15/user-proximity-sensor-4/" target="_blank">Doug Turner/User Proximity</a>.
+[W3C Proximity Events](http://www.w3.org/TR/proximity/),
+[MDN/DeviceProximityEvent](https://developer.mozilla.org/en-US/docs/DOM/DeviceProximityEvent),
+[MDN/UserProximityEvent](https://developer.mozilla.org/en-US/docs/DOM/UserProximityEvent),
+[Doug Turner/Device Proximity](https://dougturner.wordpress.com/2012/03/22/device-proximity-sensor/),
+[Doug Turner/User Proximity](http://dougturner.wordpress.com/2012/05/15/user-proximity-sensor-4/).
 
 
 
@@ -353,15 +353,15 @@ document.addEventListener( 'mozvisibilitychange',
 ```
 
 **Примеры**:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.pagevisibility.html" target="_blank">Page Visibility API example</a>,
-<a href="http://davidwalsh.name/demo/page-visibility.php" target="_blank">David Walsh/Page Visibility API/Example</a>,
-<a href="http://www.samdutton.com/pageVisibility/" target="_blank">Mozilla/Page Visibility API/Example</a>.
+[Page Visibility API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.pagevisibility.html),
+[David Walsh/Page Visibility API/Example](http://davidwalsh.name/demo/page-visibility.php),
+[Mozilla/Page Visibility API/Example](http://www.samdutton.com/pageVisibility/).
 
 **Источники**:
-<a href="http://www.w3.org/TR/page-visibility/" target="_blank">W3C Page Visibility</a>,
-<a href="http://davidwalsh.name/page-visibility" target="_blank">David Walsh/Page Visibility API</a>,
-<a href="https://developers.google.com/chrome/whitepapers/pagevisibility" target="_blank">Chrome/Page Visibility API</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/Using_the_Page_Visibility_API" target="_blank">MDN/Page Visibility API</a>.
+[W3C Page Visibility](http://www.w3.org/TR/page-visibility/),
+[David Walsh/Page Visibility API](http://davidwalsh.name/page-visibility),
+[Chrome/Page Visibility API](https://developers.google.com/chrome/whitepapers/pagevisibility),
+[MDN/Page Visibility API](https://developer.mozilla.org/en-US/docs/DOM/Using_the_Page_Visibility_API).
 
 
 
@@ -391,15 +391,15 @@ console.log('fullscreenElement:', document.mozFullscreenElement);
 document.mozCancelFullScreen();
 ```
 
-<b>Примеры</b>:
-<a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.fullscreen.html" target="_blank">Fullscreen API/Example</a>,
-<a href="https://developer.mozilla.org/samples/domref/fullscreen.html" target="_blank">MDN/Fullscreen API/Example</a>,
-<a href="http://davidwalsh.name/demo/fullscreen.php" target="_blank">David Walsh/Fullscreen API/Example</a>.
-<br />
-<b>Источники</b>:
-<a href="http://www.w3.org/TR/fullscreen/" target="_blank">W3C Fullscreen</a>,
-<a href="https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode" target="_blank">MDN/Using fullscreen mode</a>,
-<a href="http://davidwalsh.name/fullscreen" target="_blank">David Walsh/Fullscreen API</a>.
+**Примеры**:
+[Fullscreen API/Example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.fullscreen.html),
+[MDN/Fullscreen API/Example](https://developer.mozilla.org/samples/domref/fullscreen.html),
+[David Walsh/Fullscreen API/Example](http://davidwalsh.name/demo/fullscreen.php).
+
+**Источники**:
+[W3C Fullscreen](http://www.w3.org/TR/fullscreen/),
+[MDN/Using fullscreen mode](https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode),
+[David Walsh/Fullscreen API](http://davidwalsh.name/fullscreen).
 
 
 

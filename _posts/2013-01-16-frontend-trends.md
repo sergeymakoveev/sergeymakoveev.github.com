@@ -112,12 +112,12 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
        " />
 </div>
 
-{% highlight js linenos %}
+```js
 
     //вибросигнал длительностью 1 сек
     navigator.vibrate(1000);
 
-{% endhighlight %}
+```
 
 <div markdown="0">
 <input type="button" value="vibrate 0.5 sec, wait 0.1 sec, vibrate 0.3 sec"
@@ -127,12 +127,12 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
        " />
 </div>
 
-{% highlight js linenos %}
+```js
 
     //последовательность: вибросигнал 0.5 сек, пауза 1 сек, вибросигнал 0.3 сек
     navigator.vibrate([500, 1000, 300]);
 
-{% endhighlight %}
+```
 
 <div markdown="0">
 <input type="button" value="vibrate many times"
@@ -144,14 +144,14 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
        " />
 </div>
 
-{% highlight js linenos %}
+```js
 
     //последовательность множества сигналов
     navigator.vibrate( ('111111111111111111'+
                         '111111111111111111').split('')
                                              .map(function(){ return 300; }) );
 
-{% endhighlight %}
+```
 
 <div markdown="0">
 <input type="button" value="vibrate stop"
@@ -161,12 +161,12 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
        " />
 </div>
 
-{% highlight js linenos %}
+```js
 
     //остановить вибросигнал
     navigator.vibrate(0);
 
-{% endhighlight %}
+```
 
 <div markdown="0">
 <input type="button" value="vibrate 10 sec"
@@ -176,12 +176,12 @@ tags: [js, api, js api, frontend, html, interface, mdn, mozilla, w3c]
        " />
 </div>
 
-{% highlight js linenos %}
+```js
 
     //вибросигнал длительностью 10 сек
     navigator.vibrate(10000);
 
-{% endhighlight %}
+```
 
 <div markdown="0">
 <input type="button" value="vibrate stop"

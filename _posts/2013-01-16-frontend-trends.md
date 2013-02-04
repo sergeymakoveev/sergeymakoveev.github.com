@@ -275,6 +275,7 @@ window.addEventListener( "devicemotion",
 
 ##Ambient Light Events
 Предназначены для получения событий датчика освещенности устройства.
+
 ```js
 window.addEventListener(
     "devicelight",
@@ -287,6 +288,7 @@ window.addEventListener(
     function(e) { console.log('lightlevel: ' + e.value); }
 );
 ```
+
 **Примеры**:
 <a href="https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html" target="_blank">Ambient Light API example</a>,
 <a href="http://dl.dropbox.com/u/8727858/mozilla/light/light.html" target="_blank">Doug Turner/Ambient Light Events/Example</a>.

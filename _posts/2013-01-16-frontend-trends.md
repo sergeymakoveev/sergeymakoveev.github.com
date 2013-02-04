@@ -403,7 +403,7 @@ document.mozCancelFullScreen();
 
 #Итог
 Обобщая развитие веб-стандартов в сфере фронтенд-технологий (css, js, html), можно увидеть общую тенденцию инновационных разработок, конечной целью которых является становление веб-интерфейсов как стандарта де-факто в качестве интерфейсов приложений.
-Уже сейчас можно воспользоваться новыми API при помощи [Modernizr](http://modernizr.com/download/).
+Уже сейчас можно воспользоваться новыми API при помощи [Modernizr][].
 
 
 #Links
@@ -425,7 +425,7 @@ document.mozCancelFullScreen();
 *   [Веб-стандарты/Статьи](http://web-standards.ru/category/articles/)
 *   [David Walsh](http://davidwalsh.name/)
 *   [Doug Turner](https://dougturner.wordpress.com/)
-*   [Modernizr](http://modernizr.com/download/)
+*   [Modernizr][]
 
 [presentation]: http://goo.gl/2CkWb
 [w3c-dap]: http://www.w3.org/2009/dap/
@@ -438,3 +438,4 @@ document.mozCancelFullScreen();
          "Adobe"
 [adobe creative cloud]: https://creative.adobe.com
                         "Adobe Creative Cloud"
+[Modernizr]: http://modernizr.com/download/

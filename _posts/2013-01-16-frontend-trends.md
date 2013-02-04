@@ -291,7 +291,7 @@ window.addEventListener(
 
 **Примеры**:
 [Ambient Light API example](https://c9.io/sergeymakoveev/examples/workspace/2013.01.trends-of-frontend/api.ambientlight.html),
-[Doug Turner/Ambient Light Events/Example](http://dl.dropbox.com/u/8727858/mozilla/light/light.html).  
+[Doug Turner/Ambient Light Events/Example](http://dl.dropbox.com/u/8727858/mozilla/light/light.html). 
 **Источники**:
 [W3C Ambient Light Events](http://www.w3.org/TR/ambient-light/),
 [MDN/DeviceLightEvent](https://developer.mozilla.org/en-US/docs/DOM/DeviceLightEvent),

@@ -4,7 +4,7 @@ published: true
 
 layout: post
 
-title: Тренды фронтэнда. Javascript APIs для мобильных устройств
+title: Тренды фронтэнда.<br />Javascript APIs для мобильных устройств
 
 categories: [javascript]
 

@@ -6,7 +6,7 @@ layout: post
 
 title: Сервис GetFavicon
 
-categories: [services]
+categories: [blog]
 
 tags: [service, online, development, favicon, getfavicon]
 

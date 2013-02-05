@@ -4,9 +4,9 @@ published: true
 
 layout: post
 
-title: Github pages as blog engine
+title: Github Pages
 
-categories: [services]
+categories: [blog]
 
 tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 

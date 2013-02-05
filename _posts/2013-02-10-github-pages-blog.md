@@ -12,23 +12,23 @@ tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 
 ---
 
-#Intro
-#Github pages as blog engine
-#jekyll templates
-#yaml
-#Markdown posts
+##Intro
+##Github pages as blog engine
+##jekyll templates
+##yaml
+##Markdown posts
 
 *   [Markdown](http://daringfireball.net/projects/markdown/syntax "Markdown syntax")
 *   [GFM](http://github.github.com/github-flavored-markdown/ "GitHub Flavored Markdown")
 *   [Maruku](http://maruku.rubyforge.org/maruku.html "Maruku - интерпретатор markdown-разметки")
 *   [Maruku/Basik Markdown](http://maruku.rubyforge.org/markdown_syntax.html "Basic Markdown syntax")
 
-##On/Off markdown for HTML-elements
+###On/Off markdown for HTML-elements
 `markdown="0|1"`
 
-##Syntax highlighting
+###Syntax highlighting
 
-###Js highlighters
+####Js highlighters
 *   [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)
 *   [google-code-prettify](http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html)
 *   [Highlight.js](http://softwaremaniacs.org/soft/highlight/)
@@ -59,5 +59,5 @@ markdown: redcarpet
 
 
 
-## Comments
+### Comments
     http://disqus.com

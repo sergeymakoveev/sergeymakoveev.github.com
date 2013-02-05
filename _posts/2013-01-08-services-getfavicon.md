@@ -27,7 +27,8 @@ http://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```
 #Особенности
-*   поддерживает https только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):  
+*   поддерживает `https:` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
+
 ```
 https://getfavicon.appspot.com/http://ya.ru
 ```

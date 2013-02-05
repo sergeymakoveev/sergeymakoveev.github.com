@@ -18,7 +18,7 @@ tags: [service, online, development, favicon, getfavicon]
 ##Использование
 Формат запроса:
 
-```
+```console
 http://getfavicon.appspot.com/{URL}
 http://g.etfv.co/{URL}
 ```

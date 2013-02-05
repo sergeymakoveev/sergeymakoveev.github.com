@@ -4,7 +4,7 @@ published: true
 
 layout: post
 
-title: Services: GetFavicon
+title: Сервис GetFavicon
 
 categories: [services]
 

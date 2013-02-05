@@ -18,12 +18,10 @@ tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 #yaml
 #Markdown posts
 
-[Markdown]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown syntax"
-[GFM]: http://github.github.com/github-flavored-markdown/
-       "GitHub Flavored Markdown"
-[Maruku]: http://maruku.rubyforge.org/maruku.html
-          "Maruku - интерпретатор markdown-разметки"
+*   [Markdown](http://daringfireball.net/projects/markdown/syntax "Markdown syntax")
+*   [GFM](http://github.github.com/github-flavored-markdown/ "GitHub Flavored Markdown")
+*   [Maruku](http://maruku.rubyforge.org/maruku.html "Maruku - интерпретатор markdown-разметки")
+*   [Maruku/Markdown](http://maruku.rubyforge.org/markdown_syntax.html "Markdown syntax")
 
 ##On/Off markdown for HTML-elements
 `markdown="0|1"`

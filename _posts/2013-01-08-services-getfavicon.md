@@ -20,7 +20,7 @@ tags: [service, online, development, favicon, getfavicon]
 ```
 http://g.etfv.co/{URL}
 ```
-Например, получить favicon ресурса "http://ya.ru":
+Например, получить favicon ресурса "[](http://ya.ru)":
 ```
 http://g.etfv.co/http://ya.ru
 ```

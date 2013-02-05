@@ -17,15 +17,19 @@ tags: [service, online, development, favicon, getfavicon]
 
 ##Использование
 Формат запроса:
+
 ```
 http://getfavicon.appspot.com/{URL}
 http://g.etfv.co/{URL}
 ```
+
 Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
+
 ```
 http://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```
+
 ##Особенности
 *   поддерживает `https:` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
 

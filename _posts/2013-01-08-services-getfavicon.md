@@ -28,10 +28,7 @@ http://g.etfv.co/http://ya.ru
 ```
 #Особенности
 *   поддерживает `https:` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
-
-```
-https://getfavicon.appspot.com/http://ya.ru
-```
+    https://getfavicon.appspot.com/http://ya.ru
 Таким образом, если ваш сайт доступен по `http:` и `https:` одновременно, будет работать "правильная" запись:
 
 ```html
@@ -41,11 +38,10 @@ https://getfavicon.appspot.com/http://ya.ru
 Если на ваш сайт обратились по `http:` иконка будет взята с адреса http://getfavicon.appspot.com/http://ya.ru ,
 если страница вашего сайта была запрошена по `https:` - иконка загрузится с адреса https://getfavicon.appspot.com/http://ya.ru
 
-*   умеет получать favicon https-ресурсов:  
-```
-http://getfavicon.appspot.com/https://ya.ru
-http://g.etfv.co/https://ya.ru
-```
+*   умеет получать favicon https-ресурсов:
+    http://getfavicon.appspot.com/https://ya.ru
+    http://g.etfv.co/https://ya.ru
+
 *   можно задавать [настройки](http://g.etfv.co/) в get-параметрах: (escaping, default icon, ...)
 *   
 http://asdasdasd.getfavicon.appspot.com/http://ya.ru

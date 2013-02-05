@@ -31,10 +31,12 @@ http://g.etfv.co/http://ya.ru
 ```
 https://getfavicon.appspot.com/http://ya.ru
 ```
-    Тоесть если ваш сайт доступен по `http:` и `https:` одновременно, будет работать "правильная" запись:  
+    Тоесть если ваш сайт доступен по `http:` и `https:` одновременно, будет работать "правильная" запись:
+
 ```html
 <img src="//getfavicon.appspot.com/http://ya.ru" />
 ```
+
     При этом браузер сам подставит в URL нужный префикс протокола - если на ваш сайт обратились по `http:` иконка будет взята с адреса http://getfavicon.appspot.com/http://ya.ru ,
     если страница вашего сайта была запрошена по `https:` - иконка загрузится с адреса https://getfavicon.appspot.com/http://ya.ru
 *   умеет получать favicon https-ресурсов:  

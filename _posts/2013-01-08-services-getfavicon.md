@@ -12,10 +12,10 @@ tags: [service, online, development, favicon, getfavicon]
 
 ---
 
-#Описание
+##Описание
 Сервис отдает favicon ресурса, указанного в `{URL}` запроса.
 
-#Использование
+##Использование
 Формат запроса:
 ```
 http://getfavicon.appspot.com/{URL}
@@ -26,7 +26,7 @@ http://g.etfv.co/{URL}
 http://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```
-#Особенности
+##Особенности
 *   поддерживает `https:` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
 
 ```
@@ -58,6 +58,6 @@ http://abc.getfavicon.appspot.com/http://ya.ru
 Таким образом, при одновременной загрузке большого количества иконок срабатывает ограничение браузера на количество одновременных запросов к одному и тому же хосту (количество зависит от реализации браузера).  
 Данное свойство позволяет динамически генерировать имя хоста: **`hosthame`.getfavicon.appspot.com** , и таким образом обойти это ограничение, сокращая общее время загрузки страницы.
 
-#Links
+##Links
 *   [Home page](http://g.etfv.co/)
 *   [Исходники на GitHub](https://github.com/potatolondon/getfavicon)

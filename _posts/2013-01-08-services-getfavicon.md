@@ -25,7 +25,8 @@ http://g.etfv.co/{URL}
 http://g.etfv.co/http://ya.ru
 ```
 #Особенности
-Поддерживает https, можно задавать настройки в get-параметрах (escaping, default icon, ...).
+Поддерживает https, можно задавать [настройки](http://g.etfv.co/) в get-параметрах (escaping, default icon, ...).
 
 #Links
+*   [Home page](http://g.etfv.co/)
 *   [Исходники на GitHub](https://github.com/potatolondon/getfavicon)

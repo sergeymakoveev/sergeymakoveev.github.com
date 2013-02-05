@@ -11,6 +11,7 @@ categories: [services]
 tags: [service, online, development, favicon, getfavicon]
 
 ---
+
 #Описание
 Сервис отдает favicon ресурса, указанного в url запроса.
 

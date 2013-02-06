@@ -14,6 +14,8 @@ tags: [service, online, development, favicon, getfavicon]
 
 ## getFavicon
 > [http://getfavicon.appspot.com](http://getfavicon.appspot.com)
+> [http://g.etfv.co](http://g.etfv.co)
+> [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Исходники")
 
 ###Описание
 Сервис отдает favicon ресурса, указанного в `{URL}` запроса.
@@ -29,11 +31,11 @@ http://g.etfv.co/{URL}
 Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
 
 ```
-[http://getfavicon.appspot.com/http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
-[http://g.etfv.co/http://ya.ru](http://g.etfv.co/http://ya.ru)
+http://getfavicon.appspot.com/http://ya.ru
+http://g.etfv.co/http://ya.ru
 ```
 
-##Особенности
+###Особенности
 *   поддерживает `https:` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
 
 ```
@@ -41,7 +43,7 @@ https://getfavicon.appspot.com/http://ya.ru
 ```
 Таким образом, если ваш сайт доступен по `http:` и `https:` одновременно, будет работать "правильная" запись:
 
-```{.html}
+```html
 <img src="//getfavicon.appspot.com/http://ya.ru" />
 ```
 При этом браузер сам подставит в URL нужный префикс протокола.  
@@ -64,10 +66,6 @@ http://abc.getfavicon.appspot.com/http://ya.ru
 ```
 Таким образом, при одновременной загрузке большого количества иконок срабатывает ограничение браузера на количество одновременных запросов к одному и тому же хосту (количество зависит от реализации браузера).  
 Данное свойство позволяет динамически генерировать имя хоста: **`hosthame`.getfavicon.appspot.com**, и, таким образом, обойти это ограничение, сокращая общее время загрузки страницы.
-
-##Links
-*   [Home page](http://g.etfv.co/)
-*   [Исходники на GitHub](https://github.com/potatolondon/getfavicon)
 
 <! ------------------------------------------------------------------------- -->
 

@@ -1,14 +1,14 @@
 ---
 
-published: true
-
-layout: post
-
-title: Сервисы GetFavicon
-
-categories: [blog]
-
-tags: [service, online, development, favicon, getfavicon]
+    published: true
+    
+    layout: post
+    
+    title: Сервисы GetFavicon
+    
+    categories: [blog]
+    
+    tags: [service, online, development, favicon, getfavicon]
 
 ---
 
@@ -30,7 +30,7 @@ http://g.etfv.co/{URL}
 
 Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
 
-```console,linenos
+```
 http://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```

@@ -15,7 +15,7 @@ tags: [service, online, development, favicon, getfavicon]
 ## getFavicon
 > [http://getfavicon.appspot.com](http://getfavicon.appspot.com "Usage")  
 > [http://g.etfv.co](http://g.etfv.co "Usage")  
-> [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Исходники")
+> [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Sources")
 
 ###Описание
 Сервис отдает favicon ресурса, указанного в `{URL}` запроса.
@@ -30,7 +30,7 @@ http://g.etfv.co/{URL}
 
 Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
 
-```
+```console
 http://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```

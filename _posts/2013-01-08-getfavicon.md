@@ -14,7 +14,7 @@
 > [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Sources")
 
 ###Описание
-Сервис отдает favicon ресурса `{src}`, указанного в URL запроса.
+Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
 ###Использование
 Формат запроса:
@@ -25,14 +25,18 @@ https://getfavicon.appspot.com/{src}
 http://g.etfv.co/{src}
 ```
 
-Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
+**Например**: получить favicon сайтов [http://ya.ru](http://ya.ru), [http://mail.ru](http://mail.ru), [http://rambler.ru](http://rambler.ru):
 
 ```
 http://getfavicon.appspot.com/http://ya.ru
-https://getfavicon.appspot.com/http://ya.ru
-http://g.etfv.co/http://ya.ru
+https://getfavicon.appspot.com/http://mail.ru
+http://g.etfv.co/http://rambler.ru
 ```
+
+**Результат**:
 ![favicon from http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
+![favicon from http://mail.ru](http://getfavicon.appspot.com/http://mail.ru)
+![favicon from http://rambler.ru](http://getfavicon.appspot.com/http://rambler.ru)
 
 ###Особенности
 *   в качестве `{src}` ресурса выступает строка `{http|https}://hostname`
@@ -42,14 +46,14 @@ http://g.etfv.co/http://ya.ru
 http://getfavicon.appspot.com/https://ya.ru
 http://g.etfv.co/https://ya.ru
 ```
-*   корректно отрабатывает если иконка запрашивается у `https://`-ресурса с "самопальным" SSL-сертификатом
+*   корректно отрабатывает если иконка запрашивается у `https://`-сайта с "самопальным" SSL-сертификатом
 
 ```
 https://getfavicon.appspot.com/https://mmmail.ru
 https://getfavicon.appspot.com/https://ioffice.penza-gsm.ru
 ```
 
-*   корректно отрабатывает если иконка запрашивается у `http://`-ресурса с "безусловным" редиректом на `https://`
+*   корректно отрабатывает если иконка запрашивается у `http://`-сайта с "безусловным" редиректом на `https://`
 
 ```
 https://getfavicon.appspot.com/http://mmmail.ru
@@ -87,7 +91,7 @@ http://abc.getfavicon.appspot.com/http://ya.ru
 ### GetFavicon by Google
 
 ####Описание
-Сервис отдает favicon ресурса `{src}`, указанного в URL запроса.
+Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
 ####Использование
 Формат запроса:
@@ -105,14 +109,14 @@ https://www.google.com/s2/favicons?domain=ya.ru
 ```
 
 ####Особенности
-*   в качестве ресурса `{src}` указывается домен без префикса протокола
+*   в качестве сайта `{src}` указывается домен без префикса протокола
 *   поддерживает `https:`:
 
 ```
 https://www.google.com/s2/favicons?domain=ya.ru
 ```
 
-*   **некорректно** отрабатывает если иконка запрашивается у `https://`-ресурса с "самопальным" SSL-сертификатом
+*   **некорректно** отрабатывает если иконка запрашивается у `https://`-сайта с "самопальным" SSL-сертификатом
 
 ```
 https://www.google.com/s2/favicons?domain=mmmail.ru
@@ -124,7 +128,7 @@ https://www.google.com/s2/favicons?domain=ioffice.penza-gsm.ru
 ### GetFavicon by Yandex
 
 ####Описание
-Сервис отдает favicon ресурса `{src}`, указанного в URL запроса.
+Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
 ####Использование
 Формат запроса:
@@ -136,7 +140,7 @@ http://favicon.yandex.ru/favicon/{src}
 https://favicon.yandex.ru/favicon/{src} (!!!)
 ```
 
-Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
+Например, получить favicon сайта "[http://ya.ru](http://ya.ru)":
 
 ```
 http://favicon.yandex.net/favicon/ya.ru
@@ -146,7 +150,7 @@ https://favicon.yandex.ru/favicon/ya.ru (!!!)
 ```
 
 ####Особенности
-*   в качестве ресурса `{src}` можно указать несколько доменов (без префикса протокола):
+*   в `{src}` можно указать несколько доменов (без префикса протокола), разделенные "прямым слешем" ( / ):
 
 ```
 http://favicon.yandex.net/favicon/google.com/ya.ru/mail.ru

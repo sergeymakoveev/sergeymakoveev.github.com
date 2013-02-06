@@ -1,15 +1,9 @@
 ---
-
-published: true
-
-layout: post
-
-title: Github Pages
-
-categories: [blog]
-
-tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
-
+    published: true
+    layout: post
+    title: Github Pages
+    categories: [blog]
+    tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 ---
 
 [GitHub]: http://github.com "GitHub"

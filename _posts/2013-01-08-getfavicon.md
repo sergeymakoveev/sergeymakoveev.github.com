@@ -1,15 +1,9 @@
 ---
-
     published: true
-    
     layout: post
-    
     title: Сервисы GetFavicon
-    
     categories: [blog]
-    
     tags: [service, online, development, favicon, getfavicon]
-
 ---
 
 ## getFavicon

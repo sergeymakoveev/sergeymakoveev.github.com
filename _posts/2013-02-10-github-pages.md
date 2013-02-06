@@ -12,7 +12,10 @@ tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 
 ---
 
+[GitHub]: http://github.com "GitHub"
+
 ##Intro
+Любой репозиторий в [GitHub][] 
 ##Github pages as blog engine
 ##jekyll templates
 ##yaml

@@ -30,7 +30,7 @@ http://g.etfv.co/{URL}
 
 Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
 
-```:linenos
+```console:linenos
 http://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```

@@ -4,7 +4,7 @@ published: true
 
 layout: post
 
-title: Сервис GetFavicon
+title: Сервисы GetFavicon
 
 categories: [blog]
 
@@ -12,10 +12,13 @@ tags: [service, online, development, favicon, getfavicon]
 
 ---
 
-##Описание
+## getFavicon
+> [http://getfavicon.appspot.com](http://getfavicon.appspot.com)
+
+###Описание
 Сервис отдает favicon ресурса, указанного в `{URL}` запроса.
 
-##Использование
+###Использование
 Формат запроса:
 
 ```
@@ -26,8 +29,8 @@ http://g.etfv.co/{URL}
 Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
 
 ```
-http://getfavicon.appspot.com/http://ya.ru
-http://g.etfv.co/http://ya.ru
+[http://getfavicon.appspot.com/http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
+[http://g.etfv.co/http://ya.ru](http://g.etfv.co/http://ya.ru)
 ```
 
 ##Особенности
@@ -65,3 +68,6 @@ http://abc.getfavicon.appspot.com/http://ya.ru
 ##Links
 *   [Home page](http://g.etfv.co/)
 *   [Исходники на GitHub](https://github.com/potatolondon/getfavicon)
+
+<! ------------------------------------------------------------------------- -->
+

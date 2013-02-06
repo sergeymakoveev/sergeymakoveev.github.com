@@ -13,8 +13,8 @@ tags: [service, online, development, favicon, getfavicon]
 ---
 
 ## getFavicon
-> [http://getfavicon.appspot.com](http://getfavicon.appspot.com)
-> [http://g.etfv.co](http://g.etfv.co)
+> [http://getfavicon.appspot.com](http://getfavicon.appspot.com)  
+> [http://g.etfv.co](http://g.etfv.co)  
 > [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Исходники")
 
 ###Описание

@@ -68,6 +68,7 @@ https://getfavicon.appspot.com/http://ya.ru
 При этом браузер сам подставит в URL нужный префикс протокола.  
 Если на ваш сайт обратились по `http:` - иконка будет взята с адреса http://getfavicon.appspot.com/http://ya.ru ,
 если страница вашего сайта была запрошена по `https:` - иконка загрузится с адреса https://getfavicon.appspot.com/http://ya.ru
+
 *   можно задавать [настройки](http://g.etfv.co/) в get-параметрах: (escaping, default icon, ...)
 *   сервис отвечает с любого хоста домена **getfavicon.appspot.com** - `*.getfavicon.appspot.com`:
 

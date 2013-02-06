@@ -41,7 +41,7 @@ https://getfavicon.appspot.com/http://ya.ru
 ```
 Таким образом, если ваш сайт доступен по `http:` и `https:` одновременно, будет работать "правильная" запись:
 
-```html
+```{.html}
 <img src="//getfavicon.appspot.com/http://ya.ru" />
 ```
 При этом браузер сам подставит в URL нужный префикс протокола.  

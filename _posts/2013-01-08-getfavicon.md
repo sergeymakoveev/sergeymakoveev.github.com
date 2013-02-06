@@ -32,6 +32,7 @@ http://getfavicon.appspot.com/http://ya.ru
 https://getfavicon.appspot.com/http://ya.ru
 http://g.etfv.co/http://ya.ru
 ```
+![favicon from http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
 
 ###Особенности
 *   в качестве `{src}` ресурса выступает строка `{http|https}://hostname`
@@ -70,6 +71,7 @@ https://getfavicon.appspot.com/http://ya.ru
 если страница вашего сайта была запрошена по `https:` - иконка загрузится с адреса https://getfavicon.appspot.com/http://ya.ru
 
 *   можно задавать [настройки](http://g.etfv.co/) в get-параметрах: (escaping, default icon, ...)
+
 *   сервис отвечает с любого хоста домена **getfavicon.appspot.com** - `*.getfavicon.appspot.com`:
 
 ```
@@ -77,7 +79,7 @@ http://1.getfavicon.appspot.com/http://ya.ru
 http://12.getfavicon.appspot.com/http://ya.ru
 http://abc.getfavicon.appspot.com/http://ya.ru
 ```
-Таким образом, при одновременной загрузке большого количества иконок срабатывает ограничение браузера на количество одновременных запросов к одному и тому же хосту (количество зависит от реализации браузера).  
+Как известно при одновременной загрузке большого количества (>7) ресурсов с одного и того же хоста срабатывает ограничение браузера на количество одновременных запросов к хосту (количество зависит от реализации браузера).  
 Данное свойство позволяет динамически генерировать имя хоста: **`hosthame`.getfavicon.appspot.com**, и, таким образом, обойти это ограничение, сокращая общее время загрузки страницы.
 
 

@@ -40,9 +40,9 @@ tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
 ```
 pygments: false
 markdown: redcarpet
+````
 
-
-###Pygments
+####Pygments
 
 [Pygments](http://pygments.org/)
 
@@ -51,7 +51,7 @@ markdown: redcarpet
 pygments: true
 ```
 
-###GFM
+####GFM
 
 **_config.yml**:
 ```
@@ -59,7 +59,8 @@ pygments: false
 markdown: redcarpet
 ```
 
-
+#### Use GitHub Gist
+<script src="http://gist.github.com/118964.js"></script>
 
 
 ### Comments

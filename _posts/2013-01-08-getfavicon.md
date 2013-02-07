@@ -33,10 +33,12 @@ https://getfavicon.appspot.com/http://mail.ru
 http://g.etfv.co/http://rambler.ru
 ```
 
-**Результат**:
+**Результат:**
+```
 ![favicon from http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
 ![favicon from http://mail.ru](http://getfavicon.appspot.com/http://mail.ru)
 ![favicon from http://rambler.ru](http://getfavicon.appspot.com/http://rambler.ru)
+```
 
 ###Особенности
 *   в качестве `{src}` ресурса выступает строка `{http|https}://hostname`
@@ -101,7 +103,7 @@ http://www.google.com/s2/favicons?domain={src}
 https://www.google.com/s2/favicons?domain={src}
 ```
 
-Например, получить favicon ресурса "[http://ya.ru](http://ya.ru)":
+**Пример:** получить favicon ресурса "[http://ya.ru](http://ya.ru)":
 
 ```
 http://www.google.com/s2/favicons?domain=ya.ru
@@ -140,7 +142,7 @@ http://favicon.yandex.ru/favicon/{src}
 https://favicon.yandex.ru/favicon/{src} (!!!)
 ```
 
-Например, получить favicon сайта "[http://ya.ru](http://ya.ru)":
+**Пример:** получить favicon сайта "[http://ya.ru](http://ya.ru)":
 
 ```
 http://favicon.yandex.net/favicon/ya.ru

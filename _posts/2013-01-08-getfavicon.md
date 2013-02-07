@@ -17,7 +17,7 @@
 Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
 ###Использование
-Формат запроса:
+**Формат:**
 
 ```
 http://getfavicon.appspot.com/{src}
@@ -25,21 +25,23 @@ https://getfavicon.appspot.com/{src}
 http://g.etfv.co/{src}
 ```
 
-**Например**: получить favicon сайтов [http://ya.ru](http://ya.ru), [http://mail.ru](http://mail.ru), [http://rambler.ru](http://rambler.ru):
+**Например:** получить favicon сайтов [http://ya.ru](http://ya.ru), [http://mail.ru](http://mail.ru), [http://rambler.ru](http://rambler.ru):
 
-```
-http://getfavicon.appspot.com/http://ya.ru
-https://getfavicon.appspot.com/http://mail.ru
-http://g.etfv.co/http://rambler.ru
+```html
+<!--
+    http://getfavicon.appspot.com/http://ya.ru
+    https://getfavicon.appspot.com/http://mail.ru
+    http://g.etfv.co/http://rambler.ru
+-->
+<img src="http://getfavicon.appspot.com/http://ya.ru" />
+<img src="https://getfavicon.appspot.com/http://mail.ru" />
+<img src="http://g.etfv.co/http://rambler.ru" />
 ```
 
 **Результат:**
-
-<pre><code>
 ![favicon from http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
 ![favicon from http://mail.ru](http://getfavicon.appspot.com/http://mail.ru)
 ![favicon from http://rambler.ru](http://getfavicon.appspot.com/http://rambler.ru)
-</code></pre>
 
 ###Особенности
 *   в качестве `{src}` ресурса выступает строка `{http|https}://hostname`

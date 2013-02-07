@@ -58,14 +58,14 @@ https://getfavicon.appspot.com/https://mmmail.ru
 https://getfavicon.appspot.com/https://ioffice.penza-gsm.ru
 ```
 
-*   корректно отрабатывает если иконка запрашивается у `http`-сайта с "безусловным" редиректом на `https://`
+*   корректно отрабатывает если иконка запрашивается у `http`-сайта с "безусловным" редиректом на `https`
 
 ```
 https://getfavicon.appspot.com/http://mmmail.ru
 https://getfavicon.appspot.com/http://ioffice.penza-gsm.ru
 ```
 
-*   поддерживает `https:` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
+*   поддерживает `https` только на хосте [getfavicon.appspot.com](https://getfavicon.appspot.com/):
 
 ```
 https://getfavicon.appspot.com/http://ya.ru
@@ -121,7 +121,7 @@ https://www.google.com/s2/favicons?domain=ya.ru
 https://www.google.com/s2/favicons?domain=ya.ru
 ```
 
-*   **некорректно** отрабатывает если иконка запрашивается у `https://`-сайта с "самопальным" SSL-сертификатом
+*   **некорректно** отрабатывает если иконка запрашивается у `https`-сайта с "самопальным" SSL-сертификатом
 
 ```
 https://www.google.com/s2/favicons?domain=mmmail.ru

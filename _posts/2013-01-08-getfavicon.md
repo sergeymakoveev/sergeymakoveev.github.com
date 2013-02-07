@@ -37,9 +37,8 @@ http://g.etfv.co/{src}
 <img src="https://getfavicon.appspot.com/http://mail.ru" />
 <img src="http://g.etfv.co/http://rambler.ru" />
 ```
-
-**  
-Результат:**
+<br />
+**Результат:**
 ![favicon from http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
 ![favicon from http://mail.ru](http://getfavicon.appspot.com/http://mail.ru)
 ![favicon from http://rambler.ru](http://getfavicon.appspot.com/http://rambler.ru)

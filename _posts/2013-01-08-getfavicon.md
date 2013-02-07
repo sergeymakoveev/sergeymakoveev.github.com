@@ -25,8 +25,7 @@ https://getfavicon.appspot.com/{src}
 http://g.etfv.co/{src}
 ```
   
-**Например:** получить favicon сайтов [http://ya.ru](http://ya.ru), [http://mail.ru](http://mail.ru), [http://rambler.ru](http://rambler.ru):
-
+**Например:** получить favicon сайтов [http://ya.ru](http://ya.ru), [http://mail.ru](http://mail.ru), [http://rambler.ru](http://rambler.ru):  
 ```html
 <!--
     http://getfavicon.appspot.com/http://ya.ru
@@ -37,7 +36,6 @@ http://g.etfv.co/{src}
 <img src="https://getfavicon.appspot.com/http://mail.ru" />
 <img src="http://g.etfv.co/http://rambler.ru" />
 ```
-<br />
 **Результат:**
 ![favicon from http://ya.ru](http://getfavicon.appspot.com/http://ya.ru)
 ![favicon from http://mail.ru](http://getfavicon.appspot.com/http://mail.ru)

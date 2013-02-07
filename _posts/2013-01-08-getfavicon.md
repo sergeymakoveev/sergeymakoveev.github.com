@@ -8,15 +8,15 @@
 
 
 
-# getfavicon.appspot.com
+## getfavicon.appspot.com
 > [http://getfavicon.appspot.com](http://getfavicon.appspot.com "Usage")  
 > [http://g.etfv.co](http://g.etfv.co "Usage")  
 > [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Sources")
 
-##Описание
+###Описание
 Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
-##Использование
+###Использование
 Формат запроса:
 
 ```
@@ -41,7 +41,7 @@ http://g.etfv.co/http://rambler.ru
 ![favicon from http://rambler.ru](http://getfavicon.appspot.com/http://rambler.ru)
 ```
 
-##Особенности
+###Особенности
 *   в качестве `{src}` ресурса выступает строка `{http|https}://hostname`
 *   умеет получать favicon https-ресурсов:
 
@@ -91,12 +91,12 @@ http://abc.getfavicon.appspot.com/http://ya.ru
 
 
 
-# GetFavicon by Google
+## GetFavicon by Google
 
-##Описание
+###Описание
 Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
-##Использование
+###Использование
 Формат запроса:
 
 ```
@@ -111,7 +111,7 @@ http://www.google.com/s2/favicons?domain=ya.ru
 https://www.google.com/s2/favicons?domain=ya.ru
 ```
 
-##Особенности
+###Особенности
 *   в качестве сайта `{src}` указывается домен без префикса протокола
 *   поддерживает `https`:
 
@@ -128,12 +128,12 @@ https://www.google.com/s2/favicons?domain=ioffice.penza-gsm.ru
 
 
 
-# GetFavicon by Yandex
+## GetFavicon by Yandex
 
-##Описание
+###Описание
 Сервис отдает favicon сайта `{src}`, указанного в URL запроса.
 
-##Использование
+###Использование
 Формат запроса:
 
 ```
@@ -152,13 +152,13 @@ http://favicon.yandex.ru/favicon/ya.ru
 https://favicon.yandex.ru/favicon/ya.ru (!!!)
 ```
 
-##Особенности
+###Особенности
 *   в `{src}` можно указать несколько доменов (без префикса протокола), разделенные "прямым слешем" ( / ):
 
 ```
 http://favicon.yandex.net/favicon/google.com/ya.ru/mail.ru
 ```
 
-# http://geticon.org/
+## http://geticon.org/
 
 

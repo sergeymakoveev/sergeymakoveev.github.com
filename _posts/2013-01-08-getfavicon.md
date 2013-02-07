@@ -65,14 +65,14 @@ https://getfavicon.appspot.com/http://ioffice.penza-gsm.ru
 ```
 https://getfavicon.appspot.com/http://ya.ru
 ```
-Таким образом, если ваш сайт доступен по *[http]() и `https` одновременно, будет работать "правильная" запись:
+Таким образом, если ваш сайт доступен по `http` и `https` одновременно, будет работать "правильная" запись:
 
 ```html
 <img src="//getfavicon.appspot.com/http://ya.ru" />
 ```
 При этом браузер сам подставит в URL нужный префикс протокола.  
-Если на ваш сайт обратились по `http:` - иконка будет взята с адреса http://getfavicon.appspot.com/http://ya.ru ,
-если страница вашего сайта была запрошена по `https:` - иконка загрузится с адреса https://getfavicon.appspot.com/http://ya.ru
+Если на ваш сайт обратились по `http` - иконка будет взята с адреса http://getfavicon.appspot.com/http://ya.ru ,
+если страница вашего сайта была запрошена по `https` - иконка загрузится с адреса https://getfavicon.appspot.com/http://ya.ru
 
 *   можно задавать [настройки](http://g.etfv.co/) в get-параметрах: (escaping, default icon, ...)
 
@@ -110,7 +110,7 @@ https://www.google.com/s2/favicons?domain=ya.ru
 
 ####Особенности
 *   в качестве сайта `{src}` указывается домен без префикса протокола
-*   поддерживает `https:`:
+*   поддерживает `https`:
 
 ```
 https://www.google.com/s2/favicons?domain=ya.ru

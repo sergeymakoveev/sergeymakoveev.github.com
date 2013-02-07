@@ -46,14 +46,14 @@ http://g.etfv.co/http://rambler.ru
 http://getfavicon.appspot.com/https://ya.ru
 http://g.etfv.co/https://ya.ru
 ```
-*   корректно отрабатывает если иконка запрашивается у `https://`-сайта с "самопальным" SSL-сертификатом
+*   корректно отрабатывает если иконка запрашивается у `https`-сайта с "самопальным" SSL-сертификатом
 
 ```
 https://getfavicon.appspot.com/https://mmmail.ru
 https://getfavicon.appspot.com/https://ioffice.penza-gsm.ru
 ```
 
-*   корректно отрабатывает если иконка запрашивается у `http://`-сайта с "безусловным" редиректом на `https://`
+*   корректно отрабатывает если иконка запрашивается у `http`-сайта с "безусловным" редиректом на `https://`
 
 ```
 https://getfavicon.appspot.com/http://mmmail.ru
@@ -65,7 +65,7 @@ https://getfavicon.appspot.com/http://ioffice.penza-gsm.ru
 ```
 https://getfavicon.appspot.com/http://ya.ru
 ```
-Таким образом, если ваш сайт доступен по `http:` и `https:` одновременно, будет работать "правильная" запись:
+Таким образом, если ваш сайт доступен по *[http]() и `https` одновременно, будет работать "правильная" запись:
 
 ```html
 <img src="//getfavicon.appspot.com/http://ya.ru" />
@@ -157,3 +157,5 @@ http://favicon.yandex.net/favicon/google.com/ya.ru/mail.ru
 ```
 
 ### http://geticon.org/
+
+

@@ -1,2 +1,8 @@
+title  : Blog
+tagline: Frontend
+author : Sergey Makoveev
+  name : Sergey Makoveev
+ email : sergey@makoveev.info
+
 markdown: redcarpet
 permalink: /:year/:month/:day/:title/

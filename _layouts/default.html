@@ -3,14 +3,14 @@
     email: sergey@makoveev.info
     author: Sergey Makoveev
     twitter: @sergeymakoveev
-    site-title: Sergey Makoveev's Website
-    site-description: The digital home of Sergey Makoveev, a web developer
+    default-title: Sergey Makoveev's Website
+    default-description: The digital home of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
 ---
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }} · {{ page.site-title }}</title>
+    <title>{{ page.title }} · {{ page.default-title }}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="author" content="{{ page.author }}" />
-    <meta name="description" content="{{ [page.title, page.description] | join:'|' }}. {{ page.author }}" />
+    <meta name="description" content="{{ [page.default-title, page.default-description, page.title, page.description] | join:'|' }}. {{ page.author }}" />
     <meta name='сopyright' content='{{ page.author }}' />
     <meta name='keywords' content='{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />

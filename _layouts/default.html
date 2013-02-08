@@ -6,25 +6,17 @@
     default-title: Website
     default-description: The digital home of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
-    splitter: ·
-    firstchar: ☺
+    divider: ·
+    splitter: ☺
 ---
 
-{% assign page-title = page.title %}
-{% if page-title %}
-    {% assign page-title = page.title | append:page.splitter | append:page.author  %}
-{% else %}
-    {% assign page-title = page.default-title | append:page.splitter | append:page.author  %}
-{% endif %}
-{% assign page-description = page.description %}
-
+{% assign page-title = page.default-title | times:page.title %}
 
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }} {{ page.splitter }} {{ page.default-title }}</title>
-    <title>{{ page.title | replace_first: null,'1111' }}</title>
+    <title>{{ page.title | append:'|' | times:page.title | append:page.default-title | append:'|' | append:page.author |}}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -32,7 +24,6 @@
     
     <meta name="author" content="{{ page.author }}" />
     <meta name="description" content="{{ page.title | append:page.splitter | append:page.default-title | split:page.splitter | sort | join:'*' }}. {{ page.author }}" />
-    <meta name="description" content="{{ ' 1111' | append:page.splitter | append:'000' | split:page.splitter | sort | join:'*' }}" />
     <meta name='сopyright' content='{{ page.author }}' />
     <meta name='keywords' content='{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />
@@ -41,7 +32,7 @@
     <meta name="twitter:site" content="{{ page.twitter }}">
     <meta name="twitter:creator" content="{{ page.twitter }}">
     <meta name="twitter:url" content="{{ page.host }}{{ page.url }}">
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:title" content="{{ page.default-title }} {{ page.splitter }} {{ page.author }}">
     <meta name="twitter:description" content="{{ page.description }}">
 
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">

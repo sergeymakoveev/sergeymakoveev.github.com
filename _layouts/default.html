@@ -12,7 +12,7 @@
 {% assign page-divider = ' · ' %}
 {% assign page-url = page.host | append:page.url %}
 {% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page.author %}
-{% assign page-tags = page.keywords | join:',' | prepend:page-tags %}
+{% assign page-tags = page.keywords | join:',' | prepend:',' | prepend:page-tags %}
 
 {% if page.title %}
     {% assign page-title = page.title | append:page-divider | append:page.default-title %}

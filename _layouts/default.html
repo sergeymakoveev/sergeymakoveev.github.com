@@ -12,9 +12,9 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@sergeymakoveev">
     <meta name="twitter:creator" content="@sergeymakoveev">
-    <meta name="twitter:url" content="{{ page.url }}">
+    <meta name="twitter:url" content="{{ site.url }}/{{ page.url }}">
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ content | truncatewords:20 | textilize | strip_html | strip_newlines }}">
+    <meta name="twitter:description" content="{{ page.description }}">
 
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />

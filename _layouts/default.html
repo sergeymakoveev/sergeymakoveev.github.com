@@ -4,7 +4,7 @@
     author: Sergey Makoveev
     twitter: @sergeymakoveev
     default-title: Sergey.Makoveev.info
-    default-description: The digital home of Sergey Makoveev, a web developer
+    default-description: The personal site of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
 ---
 {% assign page-divider = ' · ' %}
@@ -16,7 +16,7 @@
 {% if page.description %}
     {% assign page-description = page.description %}
 {% else %}
-    {% assign page-description = page-title %}
+    {% assign page-description = page.default-description %}
 {% endif %}
 
 <!DOCTYPE html>

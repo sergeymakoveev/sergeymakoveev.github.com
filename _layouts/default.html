@@ -9,11 +9,22 @@
     splitter: ·
     firstchar: ☺
 ---
+
+{% assign page-title = page.title %}
+{% if page-title %}
+    {% assign page-title = page.title | append:page.splitter | append:page.author  %}
+{% else %}
+    {% assign page-title = page.default-title | append:page.splitter | append:page.author  %}
+{% endif %}
+{% assign page-description = page.description %}
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>{{ page.title }} {{ page.splitter }} {{ page.default-title }}</title>
-
+    <title>{{ page.title | replace_first: null,'1111' }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -21,7 +32,7 @@
     
     <meta name="author" content="{{ page.author }}" />
     <meta name="description" content="{{ page.title | append:page.splitter | append:page.default-title | split:page.splitter | sort | join:'*' }}. {{ page.author }}" />
-    <meta name="description" content="{{ ' 1111' | append:page.splitter | append:'☺000' | split:page.splitter | sort | join:'*' }}" />
+    <meta name="description" content="{{ ' 1111' | append:page.splitter | append:'000' | split:page.splitter | sort | join:'*' }}" />
     <meta name='сopyright' content='{{ page.author }}' />
     <meta name='keywords' content='{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />

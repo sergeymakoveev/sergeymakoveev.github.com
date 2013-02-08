@@ -3,6 +3,7 @@
     email: sergey@makoveev.info
     author: Sergey Makoveev
     twitter: @sergeymakoveev
+    avatar: http://www.gravatar.com/avatar/ec5c4ece917e78fe539d3051f4cbb87b.png
     default-title: Sergey.Makoveev.info
     default-description: The personal site of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
@@ -21,7 +22,8 @@
 {% endif %}
 
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#">
+<html xmlns:og="http://ogp.me/ns#"
+      prefix="og: http://ogp.me/ns#">
 <head>
     <title>{{ page-title }}</title>
     
@@ -44,10 +46,12 @@
     <meta name="twitter:description" content="{{ page-description }}">
 
     <meta property="og:title" content="{{ page-title }}"/>
-    <meta property="og:type" content="blog"/>
+    <meta property="og:type" content="article"/>
     <meta property="og:url" content="{{ page-url }}"/>
     <meta property="og:site_name" content="{{ page.default-title }}"/>
-    <meta property="og:description" content="{{ page.page-description }}"/>
+    <meta property="og:description" content="{{ page-description }}"/>
+    <meta property="og:image" content="{{ page.avatar }}" />
+    <meta property="og:locale" content="ru_RU" />
     
     <meta property="og:country-name" content="Russia"/>
     <meta property="og:region" content="Penza"/>

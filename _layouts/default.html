@@ -13,6 +13,7 @@
 {% else %}
     {% assign page-title = page.default-title %}
 {% endif %}
+{% assign page-title = page-title | append:page-divider | append:page.author %}
 {% if page.description %}
     {% assign page-description = page.description %}
 {% else %}

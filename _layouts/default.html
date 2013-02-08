@@ -3,14 +3,15 @@
     email: sergey@makoveev.info
     author: Sergey Makoveev
     twitter: @sergeymakoveev
-    title: Sergey Makoveev's Website
-    description: The digital home of Sergey Makoveev, a web developer
+    site-title: Sergey Makoveev's Website
+    site-description: The digital home of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
 ---
+{% assign page.aaa = 'freestyle' %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }}{{ page.aaa }}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     

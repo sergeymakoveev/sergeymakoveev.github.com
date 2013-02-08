@@ -20,7 +20,7 @@
     
     <meta name="author" content="{{ page.author }}" />
     <meta name="description" content="{{ page.title | append:page.splitter | append:page.default-title | split:page.splitter | sort | join:'*' }}. {{ page.author }}" />
-    <meta name="description" content="{{ '111' | append:page.splitter | append:'222' | split:page.splitter | sort | join:'*' }}" />
+    <meta name="description" content="{{ '111' | append:page.splitter | append:'_222' | split:page.splitter | sort | join:'*' }}" />
     <meta name='сopyright' content='{{ page.author }}' />
     <meta name='keywords' content='{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />

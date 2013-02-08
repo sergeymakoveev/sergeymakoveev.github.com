@@ -20,7 +20,7 @@
     <meta name="author" content="{{ page.author }}" />
     <meta name="description" content="{{ page.title }}. {{ page.description }}" />
     <meta name='сopyright' content='{{ page.author }}' />
-    <meta name='keywords' content='{{ page.keywords }}' />
+    <meta name='keywords' content='{{ page.keywords | join:, }},{{ page.tags | join:, }}' />
     <meta name='reply-to' content='{{ page.email }}' />
     
     <meta name="twitter:card" content="summary">

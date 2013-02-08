@@ -46,6 +46,10 @@ markdown: redcarpet
 pygments: true
 ```
 
+####Liquid
+https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+https://github.com/mojombo/jekyll/wiki/Liquid-Extensions
+
 ####GFM
 
 **_config.yml**:

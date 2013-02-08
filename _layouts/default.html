@@ -8,6 +8,7 @@
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
 ---
 {% assign page-divider = ' · ' %}
+{% assign page-url = page.host | append:page.url %}
 {% if page.title %}
     {% assign page-title = page.title | append:page-divider | append:page.default-title %}
 {% else %}
@@ -20,7 +21,7 @@
 {% endif %}
 
 <!DOCTYPE html>
-<html>
+<html xmlns:og="http://ogp.me/ns#">
 <head>
     <title>{{ page-title }}</title>
     
@@ -38,9 +39,21 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ page.twitter }}">
     <meta name="twitter:creator" content="{{ page.twitter }}">
-    <meta name="twitter:url" content="{{ page.host }}{{ page.url }}">
+    <meta name="twitter:url" content="{{ page-url }}">
     <meta name="twitter:title" content="{{ page-title }}">
     <meta name="twitter:description" content="{{ page-description }}">
+
+    <meta property="og:title" content="{{ page-title }}"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:url" content="{{ page-url }}"/>
+    <meta property="og:site_name" content="{{ page.default-title }}"/>
+    <meta property="og:description" content="{{ page.page-description }}"/>
+    
+    <meta property="og:country-name" content="Russia"/>
+    <meta property="og:region" content="Penza"/>
+    <meta property="og:locality" content="Penza"/>
+    
+    <meta property="og:email" content="{{ page.email }}"/>
 
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />

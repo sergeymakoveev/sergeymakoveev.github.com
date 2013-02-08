@@ -8,9 +8,12 @@
     default-description: The personal site of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
 ---
+
 {% assign page-divider = ' · ' %}
 {% assign page-url = page.host | append:page.url %}
-{% capture page-tags %}{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}{% endcapture %}
+{% assign page-tags = page.tags | join:',' | prepend:page.author %}
+{% assign page-tags = page.keywords | join:',' | prepend:page-tags %}
+
 {% if page.title %}
     {% assign page-title = page.title | append:page-divider | append:page.default-title %}
 {% else %}

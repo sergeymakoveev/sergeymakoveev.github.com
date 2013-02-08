@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="author" content="{{ page.author }}" />
-    <meta name="description" content="{{ [page.default-title, page.default-description, page.title, page.description] | join:'|' }}. {{ page.author }}" />
+    <meta name="description" content="{{ [page.title, page.default-title] | join:'|' }}. {{ page.author }}" />
     <meta name='сopyright' content='{{ page.author }}' />
     <meta name='keywords' content='{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />

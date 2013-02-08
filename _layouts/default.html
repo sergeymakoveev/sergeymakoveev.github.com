@@ -6,12 +6,12 @@
     default-title: Website
     default-description: The digital home of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
-    splitter:  · 
+    splitter: ·
 ---
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}{{ page.splitter }}{{ page.default-title }}</title>
+    <title>{{ page.title }} {{ page.splitter }} {{ page.default-title }}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
@@ -20,8 +20,9 @@
     
     <meta name="author" content="{{ page.author }}" />
     <meta name="description" content="{{ page.title | append:page.splitter | append:page.default-title | split:page.splitter | sort | join:'*' }}. {{ page.author }}" />
+    <meta name="description" content="{{ '111' | append:page.splitter | append:'222' | split:page.splitter | sort | join:'*' }}" />
     <meta name='сopyright' content='{{ page.author }}' />
-    <meta name='keywords' content='{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
+    <meta name='keywords' content='{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />
     
     <meta name="twitter:card" content="summary">

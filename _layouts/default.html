@@ -7,11 +7,10 @@
     site-description: The digital home of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
 ---
-{% assign page.aaa = 'freestyle' %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}{{ page.aaa }}</title>
+    <title>{{ page.title }} · {{ page.site-title }}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
@@ -19,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="author" content="{{ page.author }}" />
-    <meta name="description" content="{{ page.title }}. {{ page.description }}" />
+    <meta name="description" content="{{ page.title }}. {{ page.description }}. {{ page.author }}" />
     <meta name='сopyright' content='{{ page.author }}' />
     <meta name='keywords' content='{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
     <meta name='reply-to' content='{{ page.email }}' />

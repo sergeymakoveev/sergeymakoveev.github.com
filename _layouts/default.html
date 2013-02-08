@@ -10,6 +10,7 @@
 ---
 {% assign page-divider = ' · ' %}
 {% assign page-url = page.host | append:page.url %}
+{% capture page-tags %}{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}{% endcapture %}
 {% if page.title %}
     {% assign page-title = page.title | append:page-divider | append:page.default-title %}
 {% else %}
@@ -35,7 +36,7 @@
     <meta name="author" content="{{ page.author }}" />
     <meta name="description" content="{{ page-description }}" />
     <meta name='сopyright' content='{{ page.author }}' />
-    <meta name='keywords' content='{{ page.author }},{{ page.keywords | join:',' }},{{ page.tags | join:',' }}' />
+    <meta name='keywords' content='{{ page-tags }}' />
     <meta name='reply-to' content='{{ page.email }}' />
     
     <meta name="twitter:card" content="summary">
@@ -52,6 +53,7 @@
     <meta property="og:description" content="{{ page-description }}"/>
     <meta property="og:image" content="{{ page.avatar }}" />
     <meta property="og:locale" content="ru_RU" />
+    <meta property="og:article:tag" content="{{ page-tags }}" />
 
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />

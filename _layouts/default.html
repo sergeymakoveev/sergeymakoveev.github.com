@@ -4,6 +4,7 @@
     author: Sergey Makoveev
     twitter: @sergeymakoveev
     googleplus: https://plus.google.com/102114895580046085377/?rel=author
+    facebook: sergey.makoveev.info
     avatar: http://www.gravatar.com/avatar/ec5c4ece917e78fe539d3051f4cbb87b.png?s=200
     default-title: Sergey.Makoveev.info
     default-description: The personal site of Sergey Makoveev, a web developer
@@ -27,8 +28,9 @@
 {% endif %}
 
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#"
-      prefix="og: http://ogp.me/ns#">
+<html xmlns:fb="https://www.facebook.com/2008/fbml"
+      xmlns:og="http://ogp.me/ns#"
+        prefix="og: http://ogp.me/ns#">
 <head>
     <title>{{ page-title }}</title>
     
@@ -58,6 +60,8 @@
     <meta property="og:image" content="{{ page.avatar }}" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:article:tag" content="{{ page-tags }}" />
+    
+    <meta property="fb:admins" content="{{ page.facebook }}"/>
 
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />

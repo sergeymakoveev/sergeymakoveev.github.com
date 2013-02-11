@@ -1,17 +1,13 @@
 ---
-    var:
-        divider: {{ ' · ' }}
-        url: site.host
-    {% assign test = ' · ' %}
+    
 ---
 
-{% assign page-divider = ' · ' %}
 {% assign page-url = site.host | append:page.url %}
 {% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en | prepend:',' | prepend:site.author.email %}
 {% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page-tags %}
 
 {% if page.title %}
-    {% assign page-title = page.title | append:page-divider | append:site.title %}
+    {% assign page-title = page.title | append:site.divider | append:site.title | append:site.divider | append:site.author.name.ru %}
 {% else %}
     {% assign page-title = site.title %}
 {% endif %}
@@ -26,9 +22,6 @@
       xmlns:og = "http://ogp.me/ns#"
         prefix = "og: http://ogp.me/ns#">
 <head>
-    <!-- page.var.url: {{ page.var.url }} -->
-    <!-- site.divider: {{ site.divider }} -->
-    <!-- test: {{ page.test }} -->
     <title>{{ page-title }}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

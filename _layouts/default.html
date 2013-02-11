@@ -13,7 +13,7 @@
 
 {% assign page-divider = ' · ' %}
 {% assign page-url = site.host | append:page.url %}
-{% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en %}
+{% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en | prepend:',' | prepend:site.author.email %}
 {% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page-tags %}
 
 {% if page.title %}

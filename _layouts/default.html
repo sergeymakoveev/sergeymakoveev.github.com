@@ -81,6 +81,8 @@
                     <ul class="nav">
                         {% for category in site.categories %}
                             <li {% if page.category==category[0] %}class='active'{% endif %}>
+                                {{ page.category }}
+                                {{ page.categories }}
                                 <a href="/{{ category[0] }}">{{ category[0] }}</a>
                             </li>
                         {% endfor %}

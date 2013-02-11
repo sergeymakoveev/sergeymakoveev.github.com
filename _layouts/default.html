@@ -23,24 +23,6 @@
         prefix = "og: http://ogp.me/ns#">
 <head>
 
-{% for category in site.categories %}
-==========================================
-{{ category[0] }}
-------------------------------------------
-{{ category[1] }}
-------------------------------------------
-{{ category[2] }}
-------------------------------------------
-{{ category[3] }}
-------------------------------------------
-{{ category[4] }}
-------------------------------------------
-{{ category[5] }}
-------------------------------------------
-{{ category[6] }}
-==========================================
-{% endfor %}
-
     <title>{{ page-title }}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -97,6 +79,12 @@
                 <a class="brand" href="/">{{ site.title }}</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
+                        {% for category in site.categories %}
+                            <li {% if page.category==category[0] %}class='active'{% endif %}>
+                                <a href="/{{ category[0] }}">{{ category[0] }}</a>
+                            </li>
+                        {% endfor %}
+<!--
                         <li>
                             <a href="./index.html">Home</a>
                         </li>
@@ -118,6 +106,7 @@
                         <li>
                             <a href="./customize.html">Customize</a>
                         </li>
+-->
                     </ul>
                 </div>
             </div>

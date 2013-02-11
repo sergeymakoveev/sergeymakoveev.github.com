@@ -80,7 +80,7 @@
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         {% for category in site.categories %}
-                            <li {% if category[0] in page.categories %}class='active'{% endif %}>
+                            <li >
                                 {{ page.category }}
                                 {{ page.categories }}
                                 <a href="/{{ category[0] }}">{{ category[0] }}</a>

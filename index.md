@@ -1,4 +1,4 @@
 ---
     layout: index
-    categories: [home]
+    categories: [blog]
 ---

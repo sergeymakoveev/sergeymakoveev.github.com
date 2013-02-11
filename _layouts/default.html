@@ -80,7 +80,7 @@
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         {% for category in site.categories %}
-                            <li {% if page.categories | size != page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size %}class='active'{% endif %}>
+                            <li {% if ( page.categories | size ) != ( page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size ) %}class='active'{% endif %}>
                                 {{ page.categories }}
                                 {{ page.categories | size }}
                                 {{ page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size }}

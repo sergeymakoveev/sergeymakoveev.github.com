@@ -9,23 +9,22 @@
     default-title: Sergey.Makoveev.info
     default-description: The personal site of Sergey Makoveev, a web developer
     keywords: [js, css, css3, css4, html, html5, web api, js api, development, jquery, frontend, фронтенд]
-{% include settings.html %}
 ---
 
 {% assign page-divider = ' · ' %}
-{% assign page-url = page.host | append:page.url %}
-{% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page.author %}
-{% assign page-tags = page.keywords | join:',' | prepend:',' | prepend:page-tags %}
+{% assign page-url = site.host | append:page.url %}
+{% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en %}
+{% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page-tags %}
 
 {% if page.title %}
-    {% assign page-title = page.title | append:page-divider | append:page.default-title %}
+    {% assign page-title = page.title | append:page-divider | append:site.title %}
 {% else %}
-    {% assign page-title = page.default-title %}
+    {% assign page-title = site.title %}
 {% endif %}
 {% if page.description %}
     {% assign page-description = page.description %}
 {% else %}
-    {% assign page-description = page.default-description %}
+    {% assign page-description = site.description %}
 {% endif %}
 
 <!DOCTYPE html>

@@ -37,8 +37,8 @@
     <meta name='reply-to' content='{{ site.author.email }}' />
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{ site.author.twitter }}">
-    <meta name="twitter:creator" content="{{ site.author.twitter }}">
+    <meta name="twitter:site" content="{{ site.author.twitter.name }}">
+    <meta name="twitter:creator" content="{{ site.author.twitter.name }}">
     <meta name="twitter:url" content="{{ page-url }}">
     <meta name="twitter:title" content="{{ page-title }}">
     <meta name="twitter:description" content="{{ page-description }}">
@@ -83,7 +83,7 @@
                             <li {% if category[0] in page.categories %}class='active'{% endif %}>
                                 {{ page.category }}
                                 {{ page.categories }}
-                                <a href="/{{ category[0] }}">{{ category[0] }}</a>
+                                <a href="/{{ category[0] }}">{{ category[0] | capitalise }}</a>
                             </li>
                         {% endfor %}
 <!--

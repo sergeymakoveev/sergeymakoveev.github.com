@@ -1,5 +1,6 @@
 ---
-    test: {{ 'aaaaaaaaaaaaaaa' }}
+    !test: {{ 'aaaaaaaaaaaaaaa' }}
+    
 ---
 
 {% assign page-divider = ' · ' %}
@@ -23,7 +24,7 @@
       xmlns:og = "http://ogp.me/ns#"
         prefix = "og: http://ogp.me/ns#">
 <head>
-    <!-- {{ page.test }} -->
+    <!-- {{ page.!test }} -->
     <title>{{ page-title }}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

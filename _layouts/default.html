@@ -83,7 +83,7 @@
                             <li {% if true %}class='active'{% endif %}>
                                 {{ page.categories }}
                                 {{ page.categories | size }}
-                                {{ page.categories | join:',' | replace: category[0],',' | replace: ',,','' }}
+                                {{ page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size }}
                                 <a href="/{{ category[0] }}">{{ category[0] | capitalise }}</a>
                             </li>
                         {% endfor %}

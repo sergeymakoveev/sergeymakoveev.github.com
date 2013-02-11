@@ -83,7 +83,7 @@
                             <li {% if category[0] in page.categories %}class='active'{% endif %}>
                                 {{ page.category }}
                                 {{ page.categories }}
-                                <a href="/{{ category[0] }}">{{ category[0] | capitalise }}</a>
+                                <a href="/{{ category[0] }}">{{ category[0] }}</a>
                             </li>
                         {% endfor %}
 <!--

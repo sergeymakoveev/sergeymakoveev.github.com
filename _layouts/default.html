@@ -1,5 +1,7 @@
 ---
-    test_: {{ 'dddddddddddddd' }}
+    var:
+        divider: {{ ' · ' }}
+        url: {{ site.host | append:page.url }}
     
 ---
 
@@ -24,7 +26,7 @@
       xmlns:og = "http://ogp.me/ns#"
         prefix = "og: http://ogp.me/ns#">
 <head>
-    <!-- {{ page.test_ }} -->
+    <!-- page.var.url: {{ page.var.url }} -->
     <title>{{ page-title }}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

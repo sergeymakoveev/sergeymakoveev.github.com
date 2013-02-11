@@ -81,8 +81,9 @@
                     <ul class="nav">
                         {% for category in site.categories %}
                             <li {% if true %}class='active'{% endif %}>
-                                {{ page.category }}
                                 {{ page.categories }}
+                                {{ page.categories | size }}
+                                {{ page.categories | join:',' }}
                                 <a href="/{{ category[0] }}">{{ category[0] | capitalise }}</a>
                             </li>
                         {% endfor %}

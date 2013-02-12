@@ -1,58 +1,13 @@
 ---
     
 ---
-{% assign site.title = '1111111' %}
-{% assign page-url = site.host | append:page.url %}
-{% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en | prepend:',' | prepend:site.author.email %}
-{% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page-tags %}
-
-{% if page.title %}
-    {% assign page-title = page.title | append:site.divider | append:site.title | append:site.divider | append:site.author.name.ru %}
-{% else %}
-    {% assign page-title = site.title | append:site.divider | append:site.author.name.ru %}
-{% endif %}
-{% if page.description %}
-    {% assign page-description = page.description %}
-{% else %}
-    {% assign page-description = site.description %}
-{% endif %}
-
 <!DOCTYPE html>
 <html xmlns:fb = "https://www.facebook.com/2008/fbml"
       xmlns:og = "http://ogp.me/ns#"
         prefix = "og: http://ogp.me/ns#">
 <head>
-    '{{ site.title }}'
-    <title>{{ page-title }}</title>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="author" content="{{ site.author.name.ru }}/{{ site.author.name.en }}" />
-    <meta name="description" content="{{ page-description }}" />
-    <meta name='сopyright' content='{{ site.author.name.ru }}/{{ site.author.name.en }}' />
-    <meta name='keywords' content='{{ page-tags }}' />
-    <meta name='reply-to' content='{{ site.author.email }}' />
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{ site.author.twitter.name }}">
-    <meta name="twitter:creator" content="{{ site.author.twitter.name }}">
-    <meta name="twitter:url" content="{{ page-url }}">
-    <meta name="twitter:title" content="{{ page-title }}">
-    <meta name="twitter:description" content="{{ page-description }}">
 
-    <meta property="og:title" content="{{ page-title }}"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="{{ page-url }}"/>
-    <meta property="og:site_name" content="{{ site.title }}"/>
-    <meta property="og:description" content="{{ page-description }}"/>
-    <meta property="og:image" content="{{ site.author.avatar }}" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:article:tag" content="{{ page-tags }}" />
-    
-    <meta property="fb:admins" content="{{ site.author.facebook }}"/>
+    {% include head.html %}
 
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
@@ -68,52 +23,8 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="brand" href="/">{{ site.title }}</a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        {% for category in site.categories %}
-                            {% assign c-size = page.categories | size %}
-                            {% assign c-size-strip = page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size %}
-                            <li {% if c-size != c-size-strip %}class='active'{% endif %}>
-                                <a href="/{{ category[0] }}">{{ category[0] | capitalize }}</a>
-                            </li>
-                        {% endfor %}
-<!--
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./getting-started.html">Get started</a>
-                        </li>
-                        <li>
-                            <a href="./scaffolding.html">Scaffolding</a>
-                        </li>
-                        <li>
-                            <a href="./base-css.html">Base CSS</a>
-                        </li>
-                        <li class="active">
-                            <a href="./components.html">Components</a>
-                        </li>
-                        <li>
-                            <a href="./javascript.html">JavaScript</a>
-                        </li>
-                        <li>
-                            <a href="./customize.html">Customize</a>
-                        </li>
--->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include body.navbar.html %}
+
     <header>
         <div class="inner">
             <h1>o_o</h1>

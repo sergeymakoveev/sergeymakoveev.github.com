@@ -3,11 +3,13 @@
       xmlns:og = "http://ogp.me/ns#"
         prefix = "og: http://ogp.me/ns#">
 <head>
-    { include head.html }
+
+    {% include head.html %}
+
 </head>
 <body>
 
-    { include body.navbar.html }
+    {% include body.navbar.html %}
 
     {{ content }}
 

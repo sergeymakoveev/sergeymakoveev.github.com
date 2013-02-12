@@ -1,7 +1,7 @@
 ---
     
 ---
-
+{% assign site.var = '1111111' %}
 {% assign page-url = site.host | append:page.url %}
 {% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en | prepend:',' | prepend:site.author.email %}
 {% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page-tags %}
@@ -22,7 +22,7 @@
       xmlns:og = "http://ogp.me/ns#"
         prefix = "og: http://ogp.me/ns#">
 <head>
-
+    {{ site.var }}
     <title>{{ page-title }}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

@@ -23,3 +23,5 @@ author:
     facebook: sergey.makoveev.info
 
 host: http://sergeymakoveev.github.com
+patch:
+    reveral: /.libs/reveal.js

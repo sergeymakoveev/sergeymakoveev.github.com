@@ -1,4 +1,1 @@
----
-    layout: index
-    categories: [blog, home]
----
+[{{ site.title }}]({{ site.host }})

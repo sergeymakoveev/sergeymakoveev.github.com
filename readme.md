@@ -1,1 +1,1 @@
-[{{ site.title }}]({{ site.host }})
+    [sergeymakoveev.github.com](http://sergeymakoveev.github.com)

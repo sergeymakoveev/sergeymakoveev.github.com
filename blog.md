@@ -3,5 +3,5 @@
     categories: [blog]
 ---
 +++++++++++++++++++
-{{ post.categories }}
+{{ page.categories }}
 ++++++++++++++++++

@@ -1,4 +1,4 @@
 ---
     layout: index
-    categories: [presentation]
+    categories: [presentations]
 ---

@@ -10,12 +10,6 @@
 
     {% include head.html %}
 
-    <link rel="shortcut icon" href="{{ site.favicon }}" />
-    <link rel="icon" href="{{ site.favicon }}" />
-    <link rel="logo" 
-          type="image/png" 
-          href="{{ site.logo }}"/>
-      
     <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="/stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
@@ -45,8 +39,6 @@
             <section id="main-content">
 
                 {{ content }}
-
-                {% include body.disqus.html %}
 
             </section>
 

@@ -1,5 +1,12 @@
 
 <!-- <head.html> -->
+
+<link rel="shortcut icon" href="{{ site.favicon }}" />
+<link rel="icon" href="{{ site.favicon }}" />
+<link rel="logo" 
+      type="image/png" 
+      href="{{ site.logo }}"/>
+
 {% assign page-url = site.host | append:page.url %}
 {% assign page-tags =  site.keywords | join:',' | prepend:',' | prepend:site.author.name.ru | prepend:',' | prepend:site.author.name.en | prepend:',' | prepend:site.author.email %}
 {% assign page-tags = page.tags | join:',' | prepend:',' | prepend:page-tags %}

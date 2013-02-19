@@ -10,9 +10,9 @@
     <h2>{{ p.categories }}</h2>
     {% for c in p.categories %}
         <h2>0:{{ c }}</h2>
-        {% assign c = c | append:',' | prepend:',' %}
-        <h2>1:{{ c }}</h2>
-        {% assign post-categories = post-categories | replace:c,',' %}
+        {% assign cc = c | append:',' | prepend:',' %}
+        <h2>1:{{ cc }}</h2>
+        {% assign post-categories = post-categories | replace:cc,',' %}
         <h2>2:{{ post-categories }}</h2>
     {% endfor %}
     <hr />

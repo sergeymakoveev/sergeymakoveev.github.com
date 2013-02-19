@@ -5,6 +5,14 @@
 <h1>{{ page-categories }}</h1>
 <ul class="archive">
 {% for p in site.posts %}
+    {% assign post-categories = page-categories %}
+    {% for c in p.categories %}
+        <h2>{{ p }}</h2>
+        {% assign p = p | append:',' | prepend:',' %}
+        <h2>{{ p }}</h2>
+        {% assign post-categories = post-categories | replace:c,',' %}
+        <h2>{{ post-categories }}</h2>
+    {% endfor %}
   <li>
     <div class="excerpt">
       <strong class="entry-title">

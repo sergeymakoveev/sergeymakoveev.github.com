@@ -9,7 +9,7 @@
         {% assign c = category | append:',' | prepend:',' %}
         {% assign post-out-categories = post-out-categories | replace:c,',' %}
     {% endfor %}
-    {% if page-categories != post-out-categories %}
+    {% if page.categories == empty or page-categories != post-out-categories %}
         <li class="post">
             <div class="date" title="{{ post.date }}">{{ post.date | date_to_string }}</div>
             <h1><a class="title" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a></h1>

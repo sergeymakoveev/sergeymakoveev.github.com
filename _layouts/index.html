@@ -1,6 +1,8 @@
 ---
     layout: default
 ---
+{% assign page-categories = page.categories | join:',' | append:',' | prepend:',' %}
+<h1>{{ page-categories }}</h1>
 <ul class="archive">
 {% for p in site.posts %}
   <li>
@@ -38,13 +40,5 @@
     category[0] = {{ category[0] }}<br />
     -------------------------------<br />
     category[1] = {{ category[1] }}<br />
-    -------------------------------<br />
-    category[2] = {{ category[2] }}<br />
-    -------------------------------<br />
-    category[3] = {{ category[3] }}<br />
-    -------------------------------<br />
-    category[4] = {{ category[4] }}<br />
-    -------------------------------<br />
-    category[5] = {{ category[5] }}<br />
 ===================================<br />
 {% endfor %}

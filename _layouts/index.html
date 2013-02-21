@@ -13,7 +13,7 @@
         {% assign prev-post-date-year = '2000' %}
         {% assign post-date-year = post.date | date:'%Y' %}
         <article class="post">
-            <time data-year="{% post-date-year | replace:prev-post-date-year,'' %}"
+            <time data-year="{{ post-date-year | replace:prev-post-date-year,'' }}"
                   datetime="{{ post.date }}"
                   datetime="{{ post.date }}"
                   pubdate ="{{ post.date }}"

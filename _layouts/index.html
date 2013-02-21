@@ -10,7 +10,7 @@
         {% assign post-out-categories = post-out-categories | replace:c,',' %}
     {% endfor %}
     {% if page.categories == empty or page-categories != post-out-categories %}
-        { assign prev-post-date-year = post-date-year }
+        {% assign prev-post-date-year = '2000' %}
         {% assign post-date-year = post.date | date:'%Y' %}
         <article class="post">
             <time data-year="{% post-date-year | replace:prev-post-date-year,'' %}"

@@ -13,6 +13,7 @@
     {% if page.categories == empty or page-categories != post-out-categories %}
         {% assign prev-post-date-year = post-date-year %}
         {% assign post-date-year = post.date | date:'%Y' %}
+        {{ prev-post-date-year }}/{{ post-date-year }}
         <article class="post">
             <time data-year="{{ post-date-year | replace:prev-post-date-year,'' }}"
                   datetime="{{ post.date }}"

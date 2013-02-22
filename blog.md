@@ -1,5 +1,5 @@
 ---
-    layout: index
+    layout: html.default.index
     categories: [blog]
 ---
 +++++++++++++++++++

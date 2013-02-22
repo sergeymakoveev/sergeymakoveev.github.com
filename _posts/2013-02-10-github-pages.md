@@ -64,3 +64,7 @@ markdown: redcarpet
 
 ### Comments
     http://disqus.com
+
+### CDN
+    http://cdnjs.com/
+    http://www.bootstrapcdn.com

@@ -1,6 +1,6 @@
 ---
     published: true
-    layout: post
+    layout: html.default.post
     title: Github Pages
     categories: [blog]
     tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]

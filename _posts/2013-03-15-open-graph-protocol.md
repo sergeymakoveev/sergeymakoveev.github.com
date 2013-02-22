@@ -1,6 +1,6 @@
 ---
     published: true
-    layout: post
+    layout: html.default.post
     title: The Open Graph protocol
     categories: [blog]
     tags: [service, faceboor, twitter, blog, yandex]

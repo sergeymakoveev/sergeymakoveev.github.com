@@ -12,8 +12,14 @@
 ##Intro
 Любой репозиторий в [GitHub][] 
 ##Github pages as blog engine
-##jekyll templates
-##yaml
+##Jekyll site engine
+
+* [Jekyll: basic site structure](https://github.com/mojombo/jekyll/wiki/usage)
+
+###yaml
+
+* https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter
+
 ##Markdown posts
 
 *   [Markdown](http://daringfireball.net/projects/markdown/syntax "Markdown syntax")

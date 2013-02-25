@@ -2,7 +2,7 @@
     published: true
     layout: html.default.post
     title: Сервисы GetFavicon
-    description: Онлайн-сервисы позволяющие сформировать URL для получения favicon произвольного сайта
+    description: Онлайн-сервисы, позволяющие сформировать URL для получения favicon произвольного сайта
     categories: [blog]
     tags: [service, online, development, favicon, getfavicon, icon]
     date: 2013.02.08

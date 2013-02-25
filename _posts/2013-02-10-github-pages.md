@@ -6,7 +6,7 @@
     tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
     date: 2013.02.10
 ---
-
+{{ page.toc }}
 [GitHub]: http://github.com "GitHub"
 
 ##Intro

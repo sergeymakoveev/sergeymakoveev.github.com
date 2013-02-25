@@ -9,9 +9,6 @@
 
 [GitHub]: http://github.com "GitHub"
 
-```toc
-```
-
 ##Intro
 Любой репозиторий в [GitHub][] 
 ##Github pages as blog engine

@@ -9,7 +9,7 @@
 
 [GitHub]: http://github.com "GitHub"
 
-~toc~
+```toc
 
 ##Intro
 Любой репозиторий в [GitHub][] 

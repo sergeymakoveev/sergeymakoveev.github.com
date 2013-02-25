@@ -8,8 +8,6 @@
     date: 2013.02.08
 ---
 
-
-
 ## getfavicon.appspot.com
 > [http://getfavicon.appspot.com](http://getfavicon.appspot.com "Usage")  
 > [http://g.etfv.co](http://g.etfv.co "Usage")  

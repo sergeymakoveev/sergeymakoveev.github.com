@@ -12,7 +12,7 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li {% if !page.categories == empty %}class='active'{% endif %}>
-                            <a href="/"><i class="icon-home" title="Home"></i></a>
+                            <a href="/"><i class="icon-large icon-home" title="Home"></i></a>
                     </li>
                     {% for category in site.categories %}
                         {% assign c-size = page.categories | size %}
@@ -24,12 +24,12 @@
                     {% endfor %}
                 </ul>
                 <ul class="nav pull-right">
-                    <li><a href="{{ site.author.github.url }}"   ><i class="icon-github-sign"      title="GitHub: {{ site.author.github.name }}"></i></a></li>
-                    <li><a href="{{ site.author.google.url }}"   ><i class="icon-google-plus-sign" title="G+: {{ site.author.google.name }}"></i></a></li>
-                    <li><a href="{{ site.author.facebook.url }}" ><i class="icon-facebook-sign"    title="Facebook: {{ site.author.facebook.name }}"></i></a></li>
-                    <li><a href="{{ site.author.twitter.url }}"  ><i class="icon-twitter-sign"     title="Twitter: {{ site.author.twitter.name }}"></i></a></li>
-                    <li><a href="mailto:{{ site.author.email }}" ><i class="icon-envelope"         title="Email: {{ site.author.email }}"></i></a></li>
-                    <li><a href="{{ site.author.url }}"          ><i class="icon-globe"            title="Site: {{ site.author.url }}"></i></a></li>
+                    <li><a href="{{ site.author.github.url }}"   ><i class="icon-large icon-github-sign"      title="GitHub: {{ site.author.github.name }}"></i></a></li>
+                    <li><a href="{{ site.author.google.url }}"   ><i class="icon-large icon-google-plus-sign" title="G+: {{ site.author.google.name }}"></i></a></li>
+                    <li><a href="{{ site.author.facebook.url }}" ><i class="icon-large icon-facebook-sign"    title="Facebook: {{ site.author.facebook.name }}"></i></a></li>
+                    <li><a href="{{ site.author.twitter.url }}"  ><i class="icon-large icon-twitter-sign"     title="Twitter: {{ site.author.twitter.name }}"></i></a></li>
+                    <li><a href="mailto:{{ site.author.email }}" ><i class="icon-large icon-envelope"         title="Email: {{ site.author.email }}"></i></a></li>
+                    <li><a href="{{ site.author.url }}"          ><i class="icon-large icon-globe"            title="Site: {{ site.author.url }}"></i></a></li>
                 </ul>
             </div>
         </div>

@@ -12,7 +12,7 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li {% if !page.categories == empty %}class='active'{% endif %}>
-                            <a href="/"><i class="icon-large icon-home"></i></a>
+                            <a href="/" title="Home"><i class="icon-large icon-home"></i></a>
                     </li>
                     {% for category in site.categories %}
                         {% assign c-size = page.categories | size %}
@@ -23,7 +23,7 @@
                     {% endfor %}
                 </ul>
                 <ul class="nav pull-right">
-                    <li><a href="{{ site.author.github.url }}"   title="GitHub: {{ site.author.github.name }}"><i class="icon-large icon-github"></i></a></li>
+                    <li><a href="{{ site.author.github.url }}"><i class="icon-large icon-github" title="GitHub: {{ site.author.github.name }}"></i></a></li>
                     <li><a href="{{ site.author.google.url }}"   title="G+: {{ site.author.google.name }}"><i class="icon-large icon-google-plus-sign"></i></a></li>
                     <li><a href="{{ site.author.facebook.url }}" title="Facebook: {{ site.author.facebook.name }}"><i class="icon-large icon-facebook"></i></a></li>
                     <li><a href="{{ site.author.twitter.url }}"  title="Twitter: {{ site.author.twitter.name }}"><i class="icon-large icon-twitter"></i></a></li>

@@ -11,6 +11,9 @@
             <a class="brand" href="/" title="{{ site.title }}">{{ site.title }}</a></li>
             <div class="nav-collapse collapse">
                 <ul class="nav">
+                    <li {% if !page.categories %}class='active'{% endif %}>
+                            <a href="/"><i class="icon-large icon-home"></i></a>
+                    </li>
                     {% for category in site.categories %}
                         {% assign c-size = page.categories | size %}
                         {% assign c-size-strip = page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size %}

@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="/" title="{{ site.title }}">{{ site.title }}</a></li>
+            <a class="brand" href="/" title="Home">{{ site.title }}</a></li>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li {% if !page.categories == empty %}class='active'{% endif %}>
@@ -28,8 +28,8 @@
                     <li><a href="{{ site.author.google.url }}"   ><i class="icon-large icon-google-plus-sign" title="G+: {{ site.author.google.name }}"></i></a></li>
                     <li><a href="{{ site.author.facebook.url }}" ><i class="icon-large icon-facebook"         title="Facebook: {{ site.author.facebook.name }}"></i></a></li>
                     <li><a href="{{ site.author.twitter.url }}"  ><i class="icon-large icon-twitter"          title="Twitter: {{ site.author.twitter.name }}"></i></a></li>
-                    <li><a href="mailto:{{ site.author.email }}" ><i class="icon-large icon-envelope"         title="mailto: {{ site.author.email }}"></i></a></li>
-                    <li><a href="{{ site.author.url }}"          ><i class="icon-large icon-globe"            title="Home: {{ site.author.url }}"></i></a></li>
+                    <li><a href="mailto:{{ site.author.email }}" ><i class="icon-large icon-envelope"         title="Email: {{ site.author.email }}"></i></a></li>
+                    <li><a href="{{ site.author.url }}"          ><i class="icon-large icon-globe"            title="Site: {{ site.author.url }}"></i></a></li>
                 </ul>
             </div>
         </div>

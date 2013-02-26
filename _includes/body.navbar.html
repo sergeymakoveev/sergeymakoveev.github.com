@@ -17,8 +17,9 @@
                     {% for category in site.categories %}
                         {% assign c-size = page.categories | size %}
                         {% assign c-size-strip = page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size %}
-                        <li {% if c-size != c-size-strip %}class='active'{% endif %}>
-                            <a href="/{{ category[0] }}" title="Category: {{ category[0] }}">{{ category[0] | capitalize }}</a>
+                        <li title="Category: {{ category[0] }}"
+                            {% if c-size != c-size-strip %}class='active'{% endif %}>
+                            <a href="/{{ category[0] }}">{{ category[0] | capitalize }}</a>
                         </li>
                     {% endfor %}
                 </ul>

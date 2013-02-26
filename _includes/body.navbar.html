@@ -9,6 +9,14 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="brand" href="/">{{ site.title }}</a>
+            <nav class="brand btn-group">
+                <a class="btn icon-large icon-github"      href="{{ site.author.github.url }}"   title="GitHub: {{ site.author.github.name }}"></a>
+                <a class="btn icon-large icon-google-plus" href="{{ site.author.google.url }}"   title="G+: {{ site.author.google.name }}"></a>
+                <a class="btn icon-large icon-facebook"    href="{{ site.author.facebook.url }}" title="Facebook: {{ site.author.facebook.name }}"></a>
+                <a class="btn icon-large icon-twitter"     href="{{ site.author.twitter.url }}"  title="Twitter: {{ site.author.twitter.name }}"></a>
+                <a class="btn icon-large icon-home"        href="{{ site.author.url }}"          title="Home: {{ site.author.url }}"></a>
+                <a class="btn icon-large icon-envelope"    href="mailto:{{ site.author.email }}" title="mailto: {{ site.author.email }}"></a>
+            </nav>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     {% for category in site.categories %}
@@ -19,14 +27,6 @@
                         </li>
                     {% endfor %}
                 </ul>
-                <nav class="brand">
-                    <a class="btn icon-large icon-github"      href="{{ site.author.github.url }}"   title="GitHub: {{ site.author.github.name }}"></a>
-                    <a class="btn icon-large icon-google-plus" href="{{ site.author.google.url }}"   title="G+: {{ site.author.google.name }}"></a>
-                    <a class="btn icon-large icon-facebook"    href="{{ site.author.facebook.url }}" title="Facebook: {{ site.author.facebook.name }}"></a>
-                    <a class="btn icon-large icon-twitter"     href="{{ site.author.twitter.url }}"  title="Twitter: {{ site.author.twitter.name }}"></a>
-                    <a class="btn icon-large icon-home"        href="{{ site.author.url }}"          title="Home: {{ site.author.url }}"></a>
-                    <a class="btn icon-large icon-envelope"    href="mailto:{{ site.author.email }}" title="mailto: {{ site.author.email }}"></a>
-                </nav>
             </div>
         </div>
     </div>

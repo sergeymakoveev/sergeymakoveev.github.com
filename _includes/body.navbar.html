@@ -12,7 +12,7 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     {{ page.categories }}
-                    <li {% if !page.categories %}class='active'{% endif %}>
+                    <li {% if !page.categories == empty %}class='active'{% endif %}>
                             <a href="/"><i class="icon-large icon-home"></i></a>
                     </li>
                     {% for category in site.categories %}

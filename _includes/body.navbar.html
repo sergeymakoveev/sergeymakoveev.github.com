@@ -19,14 +19,14 @@
                     {% endfor %}
                 </ul>
             </div>
-            <nav class="brand">
-                <a class="icon-large icon-github"      href="{{ site.author.github.url }}"   title="GitHub: {{ site.author.github.name }}"></a>
-                <a class="icon-large icon-google-plus" href="{{ site.author.google.url }}"   title="G+: {{ site.author.google.name }}"></a>
-                <a class="icon-large icon-facebook"    href="{{ site.author.facebook.url }}" title="Facebook: {{ site.author.facebook.name }}"></a>
-                <a class="icon-large icon-twitter"     href="{{ site.author.twitter.url }}"  title="Twitter: {{ site.author.twitter.name }}"></a>
-                <a class="icon-large icon-envelope"    href="mailto:{{ site.author.email }}" title="mailto: {{ site.author.email }}"></a>
-                <a class="icon-large icon-home"        href="{{ site.author.url }}"          title="Home: {{ site.author.url }}"> {{ site.title }}</a>
-            </nav>
+            <ul class="brand">
+                <li><a class="icon-large icon-github"      href="{{ site.author.github.url }}"   title="GitHub: {{ site.author.github.name }}"></a></li>
+                <li><a class="icon-large icon-google-plus" href="{{ site.author.google.url }}"   title="G+: {{ site.author.google.name }}"></a></li>
+                <li><a class="icon-large icon-facebook"    href="{{ site.author.facebook.url }}" title="Facebook: {{ site.author.facebook.name }}"></a></li>
+                <li><a class="icon-large icon-twitter"     href="{{ site.author.twitter.url }}"  title="Twitter: {{ site.author.twitter.name }}"></a></li>
+                <li><a class="icon-large icon-envelope"    href="mailto:{{ site.author.email }}" title="mailto: {{ site.author.email }}"></a></li>
+                <li><a class="icon-large icon-home"        href="{{ site.author.url }}"          title="Home: {{ site.author.url }}"> {{ site.title }}</a></li>
+            </ul>
         </div>
     </div>
 </nav>

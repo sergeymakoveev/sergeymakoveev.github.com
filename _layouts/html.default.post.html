@@ -6,18 +6,18 @@ layout: html.default
     <div class="container">
         <h1><a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
-        <div>
+        <nav role="navigation">
             {% for category in page.categories %}
                 <a rel="category"
                    href="/{{ category }}"
-                   title="category: {{ category }}"><span class="label label-inverse">{{ category }}</span></a>
+                   title="category: {{ category }}"><span class="label label-inverse"> {{ category }}</span></a>
             {% endfor %}
             {% for tag in page.tags %}
                 <a rel="tag"
                    href="/tags/{{ tag }}"
-                   title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i>{{ tag }}</span></a>
+                   title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
             {% endfor %}
-        </div>
+        </nav>
     </div>
 </header>
 

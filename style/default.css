@@ -4,7 +4,7 @@ body > .navbar .brand {
 body > .navbar [class^="icon-"]{
     font-size:1.4em;
     }
-body > .navbar .nav.pull-right > ul > li > a {
+body > .navbar ul.nav.pull-right > li > a {
     padding-right: 5px;
     }
 

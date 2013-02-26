@@ -1,7 +1,9 @@
 body > .navbar .brand {
     color:#999;
     }
-
+body > header [rel=tag]:hover {
+    box-shadow: 0 0 2px 0 #fff;
+    }
 /*
 #main-content h1 {
   font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 

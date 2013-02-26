@@ -2,11 +2,12 @@ body > .navbar .brand {
     color:#999;
     }
 body > header .label{
+    box-shadow: 0 0 1px 0 #fff;
     text-shadow: 0 1px 3px  rgba(0,0,0,.4),
                  0 0   30px rgba(0,0,0,.075);
     }
 body > header .label:hover {
-    box-shadow: 0 0 2px 0 #fff;
+    box-shadow: 0 0 10px 0 #fff;
     }
 /*
 #main-content h1 {

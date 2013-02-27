@@ -5,15 +5,6 @@ body > .navbar ul.nav.pull-right > li > a {
     padding-right: 5px;
     padding-left: 5px;
     }
-body > .navbar .i-twitter:hover {
-    color:#00ACEE;
-    }
-body > .navbar .i-google:hover {
-    color:#C63B1E;
-    }
-body > .navbar .i-facebook:hover {
-    color:#3B5998;
-    }
 
 body > header .label{
     text-shadow: 0 1px 3px  rgba(0,0,0,.4),

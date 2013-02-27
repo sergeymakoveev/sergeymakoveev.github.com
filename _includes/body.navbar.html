@@ -3,12 +3,13 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-inner">
         <div class="container">
+
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- <a class="brand" href="/" title="Home">{{ site.title }}</a> -->
+
             <a class="brand" href="{{ site.author.url }}"          >{{ site.title }}</a>
             <a class="brand" href="{{ site.author.github.url }}"   ><i class="icon-github-sign"      title="GitHub: {{ site.author.github.name }}"></i></a>
             <a class="brand" href="{{ site.author.google.url }}"   ><i class="icon-google-plus-sign" title="G+: {{ site.author.google.name }}"></i></a>
@@ -31,6 +32,7 @@
                     {% endfor %}
                 </ul>
             </div>
+
         </div>
     </div>
 </nav>

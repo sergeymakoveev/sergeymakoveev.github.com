@@ -16,6 +16,9 @@ body > header .label.label-inverse{
 body > header .label:hover {
     box-shadow: 0 0 0 1px #fff;
     }
+body > .container article.post .label:hover {
+    box-shadow: 0 0 2px 0 #ccc;
+    }
 /*
 #main-content h1 {
   font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 

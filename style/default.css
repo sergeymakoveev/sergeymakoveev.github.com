@@ -1,9 +1,6 @@
 body > .navbar .brand {
     color:#999;
     }
-/*body > .navbar [class^="icon-"]{
-    font-size:1.4em;
-    }*/
 body > .navbar ul.nav.pull-right > li > a {
     padding-right: 5px;
     padding-left: 5px;

@@ -14,7 +14,7 @@ layout: html.default
             {% endfor %}
             {% for tag in page.tags %}
                 <a rel="tag"
-                   href="/tags/{{ tag }}"
+                   href="/tags#{{ tag }}"
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
             {% endfor %}
         </nav>

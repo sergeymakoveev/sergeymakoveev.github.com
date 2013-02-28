@@ -3,7 +3,7 @@
     layout: html.default.post
     title: The Open Graph protocol
     categories: [blog]
-    tags: [service, faceboor, twitter, blog, yandex]
+    tags: [service, facebook, twitter, blog, yandex]
     date: 2013.02.10
 ---
 

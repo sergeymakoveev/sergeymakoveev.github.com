@@ -24,6 +24,8 @@
         <div class="span9">
             <section id="main-content">
 
+{{ content }}
+
 {% assign page-categories = page.categories | join:',' | append:',' | prepend:',' %}
 {% assign post-date-year  = '' %}
 {% for post in site.posts %}

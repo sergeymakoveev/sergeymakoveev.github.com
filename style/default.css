@@ -1,3 +1,7 @@
+#modal-404 > .modal-body {
+    text-align:center;
+    }
+
 body > .navbar .brand {
     color:#999;
     }

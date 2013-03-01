@@ -1,4 +1,4 @@
 ---
-    layout: html.default.index
+    layout: html.default.categories
     categories: [blog]
 ---

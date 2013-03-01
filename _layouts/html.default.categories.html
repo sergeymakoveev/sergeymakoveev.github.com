@@ -44,7 +44,7 @@
         {% assign page_posts = page_posts | append:page_post  %}
     {% endif %}
 {% endfor %}
-
+page_tags:{{ page_tags | size }}
 {% assign page_tags_uniq = [] %}
 {% for tag in page_tags %}
     {% unless page_tags_uniq contains tag %}

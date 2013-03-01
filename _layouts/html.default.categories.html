@@ -42,21 +42,17 @@
             </article>
         {% endcapture %}
         {% assign page_posts = page_posts | append:page_post  %}
-        page_post.size:{{ page_post | size }}<br />
-        page_posts.size:{{ page_posts | size }}<br />
     {% endif %}
 {% endfor %}
 
 {% assign page_tags = page_tags | split:',' %}
 {% assign page_tags_uniq = '' %}
-{% raw %}
 {% for tag in page_tags %}
     {% unless tag in page_tags_uniq %}
         {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}
     {% endunless %}
 {% endfor %}
 {% assign page_tags_uniq = page_tags_uniq | sort %}
-{% endraw %}
 
 <header class="jumbotron subhead" id="overview">
     <div class="container">

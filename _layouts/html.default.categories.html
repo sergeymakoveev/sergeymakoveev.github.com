@@ -4,8 +4,20 @@
 
 <header class="jumbotron subhead" id="overview">
     <div class="container">
-        <h1>{{ page.title }}</h1>
+        <h1><a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
+        <nav role="navigation">
+            {% for category in page.categories %}
+                <a rel="category"
+                   href="/{{ category }}"
+                   title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
+            {% endfor %}
+            {% for tag in page.tags %}
+                <a rel="tag"
+                   href="/tags#{{ tag }}"
+                   title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
+            {% endfor %}
+        </nav>
     </div>
 </header>
 

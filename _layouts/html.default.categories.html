@@ -45,9 +45,9 @@
     {% endif %}
 {% endfor %}
 
-{% comment %}
 {% assign page-tags = page-tags | split:',' %}
 {% assign page-tags-uniq = '' %}
+{% comment %}
 {% for tag in page-tags %}
     {% unless tag in page-tags-uniq %}
         {% assign page-tags-uniq = page-tags-uniq | join:',' | append:',' | append:tag | split:',' %}
@@ -95,7 +95,7 @@
             <section id="main-content">
 
 {{ content }}
-{{ articles }}
+{{ page-posts }}
 
             </section>
         </div>

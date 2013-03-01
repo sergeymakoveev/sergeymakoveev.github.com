@@ -2,7 +2,8 @@
     layout: html.default
 ---
 
-{% assign articles = '' %}
+{% assign page-posts = '' %}
+{% assign page-tags = '' %}
 {% assign page-categories = page.categories | join:',' | append:',' | prepend:',' %}
 {% assign post-date-year  = '' %}
 {% for post in site.posts %}
@@ -12,9 +13,10 @@
         {% assign post-out-categories = post-out-categories | replace:c,',' %}
     {% endfor %}
     {% if page.categories == empty or page-categories != post-out-categories %}
+        {% assign page-tags = post.tags | join:',' | append:',' | appand:page-tags %}
         {% assign prev-post-date-year = post-date-year %}
         {% assign post-date-year = post.date | date:'%Y' %}
-        {% capture article %}
+        {% capture page-post %}
             <article class="post">
                 <time data-year="{{ post-date-year | replace:prev-post-date-year,'' }}"
                       datetime="{{ post.date }}"
@@ -39,9 +41,18 @@
                 </nav>
             </article>
         {% endcapture %}
-        {% assign articles = articles | append:article  %}
+        {% assign page-posts = page-posts | append:page-post  %}
     {% endif %}
 {% endfor %}
+
+{% assign page-tags = page-tags | split:',' %}
+{% assign page-tags-uniq = '' %}
+{% for tag in page-tags %}
+    {% unless tag in page-tags-uniq %}
+        {% assign page-tags-uniq = page-tags-uniq | join:',' | append:',' | append:tag | split:',' %}
+    {% endunless %}
+{% endfor %}
+{% assign page-tags-uniq = page-tags-uniq | sort %}
 
 <header class="jumbotron subhead" id="overview">
     <div class="container">
@@ -53,7 +64,7 @@
                    href="/{{ category }}"
                    title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
             {% endfor %}
-            {% for tag in page.tags %}
+            {% for tag in page-tags-uniq %}
                 <a rel="tag"
                    href="/tags#{{ tag }}"
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>

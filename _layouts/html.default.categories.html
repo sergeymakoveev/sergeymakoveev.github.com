@@ -49,7 +49,7 @@
 {% assign page_tags_uniq = '' | split:',' %}
 {% for tag in page_tags %}
 {% raw %}
-    {% unless tag in page_tags_uniq %}
+    {% unless page_tags_uniq contains tag %}
         {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}
     {% endunless %}
 {% endraw %}

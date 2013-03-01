@@ -49,14 +49,14 @@
 
 {% assign page-tags = page-tags | split:',' %}
 {% assign page-tags-uniq = '' %}
-{% comment %}
+{% raw %}
 {% for tag in page-tags %}
     {% unless tag in page-tags-uniq %}
         {% assign page-tags-uniq = page-tags-uniq | join:',' | append:',' | append:tag | split:',' %}
     {% endunless %}
 {% endfor %}
 {% assign page-tags-uniq = page-tags-uniq | sort %}
-{% endcomment %}
+{% endraw %}
 
 <header class="jumbotron subhead" id="overview">
     <div class="container">

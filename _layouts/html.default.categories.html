@@ -50,7 +50,7 @@
 {% for tag in page_tags %}
     {% unless tag == '' and page_tags_uniq contains tag %}
         {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}
-    "{{ page_tags_uniq }}"<br />
+    "{{ page_tags_uniq | join:',' }}"<br />
     {% endunless %}
 {% endfor %}
 {% assign page_tags_uniq = page_tags_uniq | sort %}

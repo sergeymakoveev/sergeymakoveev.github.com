@@ -16,7 +16,7 @@
         {% assign page-tags = post.tags | join:',' | append:',' | appand:page-tags %}
         {% assign prev-post-date-year = post-date-year %}
         {% assign post-date-year = post.date | date:'%Y' %}
-        size:{{ page-posts | size }}<br />
+        page-posts.size:{{ page-posts | size }}<br />
         {% capture page-post %}
             <article class="post">
                 <time data-year="{{ post-date-year | replace:prev-post-date-year,'' }}"
@@ -42,6 +42,7 @@
                 </nav>
             </article>
         {% endcapture %}
+        page-post.size:{{ page-post | size }}<br />
         {% assign page-posts = page-posts | append:page-post  %}
     {% endif %}
 {% endfor %}

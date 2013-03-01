@@ -47,13 +47,13 @@
 
 {% assign page_tags = page_tags | split:',' %}
 {% assign page_tags_uniq = '' | split:',' %}
-{% raw %}
 {% for tag in page_tags %}
+{% raw %}
     {% unless tag in page_tags_uniq %}
         {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}
     {% endunless %}
-{% endfor %}
 {% endraw %}
+{% endfor %}
 {% assign page_tags_uniq = page_tags_uniq | sort %}
 
 <header class="jumbotron subhead" id="overview">

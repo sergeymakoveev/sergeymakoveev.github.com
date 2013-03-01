@@ -45,6 +45,7 @@
     {% endif %}
 {% endfor %}
 
+{% comment %}
 {% assign page-tags = page-tags | split:',' %}
 {% assign page-tags-uniq = '' %}
 {% for tag in page-tags %}
@@ -53,6 +54,7 @@
     {% endunless %}
 {% endfor %}
 {% assign page-tags-uniq = page-tags-uniq | sort %}
+{% endcomment %}
 
 <header class="jumbotron subhead" id="overview">
     <div class="container">

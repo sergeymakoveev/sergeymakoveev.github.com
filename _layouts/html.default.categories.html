@@ -46,7 +46,7 @@
 {% endfor %}
 
 {% assign page_tags = page_tags | split:',' %}
-{% assign page_tags_uniq = '' %}
+{% assign page_tags_uniq = '' | split:',' %}
 {% for tag in page_tags %}
     {% unless tag in page_tags_uniq %}
         {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}

@@ -17,11 +17,11 @@
         {% assign prev-post-date-year = post-date-year %}
         {% assign post-date-year = post.date | date:'%Y' %}
         page-posts.size:{{ page-posts | size }}<br />
-        {% capture page-post %}
+        {% capture page_post %}
             aaaaaaaaaaaaaaaaaa
         {% endcapture %}
-        page-post.size:{{ page-post | size }}<br />
-        {% assign page-posts = page-posts | append:page-post  %}
+        page-post.size:{{ page_post | size }}<br />
+        {% assign page-posts = page_posts | append:page-post  %}
     {% endif %}
 {% endfor %}
 

@@ -13,10 +13,10 @@
 {% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
 
 <hr />
-{% assign page_tags = [] %}
+{% assign tags = [] %}
 {% for tag in site.tags %}
     {{ forloop.index0 }}<br />
-    {% capture page_tags[forloop.index0] %}{{ tag[0] }} ({{ tag[1] | size }}){% endcapture %}
+    {% capture tags[forloop.index0] %}{{ tag[0] }} ({{ tag[1] | size }}){% endcapture %}
 {% endfor %}
 tags:{{ tags }}
 <hr />

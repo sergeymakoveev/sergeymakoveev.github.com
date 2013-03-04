@@ -12,11 +12,6 @@
                    href="/{{ category }}"
                    title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
             {% endfor %}
-            {% for tag in page_tags_uniq %}
-                <a rel="tag"
-                   href="/tags#{{ tag }}"
-                   title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
-            {% endfor %}
         </nav>
     </div>
 </header>

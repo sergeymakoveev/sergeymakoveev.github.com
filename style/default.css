@@ -4,17 +4,17 @@ body > .navbar .brand {
 body > .navbar .brand.active {
     color:#fff;
     }
-body > header .label{
+body .label{
     text-shadow: 0 1px 3px  rgba(0,0,0,.4),
                  0 0   30px rgba(0,0,0,.075);
     }
-body > header .label.label-inverse{
+body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
-body > header .label:hover {
+body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;
     }
-body > .container article.post .label:hover {
+body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 /*

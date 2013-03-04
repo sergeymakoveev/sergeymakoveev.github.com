@@ -5,7 +5,7 @@
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
-{{ post.tags | join:"," }}
+[{{ post.tags | join:"," }}]
 <nav role="navigation">
     {% for tag in tags %}
         {% assign t = tag | split:','  %}

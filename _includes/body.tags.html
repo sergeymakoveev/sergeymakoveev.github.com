@@ -12,6 +12,7 @@
 {% endfor %}
 {% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
 
+site.tags:{{ site.tags }}
 <nav role="navigation">
     {% for tag in page_tags_uniq %}
         <a rel="tag"

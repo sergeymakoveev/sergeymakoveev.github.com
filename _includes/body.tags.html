@@ -18,7 +18,7 @@
     {{ forloop.index0 }}<br />
     {% capture page_tags[forloop.index0] %}{{ tag[0] }} ({{ tag[1] | size }}){% endcapture %}
 {% endfor %}
-{{ page_tags | join:'|' }}
+!!!:{{ page_tags | size }}
 <hr />
 <nav role="navigation">
     {% for tag in page_tags_uniq %}

@@ -1,3 +1,4 @@
+
 {% assign tags = '' %}
 {% for tag in site.tags %}
     {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}{{ tag[0] }},{{ tag[1] | size }}{% endcapture %}

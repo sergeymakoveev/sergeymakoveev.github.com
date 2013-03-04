@@ -15,7 +15,8 @@
 <hr />
 {% for tag in site.tags %}
 tag[0]:{{ tag[0] }}<br />
-tag[1]:{{ tag[1] }}<br />
+tag[1]:{{ tag[1] | size }}<br />
+tag[2]:{{ tag[2] }}<br />
 {% endfor %}
 <hr />
 <nav role="navigation">

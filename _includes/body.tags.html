@@ -15,8 +15,8 @@
 <hr />
 {% assign page_tags = [] %}
 {% for tag in site.tags %}
-    {{ forloop.index }}<br />
-    {% capture page_tags[forloop.index] %}{{ tag[0] }} ({{ tag[1] | size }}){% endcapture %}
+    {{ forloop.index0 }}<br />
+    {% capture page_tags[forloop.index0] %}{{ tag[0] }} ({{ tag[1] | size }}){% endcapture %}
 {% endfor %}
 {{ page_tags | join:'|' }}
 <hr />

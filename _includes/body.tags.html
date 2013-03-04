@@ -13,7 +13,8 @@
 {% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
 
 <hr />
-{% for tag in site.tags | map '0' %}
+{{ site.tags | map '0' }}
+{% for tag in site.tags %}
 tag:{{ tag }}<br />
 tag[0]:{{ tag[0] }}<br />
 tag[1]:{{ tag[1] | size }}<br />

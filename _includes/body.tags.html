@@ -1,26 +1,9 @@
-{% assign page_tags = '' %}
-{% for post in site.posts %}
-    {% assign page_tags = post.tags | join:',' | append:',' | append:page_tags %}
-{% endfor %}
-
-{% assign page_tags = page_tags | split:',' %}
-{% assign page_tags_uniq = ',' %}
-{% for tag in page_tags %}
-    {% unless page_tags_uniq contains tag %}
-        {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}
-    {% endunless %}
-{% endfor %}
-{% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
-
-<hr />
 {% assign tags = '' %}
 {% for tag in site.tags %}
     {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}{{ tag[0] }},{{ tag[1] | size }}{% endcapture %}
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
-tags:{{ tags | join:';' }}
-<hr />
 <nav role="navigation">
     {% for tag in tags %}
         {% assign t = tag | split:','  %}

@@ -5,11 +5,16 @@
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
+{{ post.tags | join:"," }}
 <nav role="navigation">
     {% for tag in tags %}
         {% assign t = tag | split:','  %}
+        {% assign s = ''  %}
+        {% if post.tags contains t[0] %}
+            {% assign s = 'active'  %}
+        {% endif %}
         <a rel="tag"
            href="/tags#{{ t[0] }}"
-           title="tag: {{ t[0] }}"><span class="label"><i class='icon-tag'></i> {{ t[0] }} ({{ t[1] }})</span></a><br />
+           title="tag: {{ t[0] }}"><span class="label {{ s }}"><i class='icon-tag'></i> {{ t[0] }} ({{ t[1] }})</span></a><br />
     {% endfor %}
 </nav>

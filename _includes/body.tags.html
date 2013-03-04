@@ -13,10 +13,9 @@
 {% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
 
 <hr />
-{% for tag in site.tags %}
+{% for tag in site.tags | sort %}
 tag[0]:{{ tag[0] }}<br />
 tag[1]:{{ tag[1] | size }}<br />
-tag[2]:{{ tag[2] }}<br />
 {% endfor %}
 <hr />
 <nav role="navigation">

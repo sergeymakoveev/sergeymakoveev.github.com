@@ -10,7 +10,7 @@
     {% for tag in tags %}
         {% assign t = tag | split:','  %}
         {% assign s = ''  %}
-        {% if post.tags contains t[0] %}
+        {% if page.tags contains t[0] %}
             {% assign s = 'active'  %}
         {% endif %}
         <a rel="tag"

@@ -13,15 +13,16 @@
 {% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
 
 <hr />
-{% assign tags = [] %}
+{% assign tags = '' %}
 {% for tag in site.tags %}
-    {{ forloop.index0 }}<br />
-    {% capture tags[forloop.index0] %}{{ tag[0] }} ({{ tag[1] | size }}){% endcapture %}
+    {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}tag[0],{{ tag[1] | size }}{% endcapture %}
 {% endfor %}
-tags:{{ tags | join:',' }}
+{% assign tags = tags | split:';' | sort  %}
+
+tags:{{ tags | join:';' }}
 <hr />
 <nav role="navigation">
-    {% for tag in page_tags_uniq %}
+    {% for tag in tags %}
         <a rel="tag"
            href="/tags#{{ tag }}"
            title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>

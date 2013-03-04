@@ -23,8 +23,9 @@ tags:{{ tags | join:';' }}
 <hr />
 <nav role="navigation">
     {% for tag in tags %}
+        {% assign tag = tag | split:','  %}
         <a rel="tag"
-           href="/tags#{{ tag }}"
-           title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
+           href="/tags#{{ tag[0] }}"
+           title="tag: {{ tag[0] }}"><span class="label"><i class='icon-tag'></i> {{ tag[0] }} ({{ tag[1] }})</span></a>
     {% endfor %}
 </nav>

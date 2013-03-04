@@ -1,0 +1,21 @@
+{% assign page_tags = '' %}
+{% for post in site.posts %}
+    {% assign page_tags = post.tags | join:',' | append:',' | append:page_tags %}
+{% endfor %}
+
+{% assign page_tags = page_tags | split:',' %}
+{% assign page_tags_uniq = ',' %}
+{% for tag in page_tags %}
+    {% unless page_tags_uniq contains tag %}
+        {% assign page_tags_uniq = page_tags_uniq | join:',' | append:',' | append:tag | split:',' %}
+    {% endunless %}
+{% endfor %}
+{% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
+
+<nav role="navigation">
+    {% for tag in page_tags_uniq %}
+        <a rel="tag"
+           href="/tags#{{ tag }}"
+           title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
+    {% endfor %}
+</nav>

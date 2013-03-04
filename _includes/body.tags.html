@@ -13,12 +13,11 @@
 {% assign page_tags_uniq = page_tags_uniq | sort | join:',' | replace:',,','' | split:',' %}
 
 <hr />
-{{ site.tags | map:0 }}
+{% assign page_tags = [] %}
 {% for tag in site.tags %}
-tag:{{ tag }}<br />
-tag[0]:{{ tag[0] }}<br />
-tag[1]:{{ tag[1] | size }}<br />
+    {% capture page_tags[forloop.index] %}{{ tag[0] }} ({{ tag[1] }}){% endcapture %}
 {% endfor %}
+{{ page_tags | join:'|' }}
 <hr />
 <nav role="navigation">
     {% for tag in page_tags_uniq %}

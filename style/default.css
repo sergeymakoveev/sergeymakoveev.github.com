@@ -16,7 +16,7 @@ body nav .label:not(:active).active {
 body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
-body[data-categories~=blog]  > header h1::before {
+body[data-categories~=blog]  > header > .container::before {
     content: "\f040";
     font-family: FontAwesome;
     font-weight: normal;

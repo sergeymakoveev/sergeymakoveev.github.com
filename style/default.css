@@ -19,6 +19,18 @@ body .label.label-inverse{
 body[data-categories~=blog]  > header h1::before {
     content: "\f040";
     font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    
+    /* sprites.less reset */
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    margin-top: 0;
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

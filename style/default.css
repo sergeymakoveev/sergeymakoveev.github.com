@@ -26,6 +26,9 @@ body > header h1::before {
 body[data-categories~=blog]  > header h1::before {
     content: "\f040";
     }
+body[data-categories~=presentations]  > header h1::before {
+    content: "\f108";
+    }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;
     }

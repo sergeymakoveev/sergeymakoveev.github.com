@@ -16,7 +16,7 @@ body nav .label:not(:active).active {
 body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
-body[data-categories] > header h1:first-line {
+body[data-categories] > header h1:first-letter {
     color:#f00!important;
     }
 body[data-categories] > header h1::before {

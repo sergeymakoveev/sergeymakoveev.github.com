@@ -9,7 +9,8 @@ body nav .label{
                  0 0   30px rgba(0,0,0,.075);
     }
 body nav .label:not(:active):hover,
-body nav .label:not(:active).hover {
+body nav .label:not(:active).hover,
+body nav .label:not(:active).active {
     background-color:#0088cc;
     }
 body .label.label-inverse{

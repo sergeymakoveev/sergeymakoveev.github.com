@@ -16,8 +16,11 @@ body nav .label:not(:active).active {
 body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
+body[data-categories] > header h1 {
+    margin-left: 1em;
+    }
 body[data-categories] > header h1:first-letter {
-    margin-left:-50px;
+    margin-left: -1em;
     }
 body[data-categories] > header h1::before {
     font-family: FontAwesome;

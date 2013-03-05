@@ -42,5 +42,23 @@
 
     {% include body.google-analytics.html %}
 
-    <footer />
+<footer class="footer">
+    <div class="container">
+    <p>
+        <a class="brand" href="{{ site.author.github.url }}"   ><i class="icon-github-sign"      title="GitHub: {{ site.author.github.name }}"></i></a>
+        <a class="brand" href="{{ site.author.google.url }}"   ><i class="icon-google-plus-sign" title="G+: {{ site.author.google.name }}"></i></a>
+        <a class="brand" href="{{ site.author.facebook.url }}" ><i class="icon-facebook-sign"    title="Facebook: {{ site.author.facebook.name }}"></i></a>
+        <a class="brand" href="{{ site.author.twitter.url }}"  ><i class="icon-twitter-sign"     title="Twitter: {{ site.author.twitter.name }}"></i></a>
+        <a class="brand" href="mailto:{{ site.author.email }}" ><i class="icon-envelope"         title="Email: {{ site.author.email }}"></i></a>
+    </p>
+    <ul class="footer-links">
+      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      <li class="muted">·</li>
+      <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+      <li class="muted">·</li>
+      <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
+    </ul>
+    </div>
+</footer>
+
 </body>

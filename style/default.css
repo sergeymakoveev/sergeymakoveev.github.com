@@ -16,14 +16,15 @@ body nav .label:not(:active).active {
 body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
-body[data-categories~=blog]  > header h1::before {
-    content: "\f040";
+body > header h1::before {
     font-family: FontAwesome;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
-    
     vertical-align: baseline;
-    font-size: 0.8em
+    margin-right: .3em;
+    }
+body[data-categories~=blog]  > header h1::before {
+    content: "f040";
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

@@ -12,7 +12,8 @@ layout: html.default
                    href="/{{ category }}"
                    title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
             {% endfor %}
-            {% for tag in page.tags %}
+            {% assign tags = page.tags | sort %}
+            {% for tag in tags %}
                 <a rel="tag"
                    href="/tags#{{ tag }}"
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>

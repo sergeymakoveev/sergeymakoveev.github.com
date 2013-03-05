@@ -24,7 +24,7 @@ body > header h1::before {
     margin-right: .3em;
     }
 body[data-categories~=blog]  > header h1::before {
-    content: "f040";
+    content: "\f040";
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

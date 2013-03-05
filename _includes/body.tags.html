@@ -1,20 +1,16 @@
 
 {% assign tags = '' %}
 {% for tag in site.tags %}
-    {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}{{ tag[0] }},{{ tag[1] | size }}{% endcapture %}
+    {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}{{ tag[0] }},{{ tag[1] | size }},{% if page.tags contains tag[0] %}active{% else %}{% endif %}
+{% endcapture %}
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
-[{{ page.tags | join:"," }}]
 <nav role="navigation">
     {% for tag in tags %}
         {% assign t = tag | split:','  %}
-        {% assign s = ''  %}
-        {% if page.tags contains t[0] %}
-            {% assign s = 'active'  %}
-        {% endif %}
         <a rel="tag"
            href="/tags#{{ t[0] }}"
-           title="tag: {{ t[0] }}"><span class="label {{ s }}"><i class='icon-tag'></i> {{ t[0] }} ({{ t[1] }})</span></a><br />
+           title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }} ({{ t[1] }})</span></a><br />
     {% endfor %}
 </nav>

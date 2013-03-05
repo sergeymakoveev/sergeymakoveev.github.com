@@ -41,6 +41,10 @@ body > header nav .label:hover {
 body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
+
+body > footer a {
+    text-decoration:none
+    }
 /*
 #main-content h1 {
   font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 

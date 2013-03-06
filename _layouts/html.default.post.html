@@ -15,6 +15,7 @@ layout: html.default
             {% assign tags = page.tags | sort %}
             {% for tag in tags %}
                 <a rel="tag"
+                   data-tag="{{ t[0] }}"
                    href="/tags#{{ tag }}"
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
             {% endfor %}

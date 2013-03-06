@@ -59,6 +59,7 @@
                 {% endfor %}
                 {% for tag in post.tags %}
                     <a rel="tag"
+                       data-tag="{{ t[0] }}"
                        href="/tags#{{ tag }}"
                        title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
                 {% endfor %}

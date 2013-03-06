@@ -20,7 +20,7 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li {% if !page.categories == empty %}class='active'{% endif %}>
-                            <a href="/"><i class="icon-large icon-home" title="Home"></i></a>
+                            <a href="/" rel="home"><i class="icon-large icon-home" title="Home"></i></a>
                     </li>
                     {% for category in site.categories %}
                         {% assign c-size = page.categories | size %}

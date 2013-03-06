@@ -45,6 +45,7 @@
                 </nav>
             </article>
         {% endcapture %}
+        {{ post-content | size }}
         {% assign posts-content = posts-content | append:post-content %}
     {% endif %}
 {% endfor %}

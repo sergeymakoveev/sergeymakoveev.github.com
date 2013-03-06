@@ -31,7 +31,7 @@ body .label.label-inverse{
 body > header > .container > * {
     margin-left:66px;
     }
-body > header h1 {
+body > header > .container > h1 {
     text-indent: -33px;
     }
 body > header nav .label:hover {

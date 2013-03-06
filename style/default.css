@@ -29,10 +29,10 @@ body .label.label-inverse{
     }
 
 body > header > .container > * {
-    margin-left:115px;
+    margin-left:1em;
     }
 body > header h1 {
-    text-indent: -33px;
+    text-indent: -.55em;
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

@@ -57,7 +57,7 @@
                        href="/{{ category }}"
                        title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
                 {% endfor %}
-                {% for tag in post.tags %}
+                {% for tag in post.tags | sort %}
                     <a rel="tag"
                        data-tag="{{ tag }}"
                        href="/tags#{{ tag }}"

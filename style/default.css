@@ -33,7 +33,7 @@ body > header > .container {
     }
 body > header h1 {
     /* margin-left:  1em; */
-    text-indent: -70px;
+    text-indent: -34px;
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

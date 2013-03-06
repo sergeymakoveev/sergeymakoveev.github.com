@@ -29,7 +29,7 @@ body .label.label-inverse{
 body[data-categories] > header h1 {
     margin-left: 1.17em;
     }
-body[data-categories] > header h1 i:first-letter {
+body[data-categories] > header h1::first-line {
     margin-left: -1.17em;
     }
 /*

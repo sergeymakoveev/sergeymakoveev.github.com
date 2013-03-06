@@ -27,11 +27,10 @@ body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
 body > header h1 {
-    margin-left: 1.17em;
+    margin-left:  1.17em;
+    text-indent: -1.17em;
     }
-body > header h1::first-line {
-    margin-left: -1.17em;
-    }
+
 /*
 body[data-categories] > header h1::before {
     content: "\f015";

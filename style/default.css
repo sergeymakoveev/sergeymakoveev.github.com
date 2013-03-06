@@ -1,10 +1,10 @@
-.icon-category_home {
+.icon-category_home::before {
     content: "\f015";
     }
-.icon-category_presentations {
+.icon-category_presentations::before {
     content: "\f108";
     }
-.icon-category_blog {
+.icon-category_blog::before {
     content: "\f040";
     }
 

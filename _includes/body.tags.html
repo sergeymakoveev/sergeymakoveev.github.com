@@ -20,7 +20,7 @@
     $(function(){
         $(document.body).on( 'mouseover mouseout',
                              'a[rel="tag"][data-tag] > .label',
-                             function(e){ $('a[rel="tag"][data-tag="'+$(this).data('tag')+'"] > .label')
+                             function(e){ $('a[rel="tag"][data-tag="'+$(this).parent().data('tag')+'"] > .label')
                                              .toggleClass('hover', e.type == 'mouseover'); }
                             );
     });

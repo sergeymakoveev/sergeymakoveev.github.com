@@ -1,3 +1,13 @@
+.icon-categories-home {
+    content: "\f015";
+    }
+.icon-categories-presentations {
+    content: "\f108";
+    }
+.icon-categories-blog {
+    content: "\f040";
+    }
+
 body > .navbar .brand {
     color:#999;
     }

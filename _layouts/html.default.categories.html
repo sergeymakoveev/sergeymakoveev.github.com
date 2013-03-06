@@ -35,10 +35,9 @@
 
 <hr>
 {% assign posts  = [] %}
-{% assign posts[1]  = '1' %}
-{% assign posts[2]  = '2' %}
-{% assign posts[]  = '3' %}
-posts: [{{ posts[1] }}]
+{% assign posts.p1  = '1' %}
+{% assign posts.p2  = '2' %}
+posts: [{{ posts.p1 }}]
 <hr>
 
 

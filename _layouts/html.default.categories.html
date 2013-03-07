@@ -3,6 +3,7 @@
 ---
 
 {% assign posts  = '' %}
+{% assign toc  = ',' %}
 {% assign page-categories = page.categories | join:',' | append:',' | prepend:',' %}
 {% assign post-date-year  = '' %}
 
@@ -17,7 +18,8 @@
         {% assign post-date-year = post.date | date:'%Y' %}
         {% capture p %}
             {% if post-date-year != post-date-year-prev %}
-                <h1>{{ post-date-year }}</h1>
+                {% assign toc = toc | append:',' | append:post-date-year %}
+                <h1 id="toc-{{ post-date-year }}">{{ post-date-year }}</h1>
             {% endif %}
             <article class="post">
                 <time data-year="{{ post-date-year | replace:post-date-year-prev,'' }}"
@@ -60,12 +62,10 @@
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav" role="navigation">
-                <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> Download</a></li>
-                <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
-                <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
-                <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
-                <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
-                <li><a href="#what-next"><i class="icon-chevron-right"></i> What next?</a></li>
+                {% assign toc = toc | replace:',,','' | split:',' %}
+                {% for t in toc %}
+                    <li><a href="#toc-{{ t }}"><i class="icon-chevron-right"></i> {{ t }}</a></li>
+                {% endfor %}
             </ul>
             
             {% include body.social.html %}

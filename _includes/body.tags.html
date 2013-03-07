@@ -12,7 +12,7 @@
         <a rel="tag"
            data-tag="{{ t[0] }}"
            href="/tags#{{ t[0] }}"
-           title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }} ({{ t[1] }})</span></a><br />
+           title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }}{% if t[1] > 1 %} ({{ t[1] }}){% endif %}</span></a><br />
     {% endfor %}
 </nav>
 

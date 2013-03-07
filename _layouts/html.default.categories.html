@@ -72,7 +72,7 @@
                 </section>
             {% endcapture %}
 
-            {% if forloop.last %}
+            {% if forloop.last and post_content %}
                 {% capture sections %}
                     {{ sections }}
                     <section id="toc-{{ post-date-year }}">
@@ -80,13 +80,12 @@
                         {{ post_content }}
                     </section>
                 {% endcapture %}
+                {% assign toc = toc | append:',' | append:post-date-year %}
             {% else %}
                 {% assign section = post_content %}
             {% endif %}
 
         {% endif %}
-
-        {{ sections | size }}<br />
 
     {% endif %}
 

@@ -5,7 +5,7 @@
     description: Онлайн-сервисы, позволяющие сформировать URL для получения favicon произвольного сайта
     categories: [blog]
     tags: [service, online, development, favicon, getfavicon, icon]
-    date: 2010.02.08
+    date: 2012.12.08
 ---
 
 ## getfavicon.appspot.com

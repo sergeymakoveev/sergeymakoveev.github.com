@@ -4,7 +4,7 @@
     title: The Open Graph protocol
     categories: [blog]
     tags: [service, facebook, twitter, blog, yandex]
-    date: 2013.02.10
+    date: 2013.03.15
 ---
 
 [GitHub]: http://github.com "GitHub"

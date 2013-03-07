@@ -19,8 +19,8 @@
 <script>
     $(function(){
         $(document.body).on( 'mouseover mouseout',
-                             'a[rel="tag"][data-tag] > .label',
-                             function(e){ $('a[rel="tag"][data-tag="'+$(this).parent().data('tag')+'"] > .label')
+                             'a[data-tag] > .label',
+                             function(e){ $('a[data-tag="'+$(this).parent().data('tag')+'"] > .label')
                                              .toggleClass('hover', e.type == 'mouseover'); }
                             );
     });

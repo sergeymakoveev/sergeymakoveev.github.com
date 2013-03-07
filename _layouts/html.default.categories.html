@@ -2,9 +2,12 @@
     layout: html.default
 ---
 
-{% assign posts  = '' %}
 {% assign toc  = ',' %}
+{% assign sections = '' %}
+{% assign section  = '' %}
 {% assign post-date-year  = '' %}
+
+
 
 {% for post in site.posts %}
     {% assign post-allow = false %}
@@ -13,28 +16,26 @@
             {% assign post-allow = true %}
         {% endif %}
     {% endfor %}
+
+    {% assign post-date-year-prev = post-date-year %}
+    {% assign post-date-year = post.date | date:'%Y' %}
+    {% assign post-content = false %}
+    {% assign post-append  = false %}
+
     {% if page.categories == empty or post-allow %}
-        {% assign post-date-year-prev = post-date-year %}
-        {% assign post-date-year = post.date | date:'%Y' %}
-        {% capture p %}
-            {% if post-date-year != post-date-year-prev %}
-                {% assign toc = toc | append:',' | append:post-date-year %}
-                <h1 id="toc-{{ post-date-year }}">{{ post-date-year }}</h1>
-            {% endif %}
+        {% capture post-content %}
             <article class="post">
-                <time data-year="{{ post-date-year | replace:post-date-year-prev,'' }}"
-                      datetime="{{ post.date }}"
-                      datetime="{{ post.date }}"
-                      pubdate ="{{ post.date }}"
-                      title   ="{{ post.date }}">{{ post.date | date:'%b %d' }}</time>
+                <time datetime ="{{ post.date }}"
+                      pubdate  ="{{ post.date }}"
+                      title    ="{{ post.date }}">{{ post.date | date:'%b %d' }}</time>
                 <h2><a class="title"
-                       rel="bookmark"
-                       href="{{ post.url }}"
+                       rel  ="bookmark"
+                       href ="{{ post.url }}"
                        title="{{ post.title }}">{{ post.title }}</a></h2>
                 <nav role="navigation">
                     {% for category in post.categories %}
-                        <a rel="category"
-                           href="/{{ category }}"
+                        <a rel  ="category"
+                           href ="/{{ category }}"
                            title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
                     {% endfor %}
                     {% assign post-tags-sorted = post.tags | sort %}
@@ -47,8 +48,46 @@
                 </nav>
             </article>
         {% endcapture %}
-        {% assign posts = posts | append:p %}
     {% endif %}
+
+    {% if post-content or forloop.last %}
+
+        {% if post-date-year-prev =='' or post-date-year-prev == post-date-year %}
+            {% assign post-append = true %}
+        {% endif %}
+
+        {% if post-append %}
+            {% assign section = section | append:post-content %}
+        {% else %}
+            {% assign toc = toc | append:',' | append:post-date-year %}
+        {% endif %}
+
+        {% if post-append == false or forloop.last %}
+
+            {% capture sections %}
+                {{ sections }}
+                <section id="toc-{{ post-date-year-prev }}">
+                    <h1>{{ post-date-year-prev }}</h1>
+                    {{ section }}
+                </section>
+            {% endcapture %}
+
+            {% if forloop.last %}
+                {% capture sections %}
+                    {{ sections }}
+                    <section id="toc-{{ post-date-year }}">
+                        <h1>{{ post-date-year }}</h1>
+                        {{ post-content }}
+                    </section>
+                {% endcapture %}
+            {% else %}
+                {% assign section = post-content %}
+            {% endif %}
+
+        {% endif %}
+
+    {% endif %}
+
 {% endfor %}
 
 <header class="jumbotron subhead" id="overview">
@@ -76,7 +115,7 @@
             <section id="main-content">
 
                 {{ content }}
-                {{ posts }}
+                {{ sections }}
 
             </section>
         </div>

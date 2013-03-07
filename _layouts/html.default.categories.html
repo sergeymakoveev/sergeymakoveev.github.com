@@ -4,11 +4,10 @@
 
 {% assign posts  = '' %}
 {% assign toc  = ',' %}
-{% assign page-categories = page.categories | join:',' | append:',' | prepend:',' %}
 {% assign post-date-year  = '' %}
 
 {% for post in site.posts %}
-    {% assign post-out-categories = page-categories %}
+    {% assign post-allow = false %}
     {% for category in page.categories %}
         {% if post.categories contains category %}
             {% assign post-allow = true %}

@@ -7,14 +7,6 @@
 {% assign page-categories = page.categories | join:',' | append:',' | prepend:',' %}
 {% assign post-date-year  = '' %}
 
-{% if test %}
-<h1>1111</h1>
-{% endif %}
-{% assign test = '' %}
-{% if test %}
-<h1>2222</h1>
-{% endif %}
-
 {% for post in site.posts %}
     {% assign post-out-categories = page-categories %}
     {% for category in page.categories %}

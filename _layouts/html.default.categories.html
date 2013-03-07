@@ -17,11 +17,12 @@
 
 {% for post in site.posts %}
     {% assign post-out-categories = page-categories %}
-    {% for category in post.categories %}
-        {% assign c = category | append:',' | prepend:',' %}
-        {% assign post-out-categories = post-out-categories | replace:c,',' %}
+    {% for category in page.categories %}
+        {% if post.categories contains category %}
+            {% assign post-allow = true %}
+        {% endif %}
     {% endfor %}
-    {% if page.categories == empty or page-categories != post-out-categories %}
+    {% if page.categories == empty or post-allow %}
         {% assign post-date-year-prev = post-date-year %}
         {% assign post-date-year = post.date | date:'%Y' %}
         {% capture p %}

@@ -5,7 +5,7 @@
 {% assign toc  = ',' %}
 {% assign sections = '' %}
 {% assign section  = '' %}
-{% assign post-date-year  = '' %}
+{% assign post_year  = '' %}
 
 {% for post in site.posts %}
     {% assign post-allow = false %}
@@ -15,8 +15,8 @@
         {% endif %}
     {% endfor %}
 
-    {% assign post-date-year-prev = post-date-year %}
-    {% assign post-date-year = post.date | date:'%Y' %}
+    {% assign post_year_prev = post_year %}
+    {% assign post_year = post.date | date:'%Y' %}
     {% assign post_content = false %}
     {% assign post-append  = false %}
 
@@ -50,7 +50,7 @@
 
     {% if post_content or forloop.last %}
 
-        {% if post-date-year-prev =='' or post-date-year-prev == post-date-year %}
+        {% if post_year_prev =='' or post_year_prev == post_year %}
             {% assign post-append = true %}
         {% endif %}
 
@@ -58,10 +58,9 @@
             {% assign section = section | append:post_content %}
         {% endif %}
 
-        {% unless toc contains post-date-year %}
+        {% unless toc contains post_year %}
             {% unless post_content == false %}
-                forloop.index:{{ forloop.index }}, post-date-year:{{ post-date-year }}, post.url:{{ post.url }}, forloop.last:{{ forloop.last }}, post-allow:{{post-allow}}, post_content:{{post_content}}<br/>
-                {% assign toc = toc | append:',' | append:post-date-year %}
+                {% assign toc = toc | append:',' | append:post_year %}
             {% endunless %}
         {% endunless %}
 
@@ -69,8 +68,8 @@
 
             {% capture sections %}
                 {{ sections }}
-                <section id="toc-{{ post-date-year-prev }}">
-                    <h1>{{ post-date-year-prev }}</h1>
+                <section id="toc-{{ post_year_prev }}">
+                    <h1>{{ post_year_prev }}</h1>
                     {{ section }}
                 </section>
             {% endcapture %}
@@ -78,8 +77,8 @@
             {% if forloop.last and post_content %}
                 {% capture sections %}
                     {{ sections }}
-                    <section id="toc-{{ post-date-year }}">
-                        <h1>{{ post-date-year }}</h1>
+                    <section id="toc-{{ post_year }}">
+                        <h1>{{ post_year }}</h1>
                         {{ post_content }}
                     </section>
                 {% endcapture %}

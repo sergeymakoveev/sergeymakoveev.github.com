@@ -58,9 +58,11 @@
             {% assign section = section | append:post_content %}
         {% endif %}
 
-        {% unless toc contains post-date-year and post_content == false %}
-            forloop.index:{{ forloop.index }}, post-date-year:{{ post-date-year }}, post.url:{{ post.url }}, forloop.last:{{ forloop.last }}, post-allow:{{post-allow}}, post_content:{{post_content}}<br/>
-            {% assign toc = toc | append:',' | append:post-date-year %}
+        {% unless toc contains post-date-year %}
+            {% unless post_content == false
+                forloop.index:{{ forloop.index }}, post-date-year:{{ post-date-year }}, post.url:{{ post.url }}, forloop.last:{{ forloop.last }}, post-allow:{{post-allow}}, post_content:{{post_content}}<br/>
+                {% assign toc = toc | append:',' | append:post-date-year %}
+            {% endunless %}
         {% endunless %}
 
         {% if post-append == false or forloop.last %}

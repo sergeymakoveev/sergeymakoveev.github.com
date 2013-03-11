@@ -59,7 +59,7 @@
         {% endif %}
 
         {% unless post_content == false and toc contains post-date-year %}
-            forloop.index:{{ forloop.index }}<br/>
+            forloop.index:{{ forloop.index }}, post-date-year:{{ post-date-year }}<br/>
             {% assign toc = toc | append:',' | append:post-date-year %}
         {% endunless %}
 

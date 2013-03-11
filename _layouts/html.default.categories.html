@@ -7,11 +7,6 @@
 {% assign section  = '' %}
 {% assign post-date-year  = '' %}
 
-{% assign test = true %}
-{% if test %}
-<h1>true</h1>
-{% endif %}
-
 {% for post in site.posts %}
     {% assign post-allow = false %}
     {% for category in page.categories %}
@@ -64,6 +59,7 @@
         {% endif %}
 
         {% unless post_content == false and toc contains post-date-year %}
+            forloop.index:{{ forloop.index }}<br/>
             {% assign toc = toc | append:',' | append:post-date-year %}
         {% endunless %}
 

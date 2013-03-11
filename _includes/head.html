@@ -16,13 +16,14 @@
 {% else %}
     {% assign page-title = site.title | append:site.divider | append:site.author.name.ru %}
 {% endif %}
+{% assign page-title = page-title | strip_html %}
 {% if page.description %}
     {% assign page-description = page.description %}
 {% else %}
     {% assign page-description = site.description %}
 {% endif %}
 
-<title>{{ page-title | strip_html }}</title>
+<title>{{ page-title }}</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="chrome=1">

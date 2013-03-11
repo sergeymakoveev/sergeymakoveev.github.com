@@ -58,10 +58,8 @@
             {% assign section = section | append:post_content %}
         {% endif %}
 
-        {% unless toc contains post_year %}
-            {% unless post_content == false %}
-                {% assign toc = toc | append:',' | append:post_year %}
-            {% endunless %}
+        {% unless toc contains post_year and post_content == false %}
+            {% assign toc = toc | append:',' | append:post_year %}
         {% endunless %}
 
         {% if post-append == false or forloop.last %}

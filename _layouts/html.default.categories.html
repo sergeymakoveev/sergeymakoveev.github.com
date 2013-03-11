@@ -60,7 +60,7 @@
             {% assign section = section | append:post_content %}
         {% endif %}
 
-        {% unless toc contains post-date-year %}
+        {% unless post_content == false and toc contains post-date-year %}
             {% assign toc = toc | append:',' | append:post-date-year %}
         {% endunless %}
 

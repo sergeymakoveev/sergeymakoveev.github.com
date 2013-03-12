@@ -3,7 +3,7 @@ layout: html.default
 ---
 <header class="jumbotron subhead" id="overview">
     <div class="container">
-        <img class="qr-code" src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" title="QR-code for URL this page ({{ site.host }}{{ page.url }})" />
+        <img class="qr-code" src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" title="QR-code for this page ({{ site.host }}{{ page.url }})" />
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
         <nav role="navigation">

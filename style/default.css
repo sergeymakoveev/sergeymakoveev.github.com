@@ -38,6 +38,7 @@ body > header > .container > h1 {
 body > header > .container.qr-code {
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: contain;
     }
 body > header > .container > .qr-code {
     position:absolute;

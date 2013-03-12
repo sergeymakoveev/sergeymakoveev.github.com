@@ -1,17 +1,8 @@
 ---
 layout: html.default
 ---
-<style>
-body > header > .container.qr-code:after {
-    content:url('{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}');
-    position:absolute;
-    height:150px;
-    width:150px;
-    }
-</style>
 <header class="jumbotron subhead" id="overview">
     <div class="container qr-code">
-        <! img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" title="QR-code for URL this page ({{ page.url }})" />
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
         <nav role="navigation">
@@ -28,6 +19,7 @@ body > header > .container.qr-code:after {
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
             {% endfor %}
         </nav>
+        <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" title="QR-code for URL this page ({{ site.host }}{{ page.url }})" />
     </div>
 </header>
 

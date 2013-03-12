@@ -28,6 +28,13 @@ body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
     }
 
+body > header > .container[data-qrcode]:after {
+    content:'';
+    background-image:attr(data-qrcode);
+    position:absolute;
+    height:150px;
+    width:150px;
+    }
 body > header > .container > * {
     margin-left:66px;
     }

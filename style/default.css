@@ -29,8 +29,7 @@ body .label.label-inverse{
     }
 
 body > header > .container[data-qrcode]:after {
-    content:'';
-    background-image:attr(data-qrcode);
+    content:url(attr(data-qrcode));
     position:absolute;
     height:150px;
     width:150px;

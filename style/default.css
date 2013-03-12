@@ -36,7 +36,7 @@ body > header > .container > h1 {
     }
 body > header > .container > .qr-code {
     position:absolute;
-    float:right;
+    right:0;
     }
 
 body > header nav .label:hover {

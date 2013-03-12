@@ -35,11 +35,6 @@ body > header > .container > * {
 body > header > .container > h1 {
     text-indent: -33px;
     }
-body > header > .container.qr-code {
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
-    }
 body > header > .container > .qr-code {
     position:absolute;
     right:0;

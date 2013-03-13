@@ -54,12 +54,12 @@ body > .container[data-layout=categories] #main-content section:first-child {
     padding-top:0;
     }
 body > .container[data-layout=categories] #main-content h1 {
-    margin-bottom:20px;
+    margin-bottom:30px;
     margin-top:0;
     }
 body > .container[data-layout=categories] #main-content article {
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     }
 body > .container[data-layout=categories] #main-content article > h2 {
     margin:0;

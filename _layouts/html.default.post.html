@@ -1,5 +1,6 @@
 ---
-layout: html.default
+    layout: html.default
+    layout-current: html.default.post
 ---
 <header class="jumbotron subhead" id="overview">
     <div class="container">
@@ -23,7 +24,7 @@ layout: html.default
     </div>
 </header>
 
-<div class="container">
+<div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav">

@@ -1,5 +1,6 @@
 ---
     layout: html.default
+    layout-current: html.default.categories
 ---
 
 {% assign toc  = ',' %}
@@ -100,7 +101,7 @@
     </div>
 </header>
 
-<div class="container">
+<div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav" role="navigation" data-spy="affix" data-offset-top="200">

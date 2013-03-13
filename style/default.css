@@ -50,6 +50,10 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
+body > .container[data-layout='html.default.categories'] #mail-content h1 {
+    margin-bottom:0;
+    }
+
 body > footer a:hover {
     text-decoration:none
     }

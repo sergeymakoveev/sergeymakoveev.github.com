@@ -30,21 +30,23 @@
                        rel  ="bookmark"
                        href ="{{ post.url }}"
                        title="{{ post.title }}">{{ post.title }}</a></h2>
-                <p class="lead">{{ post.description }}</p>
-                <nav role="navigation">
-                    {% for category in post.categories %}
-                        <a rel  ="category"
-                           href ="/{{ category }}"
-                           title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
-                    {% endfor %}
-                    {% assign post-tags-sorted = post.tags | sort %}
-                    {% for tag in post-tags-sorted %}
-                        <a rel="tag"
-                           data-tag="{{ tag }}"
-                           href="/tags#{{ tag }}"
-                           title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
-                    {% endfor %}
-                </nav>
+                <blockquote>
+                    {{ post.description }}
+                    <nav role="navigation">
+                        {% for category in post.categories %}
+                            <a rel  ="category"
+                               href ="/{{ category }}"
+                               title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
+                        {% endfor %}
+                        {% assign post-tags-sorted = post.tags | sort %}
+                        {% for tag in post-tags-sorted %}
+                            <a rel="tag"
+                               data-tag="{{ tag }}"
+                               href="/tags#{{ tag }}"
+                               title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
+                        {% endfor %}
+                    </nav>
+                </blockquote>
             </article>
         {% endcapture %}
     {% endif %}

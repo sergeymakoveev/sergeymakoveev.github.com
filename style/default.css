@@ -61,6 +61,7 @@ body > .container[data-layout=categories] article > p {
     }
 body > .container[data-layout=categories] article > time {
     font-size:1.5em;
+    position: absolute;
     }
 body > .container[data-layout=categories] article > time::after {
     content: attr(data-month);

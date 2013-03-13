@@ -60,6 +60,7 @@ body > .container[data-layout=categories] article > p {
     margin-bottom:5px;
     }
 body > .container[data-layout=categories] article > time {
+    border-bottom: 1px solid #000;
     font-size: 1.7em;
     position: absolute;
     margin-left: -1.8em;
@@ -68,7 +69,6 @@ body > .container[data-layout=categories] article > time {
 body > .container[data-layout=categories] article > time::after {
     content: attr(data-month);
     display: block;
-    border-top: 1px solid #000;
     font-size: .5em;
     position: absolute;
     }

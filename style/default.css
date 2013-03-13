@@ -62,7 +62,7 @@ body > .container[data-layout=categories] #main-content article {
     margin-bottom: 20px;
     }
 body > .container[data-layout=categories] #main-content article > h2 {
-    margin-bottom:0;
+    margin:0;
     }
 body > .container[data-layout=categories] #main-content article > p {
     margin-bottom:5px;

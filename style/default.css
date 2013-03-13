@@ -53,7 +53,7 @@ body > .container[data-layout=categories] #main-content section:first-child {
     padding-top:0;
     }
 body > .container[data-layout=categories] #main-content h1 {
-    color: rgba(0,0,0,0.6);
+    color: rgba(0,0,0,0.5);
     margin-bottom:40px;
     margin-top:0;
     }
@@ -73,6 +73,8 @@ body > .container[data-layout=categories] #main-content article > time {
     position: absolute;
     margin-left: -70px;
     text-align: center;
+    font-weight: bold;
+    margin-top: -12px;
     }
 body > .container[data-layout=categories] #main-content article > time > small {
     display: block;

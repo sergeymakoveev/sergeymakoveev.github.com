@@ -50,20 +50,20 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
-body > .container[data-layout=categories] article {
+body > .container[data-layout=categories] #main-content h1 {
+    margin-bottom:20px;
+    }
+body > .container[data-layout=categories] #main-content article {
     margin-left: 43px;
     margin-bottom: 20px;
     }
-body > .container[data-layout=categories] article > h1 {
-    margin-bottom:20;
-    }
-body > .container[data-layout=categories] article > h2 {
+body > .container[data-layout=categories] #main-content article > h2 {
     margin-bottom:0;
     }
-body > .container[data-layout=categories] article > p {
+body > .container[data-layout=categories] #main-content article > p {
     margin-bottom:5px;
     }
-body > .container[data-layout=categories] article > time {
+body > .container[data-layout=categories] #main-content article > time {
     border-bottom: 1px solid #000;
     font-size: 1.7em;
     position: absolute;
@@ -71,7 +71,7 @@ body > .container[data-layout=categories] article > time {
     margin-top: 10px;
     
     }
-body > .container[data-layout=categories] article > time::after {
+body > .container[data-layout=categories] #main-content article > time::after {
     content: attr(data-month);
     display: block;
     font-size: .5em;

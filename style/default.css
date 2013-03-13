@@ -52,14 +52,12 @@ body > .container nav .label:hover {
 
 body > .container[data-layout=categories] article > h2 {
     margin-bottom:0;
-    display:inline-block;
     }
 body > .container[data-layout=categories] article > p {
     margin-bottom:5px;
     }
 body > .container[data-layout=categories] article > time {
     font-size:1.5em;
-    display:inline-block;
     }
 body > .container[data-layout=categories] article > time::after {
     content: attr(data-month);

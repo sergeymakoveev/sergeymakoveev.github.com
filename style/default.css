@@ -32,8 +32,9 @@ body > header > .container > * {
     margin-left:66px;
     margin-right: 150px;
     }
-body > header > .container > h1 {
-    text-indent: -27px;
+body > header > .container > h1 > i {
+    position: absolute;
+    left: 0;
     }
 body > header > .container > .qr-code {
     position:absolute;

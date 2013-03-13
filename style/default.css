@@ -51,7 +51,7 @@ body > .container nav .label:hover {
     }
 
 body > .container[data-layout=categories] #main-content section:first-child {
-    margin-top:0;
+    padding-top:0;
     }
 body > .container[data-layout=categories] #main-content h1 {
     margin-bottom:20px;

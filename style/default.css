@@ -58,7 +58,7 @@ body > .container[data-layout=categories] #main-content h1 {
     margin-top:0;
     }
 body > .container[data-layout=categories] #main-content article {
-    margin-left: 50px;
+    margin-left: 70px;
     margin-bottom: 40px;
     }
 body > .container[data-layout=categories] #main-content article > h2 {
@@ -70,9 +70,11 @@ body > .container[data-layout=categories] #main-content article > p {
 body > .container[data-layout=categories] #main-content article > time {
     font-size: 31.5px;
     position: absolute;
-    margin-left: -50px;
-    margin-top: -12px;
+    margin-left: -70px;
     text-align: center;
+    box-shadow: 1px -1px 2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 5px;
     }
 body > .container[data-layout=categories] #main-content article > time > small {
     display: block;

@@ -50,6 +50,9 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
+body > .container[data-layout=categories] #main-content section:first-child {
+    margin-top:0;
+    }
 body > .container[data-layout=categories] #main-content h1 {
     margin-bottom:20px;
     }

@@ -50,11 +50,18 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
-body > .container[data-layout=categories] #main-content article > h2 {
+body > .container[data-layout=categories] article > h2 {
     margin-bottom:0;
     }
-body > .container[data-layout=categories] #main-content article > p {
+body > .container[data-layout=categories] article > p {
     margin-bottom:5px;
+    }
+body > .container[data-layout=categories] article > time {
+    font-size:1.5em;
+    }
+body > .container[data-layout=categories] article > time::after {
+    display:inline-block;
+    border-top:1px solid #000;
     }
 
 body > footer a:hover {

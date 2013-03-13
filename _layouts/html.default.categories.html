@@ -26,7 +26,8 @@
             <article class="post">
                 <time datetime ="{{ post.date }}"
                       pubdate  ="{{ post.date }}"
-                      title    ="{{ post.date }}">{{ post.date | date:'%b %d' }}</time>
+                      title    ="{{ post.date }}"
+                      date-month = "{{ post.date | date:'%b' }}">{{ post.date | date:'%d' }}</time>
                 <h2><a class="title"
                        rel  ="bookmark"
                        href ="{{ post.url }}"

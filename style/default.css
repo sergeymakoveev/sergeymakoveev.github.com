@@ -68,18 +68,17 @@ body > .container[data-layout=categories] #main-content article > p {
     margin-bottom:5px;
     }
 body > .container[data-layout=categories] #main-content article > time {
-    border-bottom: 1px solid #000;
     font-size: 1.7em;
     position: absolute;
     margin-left: -50px;
     margin-top: 10px;
-    
+    box-shadow: 0 0 10px #000;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
     }
-body > .container[data-layout=categories] #main-content article > time::after {
-    content: attr(data-month);
+body > .container[data-layout=categories] #main-content article > time > small {
     display: block;
-    font-size: .5em;
-    position: absolute;
     }
 
 body > footer a:hover {

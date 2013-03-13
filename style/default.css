@@ -60,9 +60,11 @@ body > .container[data-layout=categories] article > time {
     font-size:1.5em;
     }
 body > .container[data-layout=categories] article > time::after {
-    content:attr(data-month);
-    display:inline-block;
-    border-top:1px solid #000;
+    content: attr(data-month);
+    display: block;
+    border-top: 1px solid #000;
+    font-size: .7em;
+    position: absolute;
     }
 
 body > footer a:hover {

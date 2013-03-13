@@ -50,6 +50,9 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
+body > .container[data-layout=categories] article {
+    margin-left: 4em;
+    }
 body > .container[data-layout=categories] article > h2 {
     margin-bottom:0;
     }

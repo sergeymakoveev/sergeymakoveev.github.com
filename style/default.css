@@ -55,6 +55,7 @@ body > .container[data-layout=categories] #main-content section:first-child {
     }
 body > .container[data-layout=categories] #main-content h1 {
     margin-bottom:20px;
+    margin-top:0;
     }
 body > .container[data-layout=categories] #main-content article {
     margin-left: 43px;

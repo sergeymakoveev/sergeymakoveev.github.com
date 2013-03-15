@@ -6,22 +6,24 @@
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
-<nav role="navigation">
-    {% for tag in tags %}
-        {% assign t = tag | split:','  %}
-        <a rel="bookmarks"
-           data-tag="{{ t[0] }}"
-           href="/tags#{{ t[0] }}"
-           title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
-    {% endfor %}
-</nav>
-
-<script>
-    $(function(){
-        $(document.body).on( 'mouseover mouseout',
-                             'a[data-tag] > .label',
-                             function(e){ $('a[data-tag="'+$(this).parent().data('tag')+'"] > .label')
-                                             .toggleClass('hover', e.type == 'mouseover'); }
-                            );
-    });
-</script>
+<section>
+    <nav role="navigation">
+        {% for tag in tags %}
+            {% assign t = tag | split:','  %}
+            <a rel="bookmarks"
+               data-tag="{{ t[0] }}"
+               href="/tags#{{ t[0] }}"
+               title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
+        {% endfor %}
+    </nav>
+    
+    <script>
+        $(function(){
+            $(document.body).on( 'mouseover mouseout',
+                                 'a[data-tag] > .label',
+                                 function(e){ $('a[data-tag="'+$(this).parent().data('tag')+'"] > .label')
+                                                 .toggleClass('hover', e.type == 'mouseover'); }
+                                );
+        });
+    </script>
+</section>

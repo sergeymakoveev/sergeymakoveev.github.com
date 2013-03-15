@@ -46,7 +46,8 @@ body > header nav .label:hover {
     }
 
 body > .container aside > ul.nav {
-    box-shadow: 0 0 5px 0;
+    box-shadow: 0 0  5px  0px,
+                0 0 15px 15px #FFFFFF;
     }
 body > .container aside > section > nav > a {
     display: block;

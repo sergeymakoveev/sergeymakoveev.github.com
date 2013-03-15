@@ -105,7 +105,7 @@
 
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
-        <aside class="span3 bs-docs-sidebar">
+        <aside class="span2 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav" role="navigation" data-spy="affix" data-offset-top="200">
                 {% assign toc = toc | replace:',,','' | split:',' %}
                 {% for t in toc %}
@@ -117,7 +117,7 @@
             {% include body.social.html %}
 
         </aside>
-        <div class="span9">
+        <div class="span10">
             <section id="main-content">
 
                 {{ content }}

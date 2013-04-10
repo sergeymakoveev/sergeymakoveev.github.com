@@ -36,10 +36,12 @@ body > header > .container > h1 > i {
     position: absolute;
     left: 0;
     }
-body > header > .container > .qr-code:not(.affix) {
-    position:absolute;
+body > header > .container > .qr-code {
     right:0;
     margin:0;
+    }
+body > header > .container > .qr-code:not(.affix) {
+    position:absolute;
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

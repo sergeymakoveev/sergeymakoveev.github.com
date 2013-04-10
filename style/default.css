@@ -44,6 +44,7 @@ body > header > .container > .qr-code:not(.affix) {
     position:absolute;
     }
 body > header > .container > .qr-code.affix {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     right:10px;
     top: 50px;
     }

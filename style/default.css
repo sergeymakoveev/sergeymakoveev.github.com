@@ -44,7 +44,6 @@ body > header > .container > .qr-code:not(.affix) {
     position:absolute;
     }
 body > header > .container > .qr-code.affix {
-    top:10px;
     right:10px;
     }
 body > header nav .label:hover {

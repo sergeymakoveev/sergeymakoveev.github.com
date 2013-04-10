@@ -45,6 +45,7 @@ body > header > .container > .qr-code:not(.affix) {
     }
 body > header > .container > .qr-code.affix {
     right:10px;
+    top: 50px;
     }
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;

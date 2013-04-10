@@ -36,7 +36,7 @@ body > header > .container > h1 > i {
     position: absolute;
     left: 0;
     }
-body > header > .container > .qr-code {
+body > header > .container > .qr-code:not(.affix) {
     position:absolute;
     right:0;
     margin:0;

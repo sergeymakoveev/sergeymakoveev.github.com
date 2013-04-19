@@ -5,11 +5,11 @@
 <header class="jumbotron subhead" id="overview">
     <div class="container">
         <a class="qr-code"
-           href="{{ page.url }}" title="{{ page.title }}" rel="bookmark"
+           href="{{ page.url }}" title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})" rel="bookmark"
            data-spy="affix" data-offset-top="300">
-            <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" title="QR-code for this page ({{ site.host }}{{ page.url }})" />
+            <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" />
         </a>
-        <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
+        <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
         <nav role="navigation">
             {% for category in page.categories %}

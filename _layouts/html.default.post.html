@@ -75,7 +75,8 @@ $((function($toc, $content){
                 $toc.append(
                     $('<li />').append(
                         $('<a />')
-                            .attr({ href:'#'+this.id })
+                            .attr({ href:'#'+this.id,
+                                    'data-level':Array(1+parseInt(this.nodeName.replace(/^h/i, ''))||0) .join('&nbsp;') })
                             .html( $this.html() )
                       )
                   ),

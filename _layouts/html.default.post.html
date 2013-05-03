@@ -31,13 +31,8 @@
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
-            <a class="qr-code"
-               href="{{ page.url }}" title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})" rel="bookmark"
-               data-spy="affix" data-offset-top="300">
-                <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" />
-            </a>
             <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300"></ul>
-
+            {% include body.qr.html %}
             {% include body.social.html %}
             {% include body.tags.html %}
 

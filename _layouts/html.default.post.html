@@ -63,7 +63,7 @@
     </div>
 </div>
 <script>
-(function($toc, $content){
+$((function($toc, $content){
     var $section;
     $toc     = $($toc);
     $content = $($content);
@@ -87,5 +87,5 @@
                      $section.append($this);
          });
 })( 'aside > ul.nav.nav-list',
-    '#main-content > article' );
+    '#main-content > article' ));
 </script>

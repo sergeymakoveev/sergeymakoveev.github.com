@@ -59,6 +59,9 @@ body > .container aside > ul.nav {
     box-shadow: 0 0  5px  0px,
                 0 0 15px 15px #FFFFFF;
     }
+body > .container aside > ul.nav > li.qr {
+    text-align:center;
+    }
 
 @media (min-width: 768px) {
 body > .container aside > section > .nav > a {

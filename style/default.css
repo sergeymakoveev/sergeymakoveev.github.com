@@ -62,7 +62,7 @@ body > .container aside > ul.nav {
 body > .container aside > ul.nav > li.qr {
     text-align:center;
     }
-body > .container aside > ul.nav > a {
+body > .container aside > ul.nav > li.qr > a {
     margin:0;
     padding:0;
     }

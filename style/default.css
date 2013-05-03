@@ -59,9 +59,12 @@ body > .container aside > ul.nav {
     box-shadow: 0 0  5px  0px,
                 0 0 15px 15px #FFFFFF;
     }
+
+@media (min-width: 979px) {
 body > .container aside > section > nav > a {
     display: block;
     }
+}
 
 body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;

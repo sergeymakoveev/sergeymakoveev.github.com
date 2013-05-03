@@ -78,7 +78,8 @@ $((function($toc, $content){
                         .append(
                             $('<a />').attr({ href:'#'+this.id })
                                       .html( $this.html() )
-                         ),
+                         )
+                 ),
                 $section = $this.wrap( $('<section />')
                                             .attr({ id:this.id }) )
                                 .removeAttr('id')

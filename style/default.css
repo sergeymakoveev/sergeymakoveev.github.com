@@ -62,6 +62,10 @@ body > .container aside > ul.nav {
 body > .container aside > ul.nav > li.qr {
     text-align:center;
     }
+body > .container aside > ul.nav > a {
+    margin:0;
+    padding:0;
+    }
 
 @media (min-width: 768px) {
 body > .container aside > section > .nav > a {

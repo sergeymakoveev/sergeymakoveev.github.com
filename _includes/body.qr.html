@@ -1,8 +1,9 @@
 
 <!-- <body.qr.html> -->
 <a class="qr-code"
-   href="{{ page.url }}" title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})" rel="bookmark"
-   data-spy="affix" data-offset-top="300">
+   href="{{ page.url }}"
+   title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})"
+   rel="bookmark" >
     <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" />
 </a>
 <!-- </body.qr.html> -->

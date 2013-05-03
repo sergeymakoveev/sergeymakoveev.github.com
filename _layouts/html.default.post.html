@@ -4,11 +4,9 @@
 ---
 <header class="jumbotron subhead" id="overview">
     <div class="container">
-        <a class="qr-code"
-           href="{{ page.url }}" title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})" rel="bookmark"
-           data-spy="affix" data-offset-top="300">
-            <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" />
-        </a>
+
+        {% include body.qr.html %}
+
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
         <nav role="navigation">
@@ -31,8 +29,8 @@
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300"></ul>
             {% include body.qr.html %}
+            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300"></ul>
             {% include body.social.html %}
             {% include body.tags.html %}
 

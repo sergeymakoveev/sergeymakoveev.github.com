@@ -29,8 +29,11 @@
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
-            {% include body.qr.html %}
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300"></ul>
+            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300">
+                <li class="qr">
+                    {% include body.qr.html %}
+                </li>
+            </ul>
             {% include body.social.html %}
             {% include body.tags.html %}
 

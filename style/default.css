@@ -60,7 +60,7 @@ body > .container aside > ul.nav {
                 0 0 15px 15px #FFFFFF;
     }
 
-@media (min-width: 979px) {
+@media (min-width: 768px) {
 body > .container aside > section > nav > a {
     display: block;
     }

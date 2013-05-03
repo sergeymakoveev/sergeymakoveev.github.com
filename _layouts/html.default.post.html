@@ -31,8 +31,12 @@
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
         <aside class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300">
-            </ul>
+            <a class="qr-code"
+               href="{{ page.url }}" title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})" rel="bookmark"
+               data-spy="affix" data-offset-top="300">
+                <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" />
+            </a>
+            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300"></ul>
 
             {% include body.social.html %}
             {% include body.tags.html %}
@@ -74,7 +78,7 @@ $((function($toc, $content){
             if( $this.is('[id^=toc_]') )
                 $toc.append(
                     $('<li />')
-                        .attr({ 'data-level':Array(1+parseInt(this.nodeName.replace(/^h/i, ''))||0).join(' ') })
+                        //.attr({ 'data-level':Array(1+parseInt(this.nodeName.replace(/^h/i, ''))||0).join(' ') })
                         .append(
                             $('<a />').attr({ href:'#'+this.id })
                                       .html( $this.html() )

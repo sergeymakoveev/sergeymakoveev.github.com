@@ -72,6 +72,10 @@ body > .container aside > ul.nav > li.qr > a {
     margin:0;
     padding:0;
     }
+body > .container aside > ul.nav > li > a {
+    overflow:hidden;
+    text-overflow: ellipsis;
+    }
 
 @media (min-width: 768px) {
 body > .container aside > section > nav > a {

@@ -56,8 +56,8 @@ body > header nav .label:hover {
     }
 
 body > .container aside > ul.nav {
-    box-shadow: 0 0  5px  0px,
-                0 0 15px 15px #FFFFFF;
+    box-shadow: 0 0  5px  0px #000;
+                /* 0 0 15px 15px #FFF; */
     }
 body > .container aside > ul.nav > li.qr {
     text-align:center;

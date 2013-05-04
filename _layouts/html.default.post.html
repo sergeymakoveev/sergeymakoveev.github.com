@@ -71,18 +71,18 @@ $((function($toc, $content){
     $content = $($content);
 
     var $section,
-        level = $content.children('[id^=toc_]')
-                        .toArray()
-                        .map(function( h ){ return parseInt( h.nodeName.replace(/^h/i, '') ) || 0; })
-                        .sort()
-                        .shift();
+        hlevel = $content.children('[id^=toc_]')
+                         .toArray()
+                         .map(function( h ){ return parseInt( h.nodeName.replace(/^h/i, '') ) || 0; })
+                         .sort()
+                         .shift();
 
     $content
         .children()
         .each(function(){
             var $this = $(this);
             if( $this.is('[id^=toc_]') &&
-                level == parseInt( this.nodeName.replace(/^h/i, '') ) || 0 )
+                hlevel == parseInt( this.nodeName.replace(/^h/i, '') ) || 0 )
                 $toc.append(
                     $('<li />')
                         .append(

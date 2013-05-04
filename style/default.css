@@ -61,6 +61,9 @@ body > .container aside > ul.nav {
 body > .container aside > ul.nav > li.qr {
     text-align:center;
     }
+body > .container aside > ul.nav > li.qr:hover {
+    background-color:inherit;
+    }
 body > .container aside > ul.nav:not(.affix) > li.qr {
     display:none;
     }

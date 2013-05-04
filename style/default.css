@@ -71,7 +71,7 @@ body > .container aside > ul.nav > li.qr > a {
     }
 
 @media (min-width: 768px) {
-body > .container aside > section > .nav > a {
+body > .container aside > section > nav > a {
     display: block;
     }
 }

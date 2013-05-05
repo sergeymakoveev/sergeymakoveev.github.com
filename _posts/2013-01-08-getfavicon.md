@@ -8,7 +8,7 @@
     date: 2012.12.08
 ---
 
-## getfavicon.appspot.com
+## GetFavicon by Potato
 > [http://getfavicon.appspot.com](http://getfavicon.appspot.com "Usage")  
 > [http://g.etfv.co](http://g.etfv.co "Usage")  
 > [https://github.com/potatolondon/getfavicon](https://github.com/potatolondon/getfavicon "Sources")

@@ -105,8 +105,12 @@
 
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
-        <div class="span1"></div>
-        <div class="span10">
+        <aside class="span3 bs-docs-sidebar">
+
+            {% include body.tags.html %}
+
+        </aside>
+        <div class="span9">
             <section id="main-content">
 
                 {{ content }}
@@ -143,6 +147,5 @@
 
             </section>
         </div>
-        <div class="span12"></div>
     </div>
 </div>

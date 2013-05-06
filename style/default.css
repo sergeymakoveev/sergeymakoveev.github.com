@@ -37,6 +37,7 @@ body > header > .container > .qr-code {
     right:0;
     margin:0;
     }
+/*
 body > header > .container > .qr-code:not(.affix) {
     position:absolute;
     }
@@ -45,6 +46,7 @@ body > header > .container > .qr-code.affix {
     right:10px;
     top: 50px;
     }
+*/
 body > header nav .label:hover {
     box-shadow: 0 0 0 1px #fff;
     }
@@ -61,6 +63,9 @@ body > .container aside > ul.nav > li.qr > a:hover {
     }
 body > .container aside > ul.nav:not(.affix) > li.qr {
     display:none;
+    }
+body > .container aside > ul.nav:not(.affix) > li.qr + li {
+    border-radius: 6px 6px 0 0;
     }
 body > .container aside > ul.nav > li.qr > a {
     margin:0;

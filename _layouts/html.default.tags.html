@@ -117,30 +117,14 @@
 
                 {% assign tags = '' %}
                 {% for tag in site.tags %}
-                    {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}{{ tag[0] }},{{ tag[1] | size }}{% endcapture %}
+                    {% capture tags %}{{ tags }}{% unless forloop.first %};{% endunless %}{{ tag[0] }}{% endcapture %}
                 {% endfor %}
                 {% assign tags = tags | split:';' | sort  %}
 
-                <div class="accordion" id="tags">
+                <div class="tab-content">
 
                     {% for tag in tags %}
-                        {% assign t = tag | split:','  %}
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle"
-                                   data-toggle="collapse"
-                                   data-parent="#tags"
-                                   href="#{{ t[0] }}"
-                                   data-tag="{{ t[0] }}"
-                                   title="tag: {{ t[0] }}"><span class="label"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
-                                </a>
-                            </div>
-                            <div id="{{ t[0] }}" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    Anim pariatur cliche...
-                                </div>
-                            </div>
-                        </div>
+                        <div class="tab-pane" id="{{ tag }}">{{ tag }}</div>
                     {% endfor %}
 
                 </div>

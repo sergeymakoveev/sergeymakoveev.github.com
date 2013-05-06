@@ -105,18 +105,6 @@
 
 <div class="container" data-layout="{{ page.layout-current }}">
     <div class="row">
-        <aside class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav" role="navigation" data-spy="affix" data-offset-top="200">
-                {% assign toc = toc | replace:',,','' | split:',' %}
-                {% for t in toc %}
-                    <li><a href="#toc-{{ t }}"><i class="icon-chevron-right"></i> {{ t }}</a></li>
-                {% endfor %}
-            </ul>
-
-            {% include body.tags.html %}
-            {% include body.social.html %}
-
-        </aside>
         <div class="span9">
             <section id="main-content">
 
@@ -134,11 +122,15 @@
                         {% assign t = tag | split:','  %}
                         <div class="accordion-group">
                             <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#tags" href="#t-{{ t[0] }}">
-                                    {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}
+                                <a class="accordion-toggle"
+                                   data-toggle="collapse"
+                                   data-parent="#tags"
+                                   href="#{{ t[0] }}">
+                                   data-tag="{{ t[0] }}"
+                                   title="tag: {{ t[0] }}"><span class="label"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
                                 </a>
                             </div>
-                            <div id="t-{{ t[0] }}" class="accordion-body collapse">
+                            <div id="{{ t[0] }}" class="accordion-body collapse">
                                 <div class="accordion-inner">
                                     Anim pariatur cliche...
                                 </div>

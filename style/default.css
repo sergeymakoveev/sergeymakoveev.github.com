@@ -13,10 +13,14 @@ body nav .label{
     text-shadow: 0 1px 3px  rgba(0,0,0,.4),
                  0 0   30px rgba(0,0,0,.075);
     }
+body nav .label:not(:active):target,
 body nav .label:not(:active):hover,
 body nav .label:not(:active).hover,
 body nav .label:not(:active).active {
     background-color:#0088cc;
+    }
+body > header nav .label:hover {
+    box-shadow: 0 0 0 1px #fff;
     }
 body .label.label-inverse{
     box-shadow: 0 0 2px 0 #fff;
@@ -47,9 +51,6 @@ body > header > .container > .qr-code.affix {
     top: 50px;
     }
 */
-body > header nav .label:hover {
-    box-shadow: 0 0 0 1px #fff;
-    }
 
 body > .container aside > ul.nav {
     box-shadow: 0 0  5px  0px #000;

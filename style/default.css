@@ -64,16 +64,16 @@ body > .container aside > ul.nav > li.qr > a:hover {
 body > .container aside > ul.nav:not(.affix) > li.qr {
     display:none;
     }
-body > .container aside > ul.nav:not(.affix) > li.qr + li {
-    border-radius: 6px 6px 0 0;
+body > .container aside > ul.nav > li > a {
+    overflow:hidden;
+    text-overflow: ellipsis;
     }
 body > .container aside > ul.nav > li.qr > a {
     margin:0;
     padding:0;
     }
-body > .container aside > ul.nav > li > a {
-    overflow:hidden;
-    text-overflow: ellipsis;
+body > .container aside > ul.nav:not(.affix) > li.qr + li > a {
+    border-radius: 6px 6px 0 0;
     }
 
 @media (min-width: 768px) {

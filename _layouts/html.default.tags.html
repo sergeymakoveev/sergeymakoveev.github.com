@@ -28,13 +28,9 @@
                 {% endfor %}
                 {% assign tags = tags | split:';' | sort  %}
 
-                <div class="tab-content">
-
-                    {% for tag in tags %}
-                        <div class="tab-pane" id="{{ tag }}">{{ tag }}</div>
-                    {% endfor %}
-
-                </div>
+                {% for tag in tags %}
+                    <section id="{{ tag }}">{{ tag }}</section>
+                {% endfor %}
 
             </section>
         </div>

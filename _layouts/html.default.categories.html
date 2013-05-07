@@ -44,7 +44,7 @@
                     {% for tag in post-tags-sorted %}
                         <a rel="tag"
                            data-tag="{{ tag | replace:' ','_' }}"
-                           href="#{{ tag }}"
+                           href="/tags#{{ tag }}"
                            title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
                     {% endfor %}
                 </nav>

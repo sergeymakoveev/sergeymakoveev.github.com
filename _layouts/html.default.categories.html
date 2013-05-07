@@ -129,5 +129,7 @@
 </div>
 
 <script>
-    $(window).on('popstate load', console.log); 
+    $(window).on('popstate load', function(){
+        console.log(location.hash);
+    }); 
 </script>

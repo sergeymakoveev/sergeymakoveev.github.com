@@ -22,8 +22,9 @@
     {% assign post-append  = false %}
 
     {% if page.categories == empty or post-allow %}
+        {% assign tags = post.tags | sort | join:',' | replace:' ','_' | split:',' %}
         {% capture post_content %}
-            <article class="post" data-tags="{{ post.tags | join:',' | replace:' ','_' | replace:',',' ' }}">
+            <article class="post" data-tags="{{ tags | join:' ' }}">
                 <time datetime ="{{ post.date }}"
                       pubdate  ="{{ post.date }}"
                       title    ="{{ post.date }}"><small>{{ post.date | date:'%b' }}</small>{{ post.date | date:'%d' }}</time>
@@ -40,8 +41,7 @@
                            href ="/{{ category }}"
                            title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
                     {% endfor %}
-                    {% assign post-tags-sorted = post.tags | sort %}
-                    {% for tag in post-tags-sorted %}
+                    {% for tag in tags %}
                         <a rel="tag"
                            data-tag="{{ tag }}"
                            href="/tags#{{ tag }}"

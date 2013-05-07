@@ -1,3 +1,5 @@
+a { outline: 0 none; }
+
 .icon-category-::before,
 .icon-category-home::before {
     content: "\f015";

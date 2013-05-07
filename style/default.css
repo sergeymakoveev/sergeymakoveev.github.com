@@ -1,4 +1,4 @@
-a { outline: 0 none; }
+a { outline: 0 none!important; }
 
 .icon-category-::before,
 .icon-category-home::before {

@@ -1,5 +1,6 @@
 ---
-    layout: html.default.tags
+    layout: html.default.categories
     title: Home
     description: Welcome...
+    categories: []
 ---

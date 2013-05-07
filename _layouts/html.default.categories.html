@@ -23,7 +23,7 @@
 
     {% if page.categories == empty or post-allow %}
         {% capture post_content %}
-            <article class="post">
+            <article class="post" data-tags="{{ post.tags | join:',' }}">
                 <time datetime ="{{ post.date }}"
                       pubdate  ="{{ post.date }}"
                       title    ="{{ post.date }}"><small>{{ post.date | date:'%b' }}</small>{{ post.date | date:'%d' }}</time>

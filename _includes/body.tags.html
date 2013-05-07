@@ -14,9 +14,8 @@
             <a rel="bookmarks"
                data-tag="{{ t[0] | replace:' ','_' }}"
                tabindex="1"
-               href="/tags#{{ t[0] }}"
-               title="tag: {{ t[0] }}"><span {% unless page.layout-current == 'tags' %}id="{{ t[0] }}"{% endunless %}
-                                             class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
+               href="{% unless page.layout == 'html.default.categories' %}/tags{% endunless %}#{{ t[0] }}"
+               title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
         {% endfor %}
     </nav>
 

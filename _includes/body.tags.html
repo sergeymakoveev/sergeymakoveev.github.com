@@ -12,7 +12,7 @@
         {% for tag in tags %}
             {% assign t = tag | split:','  %}
             <a rel="bookmarks"
-               data-tag="{{ t[0] }}"
+               data-tag="{{ t[0] | replace:' ','_' }}"
                tabindex="1"
                href="/tags#{{ t[0] }}"
                title="tag: {{ t[0] }}"><span {% unless page.layout-current == 'tags' %}id="{{ t[0] }}"{% endunless %}

@@ -178,11 +178,9 @@
         });
 */
         $('#main-content > section')
+            .show()
             .filter(':not(:has([data-tags]:visible))')
                 .hide()
-                .end()
-            .filter(':has([data-tags]:visible)')
-                .show()
                 .end();
 
     }

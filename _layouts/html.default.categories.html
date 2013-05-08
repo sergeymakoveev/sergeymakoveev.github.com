@@ -130,6 +130,8 @@
 
 <script>
     $(window).on('popstate load', function(){
-        console.log(location.hash);
+        var tag = location.hash.substring(1);
+        if( tag )
+            $('[data-tag='+tag+'] > .label').addClass('hover');
     }); 
 </script>

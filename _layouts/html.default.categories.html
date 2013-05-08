@@ -145,8 +145,13 @@
             if( tag )
                 $('[data-tag="'+tag+'"] > .label')
                     .addClass('active'),
-                $('#main-content [data-tags]:not([data-tags~="'+tag+'"])')
-                    .addClass('notactive');
+                $('#main-content [data-tags]')
+                    .not('[data-tags~="'+tag+'"]')
+                        .addClass('notactive')
+                        .end()
+                    .not('.noactive')
+                        .first()
+                        .focus();
         }
     );
 

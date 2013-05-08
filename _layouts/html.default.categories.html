@@ -144,8 +144,12 @@
 
             $('[data-tag] > .label')
                 .removeClass('active');
-            $('#main-content [data-tags]')
-                .toggleClass('notactive', tags.length);
+            if( tags.length )
+                $('#main-content [data-tags]')
+                    .addClass('notactive');
+            else
+                $('#main-content [data-tags]')
+                    .removeClass('notactive');
 
             tags.forEach( function(tag){
                 $('[data-tag="'+tag+'"] > .label')

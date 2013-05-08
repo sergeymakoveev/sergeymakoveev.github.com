@@ -144,6 +144,22 @@
             .removeClass('active');
         if( tags.length )
             $('#main-content [data-tags]')
+                .hide();
+        else
+            $('#main-content [data-tags]')
+                .show();
+
+        tags.forEach( function(tag){
+            $('[data-tag="'+tag+'"] > .label')
+                .addClass('active'),
+            $('#main-content [data-tags~="'+tag+'"]')
+                .show();
+        });
+/*
+        $('[data-tag] > .label')
+            .removeClass('active');
+        if( tags.length )
+            $('#main-content [data-tags]')
                 .addClass('notactive');
         else
             $('#main-content [data-tags]')
@@ -160,6 +176,14 @@
                     .first()
                     .focus();
         });
+*/
+        $('#main-content > section')
+            .filter(':not(:has([data-tags]:visible))')
+                .hide()
+                .end()
+            .filter(':has([data-tags]:visible)')
+                .show()
+                .end();
 
     }
 

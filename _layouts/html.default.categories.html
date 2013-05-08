@@ -134,7 +134,7 @@
         var tag = location.hash
                           .substring(1)
                           .replace(/\s+/g, '_');
-        $('[data-tag] > .label').removeClass('hover');
+        //$('[data-tag] > .label').removeClass('hover');
         if( tag ){
             console.log($('[data-tag="'+tag+'"] > .label'));
             $('[data-tag="'+tag+'"] > .label').addClass('hover');

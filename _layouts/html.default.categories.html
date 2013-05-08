@@ -130,40 +130,39 @@
 
 <script>
 
-    $(window).on(
-        'load popstate',
-        function(){
+    function popstate(){
 
-            var tags = /^#\[(.+)\]$/.test(location.hash) ?
-                            RegExp.$1
-                                  .replace(/\s+/g, '_')
-                                  .split(',')
-                                  .map( function(tag){ return tag.trim(); })
-                                  .filter( function(tag){ return !!tag; }):
-                            [];
+        var tags = /^#\[(.+)\]$/.test(location.hash) ?
+                        RegExp.$1
+                              .replace(/\s+/g, '_')
+                              .split(',')
+                              .map( function(tag){ return tag.trim(); })
+                              .filter( function(tag){ return !!tag; }):
+                        [];
 
-            $('[data-tag] > .label')
-                .removeClass('active');
-            if( tags.length )
-                $('#main-content [data-tags]')
-                    .addClass('notactive');
-            else
-                $('#main-content [data-tags]')
-                    .removeClass('notactive');
+        $('[data-tag] > .label')
+            .removeClass('active');
+        if( tags.length )
+            $('#main-content [data-tags]')
+                .addClass('notactive');
+        else
+            $('#main-content [data-tags]')
+                .removeClass('notactive');
 
-            tags.forEach( function(tag){
-                $('[data-tag="'+tag+'"] > .label')
-                    .addClass('active'),
-                $('#main-content [data-tags]')
-                    .filter('[data-tags~="'+tag+'"]')
-                        .removeClass('notactive')
-                        .end()
-                    .not('.noactive')
-                        .first()
-                        .focus();
-            });
-        }
-    );
+        tags.forEach( function(tag){
+            $('[data-tag="'+tag+'"] > .label')
+                .addClass('active'),
+            $('#main-content [data-tags]')
+                .filter('[data-tags~="'+tag+'"]')
+                    .removeClass('notactive')
+                    .end()
+                .not('.noactive')
+                    .first()
+                    .focus();
+        });
+    }
+    $(popstate);
+    $(window).on({ popstate: popstate });
 
     $(document).on({
         click: function(e){

@@ -92,10 +92,9 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
-body > .container[data-layout=tags] #main-content section:not(:target) {
-    display: none;
+body #main-content [data-tags].notactive{
+    opacity:0.5;
     }
-
 body > .container[data-layout=categories] aside > ul.nav {
     width: 100px;
     }

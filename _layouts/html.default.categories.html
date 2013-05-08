@@ -138,10 +138,12 @@
                               .replace(/\s+/g, '_');
             $('[data-tag] > .label').removeClass('active');
             if( tag )
-                $('[data-tag="'+tag+'"] > .label').addClass('active'),
-                $('[data-tags]').hide()
-                                .filter('[data-tags~="'+tag+'"]')
-                                .show();
+                $('[data-tag="'+tag+'"] > .label')
+                    .addClass('active'),
+                $('#main-content [data-tags]')
+                    .addClass('notactive')
+                    .filter('[data-tags~="'+tag+'"]')
+                    .removeClass('notactive');
         }
     );
 

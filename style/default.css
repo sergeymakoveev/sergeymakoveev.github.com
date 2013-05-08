@@ -92,8 +92,8 @@ body > .container nav .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 
-body #main-content [data-tags].notactive{
-    opacity:0.5;
+body #main-content [data-tags].notactive:not(:hover){
+    opacity:0.1;
     }
 body > .container[data-layout=categories] aside > ul.nav {
     width: 100px;

@@ -140,7 +140,7 @@
             if( tag )
                 $('[data-tag="'+tag+'"] > .label').addClass('active'),
                 $('[data-tags]').hide()
-                                .filter('[data-tags=~"'+tag+'"]')
+                                .filter('[data-tags~="'+tag+'"]')
                                 .show();
         }
     );

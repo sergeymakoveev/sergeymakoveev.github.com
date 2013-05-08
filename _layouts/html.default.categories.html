@@ -136,14 +136,17 @@
             var tag = location.hash
                               .substring(1)
                               .replace(/\s+/g, '_');
-            $('[data-tag] > .label').removeClass('active');
+
+            $('[data-tag] > .label')
+                .removeClass('active');
+            $('#main-content [data-tags]')
+                .removeClass('notactive');
+
             if( tag )
                 $('[data-tag="'+tag+'"] > .label')
                     .addClass('active'),
-                $('#main-content [data-tags]')
-                    .addClass('notactive')
-                    .filter('[data-tags~="'+tag+'"]')
-                    .removeClass('notactive');
+                $('#main-content [data-tags]:not([data-tags~="'+tag+'"])')
+                    .addClass('notactive');
         }
     );
 

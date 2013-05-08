@@ -129,9 +129,17 @@
 </div>
 
 <script>
-    $(window).on('popstate load', function(){
+
+    function popstate(){
         var tag = location.hash.substring(1);
+        $('[data-tag] > .label').removeClass('hover');
         if( tag )
             $('[data-tag='+tag+'] > .label').addClass('hover');
-    }); 
+    };
+
+    $(window).on({
+        load: popstate,
+        popstate: popstate
+    });
+
 </script>

@@ -137,10 +137,11 @@
                               .substring(1)
                               .replace(/\s+/g, '_');
             $('[data-tag] > .label').removeClass('active');
-            if( tag ){
-                console.log($('[data-tag="'+tag+'"] > .label'));
-                $('[data-tag="'+tag+'"] > .label').addClass('active');
-            }
+            if( tag )
+                $('[data-tag="'+tag+'"] > .label').addClass('active'),
+                $('[data-tags]').hide()
+                                .filter('[data-tags=~"'+tag+'"]')
+                                .show();
         }
     );
 

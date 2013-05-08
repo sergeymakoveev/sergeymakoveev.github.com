@@ -151,7 +151,7 @@
                 $('[data-tag="'+tag+'"] > .label')
                     .addClass('active'),
                 $('#main-content [data-tags]')
-                    .is('[data-tags~="'+tag+'"]')
+                    .filter('[data-tags~="'+tag+'"]')
                         .removeClass('notactive')
                         .end()
                     .not('.noactive')

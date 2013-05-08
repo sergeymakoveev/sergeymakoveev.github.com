@@ -166,7 +166,10 @@
     );
 
     $(document).on({
-        click:console.log
+        click: function(e){
+            if(!$('[href*="/tags#["]').has(e.target))
+                location.hash='';
+        }
     })
 
 </script>

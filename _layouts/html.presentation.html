@@ -1,5 +1,6 @@
 ---
     layout: html
+    layout-current: presentation
 ---
 <head>
 
@@ -26,7 +27,7 @@
             type="text/javascript"></script>
 
 </head>
-<body>
+<body data-layout="{{ page.layout-current }}">
 
     {% include body.navbar.html %}
     {% include body.qr.html %}

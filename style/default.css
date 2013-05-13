@@ -11,6 +11,13 @@ a { outline: 0 none!important; }
     content: "\f040";
     }
 
+body > .navbar .brand {
+    color:#999;
+    }
+body > .navbar .brand.active {
+    color:#fff;
+    }
+
 body nav .label{
     text-shadow: 0 1px 3px  rgba(0,0,0,.4);
     outline: 0 none;

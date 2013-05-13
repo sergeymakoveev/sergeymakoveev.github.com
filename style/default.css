@@ -83,8 +83,12 @@ body > .container aside > ul.nav:not(.affix) > li.qr + li > a {
     }
 
 @media (min-width: 768px) {
+body > .container aside > section > nav {
+    clear: both;
+    }
 body > .container aside > section > nav > a {
-    display: block;
+    float:left;
+    clear:both;
     }
 }
 

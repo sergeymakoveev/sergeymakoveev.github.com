@@ -1,4 +1,5 @@
-markdown: redcarpet
+#markdown: redcarpet
+markdown: maruku
 redcarpet:
     extensions: ["with_toc_data"]
 permalink: /:year/:month/:title/

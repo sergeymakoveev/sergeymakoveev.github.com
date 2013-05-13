@@ -90,6 +90,7 @@ body > .container aside > ul.nav:not(.affix) > li.qr + li > a {
     }
 
 @media (min-width: 768px) {
+body > .container aside > section,
 body > .container aside > section > nav {
     clear: both;
     }

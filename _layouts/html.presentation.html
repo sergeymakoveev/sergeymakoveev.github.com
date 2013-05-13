@@ -5,12 +5,44 @@
 
     {% include head.html %}
 
+    <link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.3/css/reveal.min.css"
+          rel ="stylesheet" type="text/css" media="screen" / >
+    <link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.3/css/theme/default.css"
+          rel ="stylesheet" type="text/css" media="screen" / >
+
 </head>
 <body>
 
     {% include body.navbar.html %}
 
-    {{ content }}
+    <div class="reveal">
+        <div class="slides">
+
+        {{ content }}
+
+        </div>
+    </div>
+    
+    <script src="lib/js/head.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.3/js/reveal.min.js"></script>
+
+    <script>
+    
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/zoom/linear/none
+    
+    });
+    
+    </script>
 
     {% include body.google-analytics.html %}
 

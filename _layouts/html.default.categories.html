@@ -155,28 +155,7 @@
             $('#main-content [data-tags~="'+tag+'"]')
                 .show();
         });
-/*
-        $('[data-tag] > .label')
-            .removeClass('active');
-        if( tags.length )
-            $('#main-content [data-tags]')
-                .addClass('notactive');
-        else
-            $('#main-content [data-tags]')
-                .removeClass('notactive');
 
-        tags.forEach( function(tag){
-            $('[data-tag="'+tag+'"] > .label')
-                .addClass('active'),
-            $('#main-content [data-tags]')
-                .filter('[data-tags~="'+tag+'"]')
-                    .removeClass('notactive')
-                    .end()
-                .not('.noactive')
-                    .first()
-                    .focus();
-        });
-*/
         $('#main-content > section')
             .show()
             .filter(':not(:has([data-tags]:visible))')

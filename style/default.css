@@ -106,28 +106,28 @@ body > .container nav .label:hover {
 body #main-content [data-tags].notactive:not(:hover){
     opacity:0.1;
     }
-body > .container[data-layout=categories] aside > ul.nav {
+body[data-layout=categories] > .container aside > ul.nav {
     width: 100px;
     }
-body > .container[data-layout=categories] #main-content section:first-child {
+body[data-layout=categories] > .container #main-content section:first-child {
     padding-top:0;
     }
-body > .container[data-layout=categories] #main-content h1 {
+body[data-layout=categories] > .container #main-content h1 {
     color: #999;
     margin-bottom:40px;
     margin-top:0;
     }
-body > .container[data-layout=categories] #main-content article {
+body[data-layout=categories] > .container #main-content article {
     margin-left: 70px;
     margin-bottom: 40px;
     }
-body > .container[data-layout=categories] #main-content article > h2 {
+body[data-layout=categories] > .container #main-content article > h2 {
     margin:0;
     }
-body > .container[data-layout=categories] #main-content article > p {
+body[data-layout=categories] > .container #main-content article > p {
     margin-bottom:5px;
     }
-body > .container[data-layout=categories] #main-content article > time {
+body[data-layout=categories] > .container #main-content article > time {
     color: #333;
     font-size: 31.5px;
     position: absolute;
@@ -136,7 +136,7 @@ body > .container[data-layout=categories] #main-content article > time {
     font-weight: bold;
     margin-top: -12px;
     }
-body > .container[data-layout=categories] #main-content article > time > small {
+body[data-layout=categories] > .container #main-content article > time > small {
     display: block;
     font-size: 40%;
     margin-bottom: 2px;

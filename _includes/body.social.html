@@ -2,6 +2,12 @@
 <!-- <body.social.html> -->
 
 {% assign page-url = site.host | append:page.url %}
+{% if page.title %}
+    {% assign page-title = page.title | append:site.divider | append:site.title | append:site.divider | append:site.author.name.ru %}
+{% else %}
+    {% assign page-title = site.title | append:site.divider | append:site.author.name.ru %}
+{% endif %}
+{% assign page-title = page-title | strip_html %}
 
 <section>
 

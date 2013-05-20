@@ -26,7 +26,7 @@
             scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
 -->
 
-    <a href="http://twitter.com/intent/tweet?url={{ page-url |escape }}&original_referer={{ page-url |escape }}&text={{ page-title | escape }}&via={{ site.author.twitter.name }}">twitter</a><br />
+    <a href="http://twitter.com/intent/tweet?url={{ page-url |escape }}&original_referer={{ page-url |escape }}&text={{ page-title | escape }}&via={{ site.author.twitter.name | replace:'@','' }}">twitter</a><br />
     <a href="http://www.facebook.com/sharer.php?u={{ page-url |escape }}&t={{ page-title | escape }}">facebook</a><br />
     <a href="https://plus.google.com/share?url={{ page-url |escape }}">G+</a><br />
 

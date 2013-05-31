@@ -1,3 +1,22 @@
+/* google-code-prettify */
+
+pre.prettyprint {
+    padding: 1em 0!important;
+}
+
+pre.prettyprint li.L0,
+pre.prettyprint li.L1,
+pre.prettyprint li.L2,
+pre.prettyprint li.L3,
+pre.prettyprint li.L4,
+pre.prettyprint li.L5,
+pre.prettyprint li.L6,
+pre.prettyprint li.L7,
+pre.prettyprint li.L8,
+pre.prettyprint li.L9 {
+        list-style-type: inherit!important;
+    }
+
 a { outline: 0 none!important; }
 
 .icon-category-::before,

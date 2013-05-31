@@ -4,19 +4,12 @@
 <head>
 
     {% include head.html %}
-<!--
-    <link href="https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic"
-          rel ="stylesheet" type="text/css" />
--->
+
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css"
           rel ="stylesheet" type="text/css" media="screen" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"
           rel ="stylesheet" type="text/css" media="screen" />
 
-    <link href="/style/pygment.monokai.css"
-          rel ="stylesheet" type="text/css" media="screen" />
-    <!-- link href="https://raw.github.com/twitter/bootstrap/gh-pages/assets/css/docs.css"
-          rel ="stylesheet" type="text/css" media="screen" / -->
     <link href="/style/docs.css"
           rel ="stylesheet" type="text/css" media="screen" / >
     <link href="/style/default.css"
@@ -26,6 +19,8 @@
 
     <script src ="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
             type="text/javascript"></script>
+
+    {% include body.codehighligter.html %}
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

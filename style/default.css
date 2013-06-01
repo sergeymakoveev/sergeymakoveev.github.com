@@ -13,6 +13,11 @@ pre.prettyprint li.L9 {
         list-style-type: inherit!important;
     }
 
+/* reveal */
+.reveal p {
+    text-align:left;
+}
+
 a { outline: 0 none!important; }
 
 .icon-category-::before,

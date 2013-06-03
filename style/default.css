@@ -15,7 +15,7 @@ pre.prettyprint li.L9 {
 
 /* reveal */
 
-.reveal p {
+.reveal p:not([class^=text-]) {
     text-align:left;
 }
 

@@ -4,14 +4,15 @@
 <head>
 
     {% include head.html %}
-
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css"
+    
+    <link href="//twitter.github.io/bootstrap/assets/css/bootstrap.css"
+          rel ="stylesheet" type="text/css" media="screen" />
+    <link href="//twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css"
+          rel ="stylesheet" type="text/css" media="screen" />
+    <link href="//twitter.github.io/bootstrap/assets/css/docs.css"
           rel ="stylesheet" type="text/css" media="screen" />
     <link href="//fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.min.css"
           rel ="stylesheet" type="text/css" media="screen" />
-
-    <link href="//twitter.github.io/bootstrap/assets/css/docs.css"
-          rel ="stylesheet" type="text/css" media="screen" / >
     <link href="/style/default.css"
           rel ="stylesheet" type="text/css" media="screen" />
     <!-- link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" / -->
@@ -27,7 +28,7 @@
     <![endif]-->
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar" data-layout="{{ page.layout-current }}">
-2
+3
     {% include body.navbar.html %}
 
     {{ content }}

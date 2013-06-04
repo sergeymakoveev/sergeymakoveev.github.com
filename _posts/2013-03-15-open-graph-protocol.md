@@ -37,3 +37,4 @@
 * [Инструмент проверки структурированных данных](http://www.google.com/webmasters/tools/richsnippets)
 * [О микроданных](http://support.google.com/webmasters/bin/answer.py?hl=ru&answer=176035)
 * [Сведения об авторе в результатах поиска](http://support.google.com/webmasters/bin/answer.py?hl=ru&answer=1408986)
+* [Использование разметки schema.org для логотипов организаций](http://habrahabr.ru/company/google/blog/178877)

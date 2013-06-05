@@ -15,6 +15,9 @@ pre.prettyprint li.L9 {
 
 /* reveal */
 
+.reveal {
+    letter-spacing: inherit;
+}
 .reveal p:not([class^=text-]) {
     text-align:left;
 }
@@ -22,11 +25,12 @@ pre.prettyprint li.L9 {
     color: gold;
 }
 .reveal > .slides > section blockquote {
-    border-left: 5px solid #EEEEEE;
-    margin: 0 0 20px;
+    border-left: 5px solid gold;
+    margin: 0 20px 20px;
     padding: 0 0 0 15px;
     width: inherit;
     font-style: inherit;
+    font-size: 80%;
 }
 .reveal > .slides > section blockquote:before,
 .reveal > .slides > section blockquote:after {

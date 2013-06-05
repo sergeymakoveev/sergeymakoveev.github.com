@@ -14,10 +14,13 @@ pre.prettyprint li.L9 {
     }
 
 /* reveal */
+
 .reveal p:not([class^=text-]) {
     text-align:left;
 }
-
+.reveal > .slides > section .highlight {
+    color: gold;
+}
 
 a { outline: 0 none!important; }
 

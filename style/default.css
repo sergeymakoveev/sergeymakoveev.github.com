@@ -21,6 +21,11 @@ pre.prettyprint li.L9 {
 .reveal > .slides > section .highlight {
     color: gold;
 }
+.reveal > .slides > section blockquote {
+    border-left: 5px solid #EEEEEE;
+    margin: 0 0 20px;
+    padding: 0 0 0 15px;
+}
 
 a { outline: 0 none!important; }
 

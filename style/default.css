@@ -26,6 +26,9 @@ pre.prettyprint li.L9 {
     margin: 0 0 20px;
     padding: 0 0 0 15px;
 }
+.reveal > .slides > section pre.prettyprint{
+    font-size:50%;
+}
 
 a { outline: 0 none!important; }
 

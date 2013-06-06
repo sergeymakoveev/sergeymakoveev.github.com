@@ -17,6 +17,7 @@ pre.prettyprint li.L9 {
 
 .reveal {
     letter-spacing: inherit;
+    font-size: 30px;
 }
 .reveal p:not([class^=text-]) {
     text-align:left;
@@ -39,7 +40,9 @@ pre.prettyprint li.L9 {
     content:'';
 }
 .reveal > .slides > section pre.prettyprint{
-    font-size:50%;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a { outline: 0 none!important; }

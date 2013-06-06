@@ -23,6 +23,7 @@ pre.prettyprint li.L9 {
 .reveal >.slides  ul:not([class^=text-]),
 .reveal >.slides  ol:not([class^=text-]) {
     text-align:left;
+    display:block;
 }
 .reveal > .slides > section .highlight {
     color: gold;

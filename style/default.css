@@ -19,7 +19,9 @@ pre.prettyprint li.L9 {
     letter-spacing: inherit;
     font-size: 30px;
 }
-.reveal p:not([class^=text-]) {
+.reveal >.slides > p:not([class^=text-]),
+.reveal >.slides > ul:not([class^=text-]),
+.reveal >.slides > ol:not([class^=text-]) {
     text-align:left;
 }
 .reveal > .slides > section .highlight {

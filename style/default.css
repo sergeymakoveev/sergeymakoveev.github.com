@@ -48,7 +48,7 @@ pre.prettyprint li.L9 {
     overflow-y: auto;
 }
 .reveal > .slides > section pre.prettyprint ol{
-    margin-left:2em;
+    margin-left:3em;
 }
 
 a { outline: 0 none!important; }

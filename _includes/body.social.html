@@ -1,34 +1,8 @@
 
 <!-- <body.social.html> -->
 
-{% assign page-url = site.host | append:page.url %}
-{% if page.title %}
-    {% assign page-title = page.title | append:site.divider | append:site.title | append:site.divider | append:site.author.name.ru %}
-{% else %}
-    {% assign page-title = site.title | append:site.divider | append:site.author.name.ru %}
-{% endif %}
-{% assign page-title = page-title | strip_html %}
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<div class="yashare-auto-init" data-yashareL10n="ru"
+     data-yashareType="icon" data-yashareQuickServices="facebook,twitter,gplus"></div> 
 
-<section>
-
-<!--
-<script src ="//apis.google.com/js/plusone.js"
-            type="text/javascript"></script>
-    <script src ="//platform.twitter.com/widgets.js"
-            type="text/javascript"></script>
-    
-    <iframe src="http://ghbtns.com/github-btn.html?user={{ site.author.github.name }}&type=follow&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="210" height="20"></iframe>
-    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><br />
-    <div class="g-plusone" data-size="medium"></div>
-    <div class="fb-like" data-send="false" data-layout="button_count" data-width="210" data-show-faces="true"></div>
-    <iframe src="//www.facebook.com/plugins/like.php?href={{ site.host | escape }}{{ page.url | escape }}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=27&amp;locale=en_US"
-            scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
--->
-
-    <a href="http://twitter.com/intent/tweet?url={{ page-url |escape }}&original_referer={{ page-url |escape }}&text={{ page-title | escape }}&via={{ site.author.twitter.name | replace:'@','' }}">twitter</a><br />
-    <a href="http://www.facebook.com/sharer.php?u={{ page-url |escape }}&t={{ page-title | escape }}">facebook</a><br />
-    <a href="https://plus.google.com/share?url={{ page-url |escape }}">G+</a><br />
-
-</section>
 <!-- </body.social.html> -->

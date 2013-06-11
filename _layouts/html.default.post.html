@@ -70,20 +70,18 @@ $((function($toc, $content){
     $content = $($content);
 
     var $section,
-        hlevel = $content.children('[id^=toc_]')
-                         .toArray()
-                         .map(function( h ){ return parseInt( h.nodeName.replace(/^h/i, '') ) || 0; })
-                         .sort()
-                         .shift();
+        hquery = 'h1[id], h2[id], h3[id]';
 
     $content
         .children()
         .each(function(){
             var $this = $(this);
-            if( $this.is('[id^=toc_]') &&
-                hlevel == parseInt( this.nodeName.replace(/^h/i, '') ) || 0 )
+            if( $this.is(hquery) )
                 $toc.append(
                     $('<li />')
+                        .addClass( 'toc-' +
+                                   this.nodeName
+                                       .toLowerCase() )
                         .append(
                             $('<a />').attr({ href:'#'+this.id })
                                       .html( $this.html() )
@@ -96,6 +94,7 @@ $((function($toc, $content){
             else if( $section )
                      $section.append($this);
          });
+
 })( 'aside > ul.nav.nav-list',
     '#main-content > article' ));
 </script>

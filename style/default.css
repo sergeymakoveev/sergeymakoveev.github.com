@@ -124,13 +124,13 @@ body > .container aside > ul.nav {
     width: 156px;
     z-index: 1;
     }
-body > .container aside > ul.nav > li {
+body > .container aside > ul.nav > li.qr {
+    text-align:center;
+    }
+body > .container aside > ul.nav > li > a {
     overflow:hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    }
-body > .container aside > ul.nav > li.qr {
-    text-align:center;
     }
 body > .container aside > ul.nav > li.qr > a:hover {
     background-color: inherit;

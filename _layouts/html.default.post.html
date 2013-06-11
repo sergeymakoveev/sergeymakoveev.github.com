@@ -70,7 +70,7 @@ $((function($toc, $content){
     $content = $($content);
 
     var $section,
-        hquery = 'h1[id], h2[id], h3[id]';
+        hquery = 'h1[id], h2[id], h3[id], h4[id], h5[id]';
 
     $content
         .children()
@@ -79,7 +79,7 @@ $((function($toc, $content){
             if( $this.is(hquery) )
                 $toc.append(
                     $('<li />')
-                        .addClass( 'toc-' +
+                        .addClass( 'toc toc-' +
                                    this.nodeName
                                        .toLowerCase() )
                         .append(

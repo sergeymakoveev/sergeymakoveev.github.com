@@ -122,6 +122,7 @@ body > header > .container > .qr-code.affix {
 body > .container aside > ul.nav {
     box-shadow: 0 0  5px  0px #000;
     width: 156px;
+    z-index: 1;
     }
 body > .container aside > ul.nav > li {
     overflow:hidden;

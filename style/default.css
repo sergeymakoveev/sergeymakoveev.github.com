@@ -123,6 +123,11 @@ body > .container aside > ul.nav {
     box-shadow: 0 0  5px  0px #000;
     width: 156px;
     }
+body > .container aside > ul.nav > li {
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
 body > .container aside > ul.nav > li.qr {
     text-align:center;
     }
@@ -131,10 +136,6 @@ body > .container aside > ul.nav > li.qr > a:hover {
     }
 body > .container aside > ul.nav:not(.affix) > li.qr {
     display:none;
-    }
-body > .container aside > ul.nav > li > a {
-    overflow:hidden;
-    text-overflow: ellipsis;
     }
 body > .container aside > ul.nav > li:last-child:first-child > a {
     border-radius: 6px;

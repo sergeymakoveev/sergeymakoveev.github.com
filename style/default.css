@@ -101,7 +101,11 @@ body > header > .container > * {
     margin-right: 150px;
     }
 body > header > .container > .lead:before {
-    content:attr(data-date);
+    content: attr(data-date);
+    margin-left: -80px;
+    display: block;
+    position: absolute;
+    width: 80px;
 }
 body > header > .container > h1 > i {
     position: absolute;

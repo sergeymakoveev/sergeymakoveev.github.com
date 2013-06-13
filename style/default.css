@@ -100,6 +100,9 @@ body > header > .container > * {
     margin-left: 80px;
     margin-right: 150px;
     }
+body > header > .container > .lead:before {
+    content:attr(data-date);
+}
 body > header > .container > h1 > i {
     position: absolute;
     left: 0;

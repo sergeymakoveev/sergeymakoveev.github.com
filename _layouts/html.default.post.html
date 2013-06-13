@@ -44,20 +44,14 @@
 
                 <article>
                     {{ content }}
-                  <p>
-                    Posted in&nbsp;
-                    {% for category in page.categories %}
-                    <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
-                    {% endfor %}
-                  </p>
-                  <p>
-                    <span class="date full-date">
-                      <abbr class="published" title="{{ page.date }}">{{ page.date | date_to_string }}</abbr>
-                    </span>
-                  </p>
                 </article>
 
-                {% include body.disqus.html %}
+                <section>
+                    <abbr class="published" title="{{ page.date }}">{{ page.date | date_to_string }}</abbr>
+                </section>
+                <section>
+                    {% include body.disqus.html %}
+                </section>
 
             </section>
         </div>

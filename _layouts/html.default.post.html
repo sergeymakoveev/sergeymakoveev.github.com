@@ -9,11 +9,11 @@
 
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">
-            <time datetime ="{{ post.date }}"
-                  pubdate  ="{{ post.date }}"
-                  title    ="{{ post.date }}"
+            <time datetime ="{{ page.date }}"
+                  pubdate  ="{{ page.date }}"
+                  title    ="{{ page.date }}"
                   data-date-month="{{ page.date | date:'%b' }}"
-                  data-date-year ="{{ page.date | date:'%Y' }}">{{ post.date | date:'%d' }}</time>
+                  data-date-year ="{{ page.date | date:'%Y' }}">{{ page.date | date:'%d' }}</time>
             {{ page.description }}
         </p>
         <nav role="navigation">

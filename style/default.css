@@ -103,8 +103,8 @@ body > header > .container > * {
     margin-right: 150px;
     }
 body > header > .container > .lead > time {
-    margin-left: -80px;
     display: block;
+    left: 0;
     position: absolute;
     width: 80px;
 }

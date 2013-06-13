@@ -63,7 +63,9 @@ a { outline: 0 none!important; }
 .icon-category-blog::before {
     content: "\f040";
     }
-
+body > .navbar {
+    box-shadow: 0 0 10px #000;
+}
 body > .navbar .brand {
     color:#999;
     }

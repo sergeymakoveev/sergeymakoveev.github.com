@@ -13,9 +13,7 @@
                   pubdate  ="{{ page.date }}"
                   title    ="{{ page.date }}"
                   data-date-month="{{ page.date | date:'%b' }}"
-                  data-date-year ="{{ page.date | date:'%Y' }}">{{ page.date | date:'%d' }}</time>
-            {{ page.description }}
-        </p>
+                  data-date-year ="{{ page.date | date:'%Y' }}">{{ page.date | date:'%d' }}</time>{{ page.description }}</p>
         <nav role="navigation">
             {% for category in page.categories %}
                 <a rel="category"

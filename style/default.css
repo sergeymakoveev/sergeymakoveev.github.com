@@ -106,14 +106,28 @@ body > header > .container > .lead > time {
     display: block;
     left: 0;
     position: absolute;
-    width: 80px;
-}
-body > header > .container > .lead > time:before {
-    content: attr(data-date-month);
-}
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 0.8em;
+    }
+
+body > header > .container > .lead > time:before,
 body > header > .container > .lead > time:after {
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    font-size: 0.5em;
+    padding: 0 5px;
+    }
+body > header > .container > .lead > time:before {
+    border-radius: 5px 5px 0 0;
+    content: attr(data-date-month);
+    margin-bottom: 8px;
+    }
+body > header > .container > .lead > time:after {
+    border-radius: 0 0 5px 5px;
     content: attr(data-date-year);
-}
+    margin-top: 5px;
+    }
 body > header > .container > h1 > i {
     position: absolute;
     left: 0;

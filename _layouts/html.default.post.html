@@ -8,7 +8,7 @@
         {% include body.qr.html %}
 
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
-        <p class="lead" data-date="{{ page.date }}">{{ page.description }}</p>
+        <p class="lead" data-date="{{ page.date | date:'%d %m %Y' }}">{{ page.description }}</p>
         <nav role="navigation">
             {% for category in page.categories %}
                 <a rel="category"

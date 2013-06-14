@@ -10,6 +10,9 @@
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
         <p class="lead">{{ page.description }}</p>
         <nav role="navigation">
+            <time datetime ="{{ page.date }}"
+                  pubdate  ="{{ page.date }}"
+                  title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
             {% for category in page.categories %}
                 <a rel="category"
                    href="/{{ category }}"
@@ -23,9 +26,6 @@
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
             {% endfor %}
         </nav>
-        <time datetime ="{{ page.date }}"
-              pubdate  ="{{ page.date }}"
-              title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
     </div>
 </header>
 

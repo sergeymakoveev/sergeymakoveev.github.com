@@ -76,6 +76,7 @@ $((function($toc, $content){
             if( $this.is(hquery) )
                 $toc.append(
                     $('<li />')
+                        .attr({ title:$this.text() })
                         .addClass( 'toc toc-' +
                                    this.nodeName
                                        .toLowerCase() )

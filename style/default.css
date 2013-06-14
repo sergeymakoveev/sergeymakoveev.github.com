@@ -98,7 +98,7 @@ body .label.label-inverse{
 body > header > .container {
     min-height:150px;
 }
-body > header > .container > * {
+body > header > .container > *:not(.qr-code) {
     margin-left: 80px!important;
     margin-right: 150px!important;
     }

@@ -99,8 +99,8 @@ body > header > .container {
     min-height:150px;
 }
 body > header > .container > * {
-    margin-left: 80px;
-    margin-right: 150px;
+    margin-left: 80px!important;
+    margin-right: 150px!important;
     }
 body > header > .container > .lead > time {
     display: block;

@@ -12,7 +12,7 @@
         <nav role="navigation">
             <time datetime ="{{ page.date }}"
                   pubdate  ="{{ page.date }}"
-                  title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
+                  title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}&nbsp;:&nbsp;</time>
             {% for category in page.categories %}
                 <a rel="category"
                    href="/{{ category }}"

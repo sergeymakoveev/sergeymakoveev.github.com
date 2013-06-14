@@ -119,12 +119,12 @@ body > header > .container > .lead > time:after {
     padding: 0 5px;
     }
 body > header > .container > .lead > time:before {
-    border-radius: 5px 5px 0 0;
+    border-radius: 0 0 5px 5px;
     content: attr(data-date-month);
     margin-bottom: 8px;
     }
 body > header > .container > .lead > time:after {
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px 5px 0 0;
     content: attr(data-date-year);
     margin-top: 5px;
     }

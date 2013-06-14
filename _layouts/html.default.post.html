@@ -8,12 +8,7 @@
         {% include body.qr.html %}
 
         <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
-        <p class="lead">
-            <time datetime ="{{ page.date }}"
-                  pubdate  ="{{ page.date }}"
-                  title    ="{{ page.date }}"
-                  data-date-month="{{ page.date | date:'%b' }}"
-                  data-date-year ="{{ page.date | date:'%Y' }}">{{ page.date | date:'%d' }}</time>{{ page.description }}</p>
+        <p class="lead">{{ page.description }}</p>
         <nav role="navigation">
             {% for category in page.categories %}
                 <a rel="category"
@@ -28,6 +23,9 @@
                    title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
             {% endfor %}
         </nav>
+        <time datetime ="{{ page.date }}"
+              pubdate  ="{{ page.date }}"
+              title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
     </div>
 </header>
 

@@ -102,32 +102,37 @@ body > header > .container > *:not(.qr-code) {
     margin-left: 80px!important;
     margin-right: 150px!important;
     }
+
 body > header > .container > .lead > time {
     display: block;
     left: 0;
     position: absolute;
     text-align: center;
     font-size: 1.3em;
+    width: 50px;
     line-height: 0.8em;
+    background-color: #fff;
+    padding: 5px 0 3px;
+    color: #000;
     }
 
 body > header > .container > .lead > time:before,
 body > header > .container > .lead > time:after {
-    background-color: rgba(255,255,255,0.5);
     display: block;
     font-size: 0.5em;
-    padding: 0 5px;
+    position: absolute;
+    width: 50px;
+    color: #fff;
     }
 body > header > .container > .lead > time:before {
-    border-radius: 0 0 5px 5px;
     content: attr(data-date-month);
-    margin-bottom: 8px;
+    top: -24px;
     }
 body > header > .container > .lead > time:after {
-    border-radius: 5px 5px 0 0;
     content: attr(data-date-year);
     margin-top: 5px;
     }
+
 body > header > .container > h1 > i {
     position: absolute;
     left: 0;

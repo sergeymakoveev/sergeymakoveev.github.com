@@ -82,13 +82,13 @@ body nav .label{
     text-shadow: 0 1px 3px  rgba(0,0,0,.4);
     outline: 0 none;
     }
-body nav .label:not(:active):target,
-body nav .label:not(:active):hover,
-body nav .label:not(:active).hover,
-body nav .label:not(:active).active {
+body nav > a > .label:not(:active):target,
+body nav > a > .label:not(:active):hover,
+body nav > a > .label:not(:active).hover,
+body nav > a > .label:not(:active).active {
     background-color:#0088cc;
     }
-body > header nav .label:hover {
+body > header nav > a > .label:hover {
     box-shadow: 0 0 0 1px #fff;
     }
 body .label.label-inverse{
@@ -166,7 +166,7 @@ body > .container aside > section > nav > a {
     }
 }
 
-body > .container nav .label:hover {
+body > .container nav > a > .label:hover {
     box-shadow: 0 0 1px 0 #000;
     }
 

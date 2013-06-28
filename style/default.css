@@ -64,7 +64,7 @@ a { outline: 0 none!important; }
     content: "\f040";
     }
 body > .navbar {
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 5px #000;
 }
 body > .navbar .brand {
     color:#999;

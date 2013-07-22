@@ -46,20 +46,17 @@
 
         </aside>
         <div class="span10">
-            <section id="main-content">
+            <main id="main-content" role="main">
 
                 <article>
                     {{ content }}
                 </article>
 
                 <section>
-                    <abbr class="published" title="{{ page.date }}">{{ page.date | date_to_string }}</abbr>
-                </section>
-                <section>
                     {% include body.disqus.html %}
                 </section>
 
-            </section>
+            </main>
         </div>
     </div>
 </div>

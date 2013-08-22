@@ -2,8 +2,8 @@
 <!-- <body.qr.html> -->
 <a class="qr-code"
    href="{{ page.url }}"
-   title="QR-code for this page: {{ page.title | strip_html }} ({{ site.host }}{{ page.url }})"
+   title="QR-code for this page: {{ page.title | strip_html }} ({{ site.meta.host }}{{ page.url }})"
    rel="bookmark" >
-    <img src="{{ site.services.qrcode }}{{ site.host }}{{ page.url | escape }}" />
+    <img src="{{ site.meta.services.qrcode }}{{ site.meta.host }}{{ page.url | escape }}" />
 </a>
 <!-- </body.qr.html> -->

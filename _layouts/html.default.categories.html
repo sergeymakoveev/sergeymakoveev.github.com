@@ -3,7 +3,6 @@
     layout-current: categories
 ---
 
-{% assign toc  = ',' %}
 {% assign sections = '' %}
 {% assign section  = '' %}
 {% assign post_year  = '' %}
@@ -24,28 +23,31 @@
     {% if page.categories == empty or post-allow %}
         {% capture post_content %}
             <article class="post" data-tags="{{ post.tags | join:',' | replace:' ','_' | replace:',',' ' }}">
-                <time datetime ="{{ post.date }}"
+                <h2><time datetime ="{{ post.date }}"
                       pubdate  ="{{ post.date }}"
-                      title    ="{{ post.date }}"><small>{{ post.date | date:'%b' }}</small>{{ post.date | date:'%d' }}</time>
-                <h2><a class="title"
+                      title    ="{{ post.date }}"><small>{{ post.date | date:'%b' }}</small><br />{{ post.date | date:'%d' }}</time>
+                    <a class="title"
                        rel  ="bookmark"
                        href ="{{ post.url }}"
-                       title="{{ post.title }}">{{ post.title }}</a></h2>
-                {% if post.description %}
-                    <p>{{ post.description }}</p>
-                {% endif %}
+                       title="{{ post.title }}">{{ post.title }}</a><br />
+                    {% if post.description %}
+                        <small>{{ post.description }}</small>
+                    {% endif %}
+                </h2>
                 <nav role="navigation">
                     {% for category in post.categories %}
                         <a rel  ="category"
+                           class="label label-default"
                            href ="/{{ category }}"
-                           title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
+                           title="category: {{ category }}"><i class='icon-bookmark'></i>&nbsp;{{ category }}</a>
                     {% endfor %}
                     {% assign post-tags-sorted = post.tags | sort %}
                     {% for tag in post-tags-sorted %}
                         <a rel="tag"
+                           class="label label-default"
                            data-tag="{{ tag | replace:' ','_' }}"
                            href="/tags#[{{ tag }}]"
-                           title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
+                           title="tag: {{ tag }}"><i class='icon-tag'></i>&nbsp;{{ tag }}</a>
                     {% endfor %}
                 </nav>
             </article>
@@ -61,12 +63,6 @@
         {% if post-append %}
             {% assign section = section | append:post_content %}
         {% endif %}
-
-        {% unless toc contains post_year %}
-            {% unless post_content == false %}
-                {% assign toc = toc | append:',' | append:post_year %}
-            {% endunless %}
-        {% endunless %}
 
         {% if post-append == false or forloop.last %}
 
@@ -96,35 +92,29 @@
 
 {% endfor %}
 
-<header class="jumbotron subhead" id="overview">
+<header class="page-header">
     <div class="container">
-        <h1><i class="icon-category-{{ page.categories[0] }}"></i><a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
-        <p class="lead">{{ page.description }}</p>
+        <h1>
+            <i class="icon-category-{{ page.categories[0] }}"></i>&nbsp;<a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a><br/>
+            <small>{{ page.description }}</small>
+        </h1>
     </div>
 </header>
 
-<div class="container" data-layout="{{ page.layout-current }}">
+<div class="container">
     <div class="row">
-        <aside class="span2 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav" role="navigation" data-spy="affix" data-offset-top="200">
-                {% assign toc = toc | replace:',,','' | split:',' %}
-                {% for t in toc %}
-                    <li><a href="#toc-{{ t }}"><i class="icon-chevron-right"></i> {{ t }}</a></li>
-                {% endfor %}
-            </ul>
+        <aside class="col-md-2">
 
-            {% include body.social.html %}
             {% include body.tags.html %}
+            {% include body.social.html %}
 
         </aside>
-        <div class="span10">
-            <main id="main-content" role="main">
+        <main role="main" class="col-md-9 col-md-offset-1">
 
-                {{ content }}
-                {{ sections }}
+            {{ content }}
+            {{ sections }}
 
-            </main>
-        </div>
+        </main>
     </div>
 </div>
 

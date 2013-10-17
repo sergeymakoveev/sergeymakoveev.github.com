@@ -1,3 +1,5 @@
+exclude: [ Gemfile, Gemfile.lock, Procfile, vendor]
+
 name: sergey
 markdown: kramdown
 pygments: false

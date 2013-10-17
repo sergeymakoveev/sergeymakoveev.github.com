@@ -51,7 +51,8 @@ pre.prettyprint li.L9 {
     margin-left:2.5em;
 }
 
-a { outline: 0 none!important; }
+
+/* site */
 
 .icon-category-::before,
 .icon-category-home::before {
@@ -63,16 +64,62 @@ a { outline: 0 none!important; }
 .icon-category-blog::before {
     content: "\f040";
     }
-body > .navbar {
-    box-shadow: 0 0 5px #000;
-}
-body > .navbar .brand {
-    color:#999;
+
+.label.active {
+    background-color: #428BCA!important;
     }
-body > .navbar .brand.active {
-    color:#fff;
+.label[rel=category]:not(:hover) {
+    background-color: #333;
     }
 
+a { outline: 0 none!important; }
+
+body > nav.navbar .navbar-brand.navbar-right > a {
+    text-decoration: none;
+    }
+
+body aside > nav {
+    clear: both;
+    padding-top: 7.5em;
+    }
+body aside > nav > .label{
+    clear: both;
+    float: right;
+    margin-bottom: 0.3em;
+    }
+
+body aside > section.yashare{
+    clear: both;
+    padding: 2em 0;
+    text-align: right;
+    }
+
+
+body > footer {
+    padding-bottom: 1em;
+    padding-top: 5em;
+    }
+
+body > footer a {
+    text-decoration: none !important;
+    }
+
+/* categories */
+
+body[data-layout=categories] main > section
+                                  + section {
+    margin-top: 6em;
+    }
+body[data-layout=categories] main > section > article {
+    margin-top: 3em;
+    }
+body[data-layout=categories] main > section > article time {
+    margin-left: -50px;
+    position: absolute;
+    text-align: center;
+    }
+
+/*
 body[data-layout=presentation] > .qr-code {
     position:fixed;
     right:0;
@@ -117,13 +164,6 @@ body > header > .container > .qr-code {
 body > header > .container > .qr-code:not(.affix) {
     position:absolute;
     }
-/*
-body > header > .container > .qr-code.affix {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    right:10px;
-    top: 50px;
-    }
-*/
 
 body > .container aside > ul.nav {
     box-shadow: 0 0  5px  0px #000;
@@ -194,104 +234,8 @@ body[data-layout=categories] > .container #main-content article > h2 {
 body[data-layout=categories] > .container #main-content article > p {
     margin-bottom:5px;
     }
-body[data-layout=categories] > .container #main-content article > time {
-    color: #333;
-    font-size: 31.5px;
-    position: absolute;
-    margin-left: -70px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: -12px;
-    }
-body[data-layout=categories] > .container #main-content article > time > small {
-    display: block;
-    font-size: 40%;
-    margin-bottom: 2px;
-    }
 
 body > footer a:hover {
     text-decoration:none
     }
-/*
-#main-content h1 {
-  font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 2.8em;
-  letter-spacing: -1px;
-  color: #474747;
-} 
-
-#main-content h1:before {
-  content: "/";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -0.9em;
-}
-
-#main-content h2 {
-  font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #474747;
-} 
-#main-content h2:before {
-  content: "//";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -1.5em;
-}
-
-#main-content h3 {
-  font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  color: #474747;
-} 
- 
-#main-content h3:before {
-  content: "///";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2em;
-}
-
-#main-content h4 {
-  font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 15px;
-  font-weight: bold;
-  color: #474747;
-} 
-
-h4:before {
-  content: "////";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2.8em;
-}
-
-#main-content h5 {
-  font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 14px;
-  color: #474747;
-} 
-h5:before {
-  content: "/////";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -3.2em;
-}
-
-#main-content h6 {
-  font-family: 'Neucha', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: .8em;
-  color: #474747;
-} 
-h6:before {
-  content: "//////";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -3.7em;
-}
 */

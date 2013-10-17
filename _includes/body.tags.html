@@ -6,26 +6,25 @@
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
-<section>
+<nav role="navigation">
+    {% for tag in tags %}
+        {% assign t = tag | split:','  %}
+        <a rel="bookmarks"
+           class="label label-default {{ t[2] }}"
+           data-tag="{{ t[0] | replace:' ','_' }}"
+           href="/tags#[{{ t[0] }}]"
+           title="tag: {{ t[0] }}"><i class='icon-tag'></i>&nbsp;{{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</a>
+    {% endfor %}
+</nav>
 
-    <nav role="navigation">
-        {% for tag in tags %}
-            {% assign t = tag | split:','  %}
-            <a rel="bookmarks"
-               data-tag="{{ t[0] | replace:' ','_' }}"
-               href="/tags#[{{ t[0] }}]"
-               title="tag: {{ t[0] }}"><span class="label {{ t[2] }}"><i class='icon-tag'></i> {{ t[0] }}{% unless t[1] == '1' %} ({{ t[1] }}){% endunless %}</span></a>
-        {% endfor %}
-    </nav>
-
-    <script>
-        $(function(){
-            $(document.body).on( 'mouseover mouseout',
-                                 'a[data-tag] > .label',
-                                 function(e){ $('a[data-tag="'+$(this).parent().data('tag')+'"] > .label')
-                                                 .toggleClass('hover', e.type == 'mouseover'); }
-                                );
-        });
-    </script>
-
-</section>
+<script>
+    $(function(){
+        var $tags = $('a.label[data-tag]')
+                        .on( 'mouseover mouseout',
+                             function(e){
+                                 $tags.filter('[data-tag="'+$(this).data('tag')+'"]')
+                                      .toggleClass('active', e.type == 'mouseover');
+                                 }
+                            );
+    });
+</script>

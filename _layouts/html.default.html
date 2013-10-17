@@ -4,23 +4,17 @@
 <head>
 
     {% include head.html %}
-    
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css"
           rel ="stylesheet" type="text/css" media="screen" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css"
-          rel ="stylesheet" type="text/css" media="screen" />
-    <link href="//twitter.github.io/bootstrap/assets/css/docs.css"
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
           rel ="stylesheet" type="text/css" media="screen" />
 
     <link href="/style/default.css"
           rel ="stylesheet" type="text/css" media="screen" />
-    <!-- link href="/stylesheets/stylesheet.css" rel="stylesheet" type="text/css" media="screen" / -->
-    <!-- link href="/stylesheets/print.css" rel="stylesheet" type="text/css" media="print" / -->
 
     <script src ="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
             type="text/javascript"></script>
-
-    {% include body.codehighlighter.html %}
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,20 +26,41 @@
 
     {{ content }}
 
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"
-            type="text/javascript"></script>
-
-    {% include body.google-analytics.html %}
-
-    <footer class="footer">
-        <div class="container">
-            <a href="{{ site.meta.author.github.url }}"   ><i class="icon-2x icon-github-sign"      title="GitHub: {{ site.meta.author.github.name }}"></i></a>
-            <a href="{{ site.meta.author.google.url }}"   ><i class="icon-2x icon-google-plus-sign" title="G+: {{ site.meta.author.google.name }}"></i></a>
-            <a href="{{ site.meta.author.facebook.url }}" ><i class="icon-2x icon-facebook-sign"    title="Facebook: {{ site.meta.author.facebook.name }}"></i></a>
-            <a href="{{ site.meta.author.twitter.url }}"  ><i class="icon-2x icon-twitter-sign"     title="Twitter: {{ site.meta.author.twitter.name }}"></i></a>
-            <a href="{{ site.meta.author.url }}"          ><i class="icon-2x icon-globe"            title="Site: {{ site.meta.author.url }}"></i></a>
-            <a href="mailto:{{ site.meta.author.email }}" ><i class="icon-2x icon-envelope"         title="Email: {{ site.meta.author.email }}"></i></a>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-9">
+                <a class="icon-2x icon-github-sign"
+                   href="{{ site.meta.author.github.url }}"
+                   title="GitHub: {{ site.meta.author.github.name }}"></a>
+                <a class="icon-2x icon-google-plus-sign"
+                   href="{{ site.meta.author.google.url }}"
+                   title="G+: {{ site.meta.author.google.name }}"></a>
+                <a class="icon-2x icon-facebook-sign"
+                   href="{{ site.meta.author.facebook.url }}"
+                   title="Facebook: {{ site.meta.author.facebook.name }}"></a>
+                <a class="icon-2x icon-twitter-sign"
+                   href="{{ site.meta.author.twitter.url }}"
+                   title="Twitter: {{ site.meta.author.twitter.name }}"></a>
+                <a class="icon-2x icon-globe"
+                   href="{{ site.meta.author.url }}"
+                   title="Site: {{ site.meta.author.url }}"></a>
+                <a class="icon-2x icon-envelope"
+                   href="mailto:{{ site.meta.author.email }}"
+                   title="Email: {{ site.meta.author.email }}"></a>
+            </div>
         </div>
     </footer>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
+            type="text/javascript"></script>
+
+    {% include body.codehighlighter.html %}
+    {% include body.google-analytics.html %}
+
+    <script>
+    <!--
+    $('*[data-toggle="tooltip"]').tooltip();
+    //-->
+    </script>
 
 </body>

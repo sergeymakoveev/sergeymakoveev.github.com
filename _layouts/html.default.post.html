@@ -45,19 +45,17 @@
             {% include body.tags.html %}
 
         </aside>
-        <div class="span10">
-            <main id="main-content" role="main">
+        <main class="span10" role="main">
 
-                <article>
-                    {{ content }}
-                </article>
+            <article>
+                {{ content }}
+            </article>
 
-                <section>
-                    {% include body.disqus.html %}
-                </section>
+            <section>
+                {% include body.disqus.html %}
+            </section>
 
-            </main>
-        </div>
+        </main>
     </div>
 </div>
 <script>

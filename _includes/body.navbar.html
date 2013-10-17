@@ -1,37 +1,63 @@
 
-<!-- <body.navbar.html> -->
+<!-- body.navbar.html -->
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-inner">
-        <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="{{ site.meta.author.url }}"><img src="{{ site.meta.logo }}" style="height: 50px;" /></a>
+    </div>
 
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-            <a class="brand active" href="{{ site.meta.author.url }}"          >{{ site.meta.title }}</a>
-            <a class="brand" href="{{ site.meta.author.github.url }}"   ><i class="icon-github-sign"      title="GitHub: {{ site.meta.author.github.name }}"></i></a>
-            <a class="brand" href="{{ site.meta.author.google.url }}"   ><i class="icon-google-plus-sign" title="G+: {{ site.meta.author.google.name }}"></i></a>
-            <a class="brand" href="{{ site.meta.author.facebook.url }}" ><i class="icon-facebook-sign"    title="Facebook: {{ site.meta.author.facebook.name }}"></i></a>
-            <a class="brand" href="{{ site.meta.author.twitter.url }}"  ><i class="icon-twitter-sign"     title="Twitter: {{ site.meta.author.twitter.name }}"></i></a>
-            <a class="brand" href="mailto:{{ site.meta.author.email }}" ><i class="icon-envelope"         title="Email: {{ site.meta.author.email }}"></i></a>
+        <ul class="nav navbar-nav">
 
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    <li {% if !page.categories == empty %}class='active'{% endif %}>
-                            <a href="/" rel="home"><i class="icon-large icon-home" title="Home"></i></a>
-                    </li>
-                    {% for category in site.categories %}
-                        {% assign c-size = page.categories | size %}
-                        {% assign c-size-strip = page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size %}
-                        <li title="category: {{ category[0] }}"
-                            {% if c-size != c-size-strip %}class='active'{% endif %}><a href="/{{ category[0] }}"><i class="icon-large icon-category-{{ category[0] }}"></i> {{ category[0] | capitalize }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
+            <li title="Home" data-toggle="tooltip" data-placement="bottom"
+                {% if !page.categories == empty %}class='active'{% endif %}>
+                    <a href="/"
+                       rel="home"
+                       class="icon-2x icon-home"></a>
+            </li>
 
-        </div>
+            {% for category in site.categories %}
+                {% assign c-size = page.categories | size %}
+                {% assign c-size-strip = page.categories | join:',' | replace: category[0],',' | replace: ',,','' | split:',' | size %}
+                <li title="{{ category[0] | capitalize }}"
+                    data-toggle="tooltip" data-placement="bottom"
+                    {% if c-size != c-size-strip %}class='active'{% endif %}><a href="/{{ category[0] }}"
+                                                                                class="icon-2x icon-category-{{ category[0] }}"></a></li>
+            {% endfor %}
+
+            <li><a class="icon-2x icon-github-sign"
+                   href="{{ site.meta.author.github.url }}"
+                   data-toggle="tooltip" data-placement="bottom"
+                   title="GitHub: {{ site.meta.author.github.name }}"></a></li>
+            <li><a class="icon-2x icon-google-plus-sign"
+                   href="{{ site.meta.author.google.url }}"
+                   data-toggle="tooltip" data-placement="bottom"
+                   title="G+: {{ site.meta.author.google.name }}"></a></li>
+            <li><a class="icon-2x icon-facebook-sign"
+                   href="{{ site.meta.author.facebook.url }}"
+                   data-toggle="tooltip" data-placement="bottom"
+                   title="Facebook: {{ site.meta.author.facebook.name }}"></a></li>
+            <li><a class="icon-2x icon-twitter-sign"
+                   href="{{ site.meta.author.twitter.url }}"
+                   data-toggle="tooltip" data-placement="bottom"
+                   title="Twitter: {{ site.meta.author.twitter.name }}"></a></li>
+            <li><a class="icon-2x icon-globe"
+                   href="{{ site.meta.author.url }}"
+                   data-toggle="tooltip" data-placement="bottom"
+                   title="Site: {{ site.meta.author.url }}"></a></li>
+            <li><a class="icon-2x icon-envelope"
+                   href="mailto:{{ site.meta.author.email }}"
+                   data-toggle="tooltip" data-placement="bottom"
+                   title="Email: {{ site.meta.author.email }}"></a></li>
+
+        </ul>
     </div>
 </nav>
-<!-- </body.navbar.html> -->
+
+<!-- /body.navbar.html -->

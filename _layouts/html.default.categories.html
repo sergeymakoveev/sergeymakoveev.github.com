@@ -8,6 +8,7 @@
 {% assign post_year  = '' %}
 
 {% for post in site.posts %}
+
     {% assign post-allow = false %}
     {% for category in page.categories %}
         {% if post.categories contains category %}
@@ -74,7 +75,7 @@
                 </section>
             {% endcapture %}
 
-            {% if forloop.last and post_content %}
+            {% if forloop.last and post_content and post-append == false %}
                 {% capture sections %}
                     {{ sections }}
                     <section id="toc-{{ post_year }}">

@@ -134,20 +134,20 @@
         $('[data-tag] > .label')
             .removeClass('active');
         if( tags.length )
-            $('#main-content [data-tags]')
+            $('main [data-tags]')
                 .hide();
         else
-            $('#main-content [data-tags]')
+            $('main [data-tags]')
                 .show();
 
         tags.forEach( function(tag){
             $('[data-tag="'+tag+'"] > .label')
                 .addClass('active'),
-            $('#main-content [data-tags~="'+tag+'"]')
+            $('main [data-tags~="'+tag+'"]')
                 .show();
         });
 
-        $('#main-content > section')
+        $('main > section')
             .show()
             .filter(':not(:has([data-tags]:visible))')
                 .hide()

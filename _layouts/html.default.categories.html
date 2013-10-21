@@ -18,7 +18,7 @@
 
     {% assign post_year_prev = post_year %}
     {% assign post_year = post.date | date:'%Y' %}
-    {% assign post_content = false %}
+    {% assign post_content = '' %}
     {% assign post-append  = false %}
 
     {% if page.categories == empty or post-allow %}

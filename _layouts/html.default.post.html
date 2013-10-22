@@ -8,7 +8,10 @@
             {% include body.qr.html %}
         </div>
         <div class="col-md-9 col-md-offset-1">
-            <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
+            <h1>
+                <i class="icon-category-{{ page.categories[0] }}"></i>
+                <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a>
+            </h1>
             <p>{{ page.description }}</p>
             <nav role="navigation">
 

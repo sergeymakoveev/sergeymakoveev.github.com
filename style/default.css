@@ -86,7 +86,8 @@ body > header.page-header {
     padding-bottom: 18px;
     }
 body > header h1 > i{
-    margin-left: -44px;
+    margin-left: -45px;
+    position: absolute;
     }
 body > header .qr-code {
     position: absolute;

@@ -2,50 +2,52 @@
     layout: html.default
     layout-current: post
 ---
-<header class="jumbotron subhead" id="overview">
-    <div class="container">
+<header class="page-header container">
+    <div class="row">
+        <div class="col-md-2">
+            {% include body.qr.html %}
+        </div>
+        <div class="col-md-9 col-md-offset-1">
+            <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
+            <p>{{ page.description }}</p>
+            <nav role="navigation">
 
-        {% include body.qr.html %}
+                <span class="label label-primary">
+                    <i class='icon-time'></i>
+                    <time datetime ="{{ page.date }}"
+                          pubdate  ="{{ page.date }}"
+                          title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
+                </span>&nbsp;
 
-        <h1><i class="icon-category-{{ page.categories[0] }}"></i> <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a></h1>
-        <p class="lead">{{ page.description }}</p>
-        <nav role="navigation">
-            <span class="label label-inverse">
-                <i class='icon-time'></i>
-                <time datetime ="{{ page.date }}"
-                      pubdate  ="{{ page.date }}"
-                      title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
-            </span>
-            {% for category in page.categories %}
-                <a rel="category"
-                   href="/{{ category }}"
-                   title="category: {{ category }}"><span class="label label-inverse"><i class='icon-bookmark'></i> {{ category }}</span></a>
-            {% endfor %}
-            {% assign tags = page.tags | sort %}
-            {% for tag in tags %}
-                <a rel="tag"
-                   data-tag="{{ tag }}"
-                   href="/tags#[{{ tag }}]"
-                   title="tag: {{ tag }}"><span class="label"><i class='icon-tag'></i> {{ tag }}</span></a>
-            {% endfor %}
-        </nav>
+                {% for category in page.categories %}
+                    <a rel="category"
+                       class="label label-default"
+                       href="/{{ category }}"
+                       title="category: {{ category }}"><i class='icon-bookmark'></i> {{ category }}</a>
+                {% endfor %}
+                {% assign tags = page.tags | sort %}
+                {% for tag in tags %}
+                    <a rel="tag"
+                       class="label label-default"
+                       data-tag="{{ tag }}"
+                       href="/tags#[{{ tag }}]"
+                       title="tag: {{ tag }}"><i class='icon-tag'></i> {{ tag }}</a>
+                {% endfor %}
+
+            </nav>
+        </div>
     </div>
 </header>
 
 <div class="container">
     <div class="row">
-        <aside class="span2 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="300">
-                <li class="qr">
-                    {% include body.qr.html %}
-                </li>
-            </ul>
+        <aside class="col-md-2">
 
             {% include body.social.html %}
             {% include body.tags.html %}
 
         </aside>
-        <main class="span10" role="main">
+        <main class="col-md-9 col-md-offset-1" role="main">
 
             <article>
                 {{ content }}

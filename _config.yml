@@ -45,3 +45,4 @@ meta:
     services:
         google-analytics: 111111
         qrcode: //chart.googleapis.com/chart?chs=150x150&cht=qr&chl=
+        disqus: sergeymakoveev

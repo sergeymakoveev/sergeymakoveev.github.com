@@ -64,6 +64,9 @@ pre.prettyprint li.L9 {
 .icon-category-blog::before {
     content: "\f040";
     }
+.icon-category-examples::before {
+    content: "\f15b";
+    }
 
 .label.active {
     background-color: #428BCA!important;
@@ -78,26 +81,41 @@ body > nav.navbar .navbar-brand.navbar-right > a {
     text-decoration: none;
     }
 
-body aside > nav {
-    clear: both;
-    padding-top: 7.5em;
+body > header.page-header {
+    margin-top: 51px;
+    padding-bottom: 18px;
     }
-body aside > nav > .label{
-    clear: both;
-    float: right;
-    margin-bottom: 0.3em;
+body > header h1 > i{
+    margin-left: -44px;
+    }
+body > header .qr-code {
+    position: absolute;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: 0 none;
     }
 
+body aside > nav {
+    text-align: right;
+    padding-top: 7.5em;
+    }
 body aside > section.yashare{
     clear: both;
     padding: 2em 0;
     text-align: right;
     }
 
+body main * {
+    word-wrap: break-word;
+    }
+body main > section > #disqus_thread {
+    margin-top: 7em;
+    }
 
 body > footer {
     padding-bottom: 1em;
     padding-top: 5em;
+    text-align: right;
     }
 
 body > footer a {

@@ -1,4 +1,4 @@
-exclude: [ Gemfile, Gemfile.lock, Procfile, vendor]
+exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, config.ru, Rakefile, readme.md]
 
 name: sergey
 markdown: kramdown

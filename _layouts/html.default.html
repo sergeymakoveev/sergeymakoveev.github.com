@@ -27,27 +27,9 @@
     {{ content }}
 
     <footer class="container">
-        <a class="icon-2x icon-github-sign"
-           href="{{ site.meta.author.github.url }}"
-           title="GitHub: {{ site.meta.author.github.name }}"></a>
-        <a class="icon-2x icon-bitbucket-sign"
-           href="{{ site.meta.author.bitbucket.url }}"
-           title="Bitbucket: {{ site.meta.author.bitbucket.name }}"></a>
-        <a class="icon-2x icon-google-plus-sign"
-           href="{{ site.meta.author.google.url }}"
-           title="G+: {{ site.meta.author.google.name }}"></a>
-        <a class="icon-2x icon-facebook-sign"
-           href="{{ site.meta.author.facebook.url }}"
-           title="Facebook: {{ site.meta.author.facebook.name }}"></a>
-        <a class="icon-2x icon-twitter-sign"
-           href="{{ site.meta.author.twitter.url }}"
-           title="Twitter: {{ site.meta.author.twitter.name }}"></a>
-        <a class="icon-2x icon-globe"
-           href="{{ site.meta.author.url }}"
-           title="Site: {{ site.meta.author.url }}"></a>
-        <a class="icon-2x icon-envelope"
-           href="mailto:{{ site.meta.author.email }}"
-           title="Email: {{ site.meta.author.email }}"></a>
+
+    {% include body.links.html %}
+
     </footer>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"

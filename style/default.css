@@ -59,7 +59,7 @@ pre.prettyprint li.L9 {
     content: "\f015";
     }
 .icon-category-presentations::before {
-    content: "\f108";
+    content: "\f152";
     }
 .icon-category-blog::before {
     content: "\f040";
@@ -122,6 +122,7 @@ body > footer > .links {
     right: 14px;
     }
 body > footer > .links > a {
+    display: block;
     text-decoration: none !important;
     }
 

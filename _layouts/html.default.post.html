@@ -9,14 +9,14 @@
         </div>
         <div class="col-md-9 col-md-offset-1">
             <h1>
-                <i class="icon-category-{{ page.categories[0] }}"></i>
+                <i class="fa icon-category-{{ page.categories[0] }}"></i>
                 <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a>
             </h1>
             <p>{{ page.description }}</p>
             <nav role="navigation">
 
                 <span class="label label-primary">
-                    <i class='icon-time'></i>
+                    <i class='fa fa-time'></i>
                     <time datetime ="{{ page.date }}"
                           pubdate  ="{{ page.date }}"
                           title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
@@ -26,7 +26,7 @@
                     <a rel="category"
                        class="label label-default"
                        href="/{{ category }}"
-                       title="category: {{ category }}"><i class='icon-bookmark'></i> {{ category }}</a>
+                       title="category: {{ category }}"><i class='fa fa-bookmark'></i> {{ category }}</a>
                 {% endfor %}
                 {% assign tags = page.tags | sort %}
                 {% for tag in tags %}
@@ -34,7 +34,7 @@
                        class="label label-default"
                        data-tag="{{ tag }}"
                        href="/tags#[{{ tag }}]"
-                       title="tag: {{ tag }}"><i class='icon-tag'></i> {{ tag }}</a>
+                       title="tag: {{ tag }}"><i class='fa fa-tag'></i> {{ tag }}</a>
                 {% endfor %}
 
             </nav>

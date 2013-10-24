@@ -41,7 +41,7 @@
                         <a rel  ="category"
                            class="label label-default"
                            href ="/{{ category }}"
-                           title="category: {{ category }}"><i class='icon-bookmark'></i>&nbsp;{{ category }}</a>
+                           title="category: {{ category }}"><i class='fa fa-bookmark'></i>&nbsp;{{ category }}</a>
                     {% endfor %}
                     {% assign post-tags-sorted = post.tags | sort %}
                     {% for tag in post-tags-sorted %}
@@ -49,7 +49,7 @@
                            class="label label-default"
                            data-tag="{{ tag | replace:' ','_' }}"
                            href="/tags#[{{ tag }}]"
-                           title="tag: {{ tag }}"><i class='icon-tag'></i>&nbsp;{{ tag }}</a>
+                           title="tag: {{ tag }}"><i class='fa fa-tag'></i>&nbsp;{{ tag }}</a>
                     {% endfor %}
                 </nav>
             </article>
@@ -100,7 +100,7 @@
             {% include body.qr.html %}
         </div>
         <h1 class="col-md-9 col-md-offset-1">
-            <i class="icon-category-{{ page.categories[0] }}"></i>
+            <i class="fa icon-category-{{ page.categories[0] }}"></i>
             <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a><br/>
             <small>{{ page.description }}</small>
         </h1>

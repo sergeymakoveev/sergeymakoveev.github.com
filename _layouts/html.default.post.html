@@ -64,12 +64,13 @@
     </div>
 </div>
 <script>
-$((function($toc, $content){
+$((function($aside, $content){
 
-    $toc     = $($toc);
+    $aside   = $($aside);
     $content = $($content);
 
     var $section,
+        $toc     = $('<ul>').addClass("nav nav-pills nav-stacked"),
         hquery = 'h1[id], h2[id], h3[id], h4[id], h5[id]';
 
     $content
@@ -95,7 +96,8 @@ $((function($toc, $content){
             else if( $section )
                      $section.append($this);
          });
+      $aside.prepend($toc);
 
-})( 'aside > ul.nav.nav-list',
-    '#main-content > article' ));
+})( 'aside',
+    'main > article' ));
 </script>

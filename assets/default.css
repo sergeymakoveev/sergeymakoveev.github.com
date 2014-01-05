@@ -65,7 +65,7 @@ pre.prettyprint li.L9 {
     content: "\f040";
     }
 .icon-category-examples::before {
-    content: "\f15b";
+    content: "\f0c3";
     }
 
 .label.active {
@@ -80,8 +80,9 @@ a { outline: 0 none!important; }
 body > nav.navbar li.active > a {
     box-shadow: 0 0 50px #ccc;
     }
-body > nav.navbar .navbar-brand > a {
+body > nav.navbar li > a {
     text-decoration: none;
+    cursor: pointer;
     }
 
 body > header.page-header {
@@ -94,13 +95,17 @@ body > header h1 > i{
     }
 body > header .qr-code {
     position: absolute;
-    right: 0;
+    right: 15px;
     border: 1px solid #ccc;
     }
 
 body aside > nav {
     text-align: right;
-    padding-top: 7.5em;
+    }
+body aside > ul.nav > li > a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     }
 body aside > section.yashare{
     clear: both;

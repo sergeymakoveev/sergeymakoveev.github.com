@@ -99,6 +99,11 @@ body > header .qr-code {
     border: 1px solid #ccc;
     }
 
+body aside > ul.nav > li > a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
 body aside > nav {
     text-align: right;
     }

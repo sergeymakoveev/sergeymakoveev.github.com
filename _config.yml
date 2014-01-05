@@ -1,13 +1,12 @@
 exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, config.ru, Rakefile, readme.md]
 
 name: sergey
-markdown: kramdown
 pygments: false
-
-#markdown: redcarpet
-#redcarpet:
-#    extensions: ["with_toc_data"]
 permalink: /:year/:month/:title/
+markdown: kramdown
+
+kramdown:
+  enable_coderay: false
 
 ## Metadata
 meta:

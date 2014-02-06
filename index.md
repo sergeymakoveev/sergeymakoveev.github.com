@@ -3,4 +3,5 @@
     title: Home
     description: Welcome...
     categories: []
+    permalink: /
 ---

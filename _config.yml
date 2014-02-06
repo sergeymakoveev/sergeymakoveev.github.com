@@ -46,6 +46,8 @@ meta:
     favicon: /favicon.ico
 
     services:
-        google-analytics: 111111
+        google-analytics:
+            id: UA-37914961-1
+            domain: makoveev.info
         qrcode: //chart.googleapis.com/chart?chs=150x150&cht=qr&chl=
         disqus: sergeymakoveev

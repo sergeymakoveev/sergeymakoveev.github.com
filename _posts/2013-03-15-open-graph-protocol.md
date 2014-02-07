@@ -1,9 +1,9 @@
 ---
     published: true
     layout: html.default.post
-    title: The Open Graph protocol
+    title: Cемантическая микроразметка
     categories: [blog]
-    tags: [service, facebook, twitter, blog, yandex]
+    tags: [microdata, microformat, open graph, facebook, twitter, blog, yandex]
     date: 2013.03.15
 ---
 
@@ -25,11 +25,11 @@
 
 ##Yandex
 
-* 
+* [Как устроен мир семантической микроразметки](http://habrahabr.ru/company/yandex/blog/211638/)
 * [Что такое Schema.org](http://help.yandex.ru/webmaster/?id=1122752)
 * [Что такое микроформаты](http://help.yandex.ru/webmaster/?id=1111670)
 * [Валидатор семантической разметки. Описание](http://help.yandex.ru/webmaster/?id=1127400)
-* http://habrahabr.ru/company/yandex/blog/165727/
+* <http://habrahabr.ru/company/yandex/blog/165727/>
 * [Валидатор микроразметки](http://webmaster.yandex.ru/microtest.xml)
 
 ##Google

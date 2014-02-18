@@ -11,8 +11,9 @@
             <h1>
                 <i class="fa icon-category-{{ page.categories[0] }}"></i>
                 <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a>
+                <br />
+                <small>{{ page.description }}</small>
             </h1>
-            <p>{{ page.description }}</p>
             <nav role="navigation">
 
                 <span class="label label-primary">

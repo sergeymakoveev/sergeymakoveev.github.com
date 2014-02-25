@@ -1,3 +1,30 @@
+/* helpers */
+
+.inline-block {
+    display: inline-block!important;
+    width:auto!important;
+    }
+.fg-white {
+    color: #fff!important;
+    }
+
+/* bootstrap */
+
+blockquote.alert {
+    font-size:inherit;
+    }
+
+main h1,
+main .h1,
+main h2,
+main .h2,
+main h3,
+main .h3,
+main h4,
+main .h4 {
+    margin-top: 40px;
+    }
+
 /* google-code-prettify */
 
 pre.prettyprint li.L0,
@@ -76,6 +103,32 @@ pre.prettyprint li.L9 {
     }
 
 a { outline: 0 none!important; }
+
+blockquote.example {
+    font-size:inherit;
+    border-radius: 8px;
+    background-color: #000;
+    margin: 1em auto;
+    padding: 1em;
+    width: 95%;
+    border: 0 none;
+    color: #fff;
+    }
+blockquote.example * {
+    max-width:100%;
+    }
+blockquote.example input,
+blockquote.example textarea,
+blockquote.example button {
+    color: #000;
+    }
+
+p.screenshot > img {
+    box-shadow: 0 0 10px;
+    margin: 1em auto;
+    display: block;
+    max-width: 100%;
+    }
 
 body > nav.navbar li.active > a {
     box-shadow: 0 0 50px #ccc;

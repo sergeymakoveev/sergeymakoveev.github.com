@@ -7,6 +7,9 @@
 .fg-white {
     color: #fff!important;
     }
+.fg-red {
+    color: #c7254e;
+    }
 
 /* bootstrap */
 
@@ -143,7 +146,7 @@ body > header.page-header {
     margin-top: 70px;
     padding-bottom: 18px;
     }
-body > header h1 > i{
+body > header h1 > i {
     margin-left: -45px;
     position: absolute;
     }
@@ -153,24 +156,43 @@ body > header .qr-code {
     border: 1px solid #ccc;
     }
 
-body aside > ul.nav > li > a {
+body aside > ul.nav > li.toc > a {
+    font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 5px 10px;
     }
+body aside > ul.nav > li.toc a::before {
+    padding-right: 5px;
+    color: #c7254e;
+    }
+body aside > ul.nav > li.toc.toc-h1 {
+    font-weight: bolder;
+    }
+body aside > ul.nav > li.toc.toc-h2 a::before {
+    content:'»';
+    }
+body aside > ul.nav > li.toc.toc-h3 a::before {
+    content:'»»';
+    }
+body aside > ul.nav > li.toc.toc-h4 a::before {
+    content:'»»»';
+    }
+body aside > ul.nav > li.toc.toc-h5 a::before {
+    content:'»»»»';
+    }
+
 body aside > nav {
     text-align: right;
     }
-body aside > ul.nav > li > a {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
-body aside > section.yashare{
+
+body aside > section.yashare {
     clear: both;
     padding: 2em 0;
     text-align: right;
     }
+
 
 body main * {
     word-wrap: break-word;

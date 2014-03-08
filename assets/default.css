@@ -10,7 +10,12 @@
 .fg-red {
     color: #c7254e;
     }
-
+.m-t20 {
+    margin-top: 20px!important;
+    }
+.m-b20 {
+    margin-bottom: 20px!important;
+    }
 /* bootstrap */
 
 blockquote.alert {
@@ -49,37 +54,68 @@ pre.prettyprint li.L9 {
     letter-spacing: inherit;
     font-size: 30px;
 }
-.reveal >.slides  p:not([class^=text-]),
-.reveal >.slides  ul:not([class^=text-]),
-.reveal >.slides  ol:not([class^=text-]) {
-    text-align:left;
-    display:block;
-}
-.reveal > .slides > section .highlight {
-    color: gold;
-}
-.reveal > .slides > section blockquote {
-    background: none;
-    border-left: 5px solid gold;
-    box-shadow: none;
-    font-size: 80%;
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: sans-serif;
+    letter-spacing: initial!important;
+    font-weight: bold;
+    text-transform: none;
+    }
+
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin-top:30px;
+    text-align: left;
+    }
+.reveal ul + p,
+.reveal ol + p {
+    margin-top:20px!important;
+    }
+.reveal dl > dd {
+    text-align: left;
+    }
+.reveal blockquote {
+    font-size: 80%!important;
     font-style: inherit;
-    margin: 0 20px 20px;
-    padding: 0 0 0 15px;
-    width: inherit;
-}
-.reveal > .slides > section blockquote:before,
-.reveal > .slides > section blockquote:after {
+    }
+.reveal blockquote:before,
+.reveal blockquote:after {
     content:'';
-}
-.reveal > .slides > section pre.prettyprint{
+    }
+.reveal pre.prettyprint{
     max-height: 300px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-.reveal > .slides > section pre.prettyprint ol{
+    }
+.reveal pre.prettyprint ol{
     margin-left:2.5em;
+    }
+
+.reveal .highlight {
+    color: gold;
+    }
+.reveal .screenshot {
+    color: gold;
+    }
+.reveal .screenshot > img {
+    box-shadow:none;
+    margin: 0 auto;
+    }
+
+.reveal > .slides  p:not([class^=text-]),
+.reveal > .slides  ul:not([class^=text-]),
+.reveal > .slides  ol:not([class^=text-]) {
+    text-align:left;
+    display:block;
 }
+
 
 
 /* site */
@@ -110,7 +146,7 @@ a { outline: 0 none!important; }
 blockquote.example {
     font-size:inherit;
     border-radius: 8px;
-    background-color: #000;
+    background-color: #555;
     margin: 1em auto;
     padding: 1em;
     width: 95%;
@@ -132,6 +168,9 @@ p.screenshot > img {
     display: inline-block;
     max-width: 100%;
     vertical-align: top;
+    }
+p.screenshot > img:first-child {
+    margin-left:2.5%;
     }
 
 body > nav.navbar li.active > a {
@@ -230,12 +269,16 @@ body[data-layout=categories] main > section > article time {
     text-align: center;
     }
 
-/*
 body[data-layout=presentation] > .qr-code {
     position:fixed;
     right:0;
+    z-index: 1031;
+    }
+body[data-layout=presentation] > nav {
+    overflow: hidden;
     }
 
+/*
 body nav .label{
     text-shadow: 0 1px 3px  rgba(0,0,0,.4);
     outline: 0 none;

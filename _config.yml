@@ -20,7 +20,7 @@ meta:
         name:
             ru: Сергей Маковеев
             en: Sergey Makoveev
-        avatar: http://www.gravatar.com/avatar/ec5c4ece917e78fe539d3051f4cbb87b.png?s=200
+        avatar: //www.gravatar.com/avatar/ec5c4ece917e78fe539d3051f4cbb87b.png?s=200
         email: sergey@makoveev.info
         url: http://sergey.makoveev.info
         bitbucket:
@@ -42,7 +42,7 @@ meta:
             id: 100000275357914
 
     host: http://sergeymakoveev.github.io
-    logo: http://www.gravatar.com/avatar/ec5c4ece917e78fe539d3051f4cbb87b.png?s=200
+    logo: //www.gravatar.com/avatar/ec5c4ece917e78fe539d3051f4cbb87b.png?s=200
     favicon: /favicon.ico
 
     services:
@@ -50,4 +50,5 @@ meta:
             id: UA-37914961-1
             domain: makoveev.info
         qrcode: //chart.googleapis.com/chart?chs=150x150&cht=qr&chl=
+        qrcode-big: //chart.googleapis.com/chart?chs=500x550&cht=qr&chl=
         disqus: sergeymakoveev

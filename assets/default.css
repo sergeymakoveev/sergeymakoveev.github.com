@@ -4,18 +4,20 @@
     display: inline-block!important;
     width:auto!important;
     }
+.absolute {
+    position: absolute;
+    }
 .fg-white {
     color: #fff!important;
     }
 .fg-red {
-    color: #c7254e;
+    color: #c7254e!important;
     }
-.m-t20 {
-    margin-top: 20px!important;
+.b,
+.strong {
+    font-weight:bold!important;
     }
-.m-b20 {
-    margin-bottom: 20px!important;
-    }
+}
 /* bootstrap */
 
 blockquote.alert {
@@ -53,7 +55,12 @@ pre.prettyprint li.L9 {
 .reveal {
     letter-spacing: inherit;
     font-size: 30px;
-}
+    font-family: sans-serif;
+    }
+
+.reveal em {
+    color: gold;
+    }
 
 .reveal h1,
 .reveal h2,
@@ -81,6 +88,24 @@ pre.prettyprint li.L9 {
 .reveal dl > dd {
     text-align: left;
     }
+.reveal kbd {
+    padding: 0 8px;
+    color: gold;
+    background-color: #000;
+    }
+.reveal code:not([class^=language-]) {
+    background-color: #000;
+    padding: 2px 8px 0;
+    color: gold;
+    margin: 0 5px;
+    }
+.reveal code:not([class^=language-]):first-child {
+    margin-left: 0;
+    }
+.reveal code:not([class^=language-]):last-child {
+    margin-right: 0;
+    }
+
 .reveal blockquote {
     font-size: 80%!important;
     font-style: inherit;
@@ -89,24 +114,34 @@ pre.prettyprint li.L9 {
 .reveal blockquote:after {
     content:'';
     }
+.reveal blockquote.example {
+    padding: 0.5em;
+    margin: 0.5em auto;
+    }
+
 .reveal pre.prettyprint{
     max-height: 300px;
     overflow-x: hidden;
     overflow-y: auto;
+    margin: 0.5em auto;
     }
 .reveal pre.prettyprint ol{
     margin-left:2.5em;
     }
 
 .reveal .highlight {
-    color: gold;
-    }
-.reveal .screenshot {
-    color: gold;
+    color: gold!important;
     }
 .reveal .screenshot > img {
     box-shadow:none;
     margin: 0 auto;
+    }
+
+.reveal .label {
+    padding: 2px 5px;
+    }
+.reveal .label {
+    padding: 2px 5px;
     }
 
 .reveal > .slides  p:not([class^=text-]),
@@ -114,8 +149,10 @@ pre.prettyprint li.L9 {
 .reveal > .slides  ol:not([class^=text-]) {
     text-align:left;
     display:block;
-}
-
+    }
+.reveal.overview .slides section.present {
+    box-shadow: 0 0 100px #000;
+    }
 
 
 /* site */
@@ -276,6 +313,9 @@ body[data-layout=presentation] > .qr-code {
     }
 body[data-layout=presentation] > nav {
     overflow: hidden;
+    }
+body[data-layout=presentation] > nav:not(:hover) {
+    opacity:0;
     }
 
 /*

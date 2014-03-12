@@ -146,7 +146,9 @@ pre.prettyprint li.L9 {
 .reveal pre.prettyprint ol{
     margin-left:2.5em;
     }
-
+.reveal .small {
+    font-size: 85%;
+    }
 .reveal .highlight {
     color: gold!important;
     }

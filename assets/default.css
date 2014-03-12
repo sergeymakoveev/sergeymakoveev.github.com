@@ -49,7 +49,13 @@ main .h4 {
     }
 
 /* google-code-prettify */
-
+pre.prettyprint li {
+    cursor: default;
+    }
+pre.prettyprint li:hover,
+pre.prettyprint li.hover {
+    background-color: rgba(255,255,255,0.3);
+    }
 pre.prettyprint li.L0,
 pre.prettyprint li.L1,
 pre.prettyprint li.L2,
@@ -222,6 +228,9 @@ p.screenshot > img:first-child {
     margin-left:2.5%;
     }
 
+body > nav.navbar {
+    padding-right:15px;
+    }
 body > nav.navbar li.active > a {
     box-shadow: 0 0 50px #ccc;
     }
@@ -318,6 +327,9 @@ body[data-layout=categories] main > section > article time {
     text-align: center;
     }
 
+body[data-layout=presentation] > nav.navbar {
+    padding-right:170px;
+    }
 body[data-layout=presentation] > .qr-code {
     position:fixed;
     right:0;

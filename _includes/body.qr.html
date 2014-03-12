@@ -1,9 +1,20 @@
 
 <!-- <body.qr.html> -->
 <a class="qr-code"
-   href="{{ page.url }}"
+   href="#"
+   data-toggle="modal" data-target="#modal-qr"
    title="QR-code for this page: {{ page.title | strip_html }} ({{ site.meta.host }}{{ page.url }})"
    rel="bookmark" >
     <img src="{{ site.meta.services.qrcode }}{{ site.meta.host }}{{ page.url | escape }}" />
 </a>
 <!-- </body.qr.html> -->
+<div class="modal fade" id="modal-qr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <img src="{{ site.meta.services.qrcode-big }}{{ site.meta.host }}{{ page.url | escape }}" />
+      </div>
+    </div>
+  </div>
+</div>

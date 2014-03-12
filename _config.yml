@@ -1,4 +1,4 @@
-exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, config.ru, Rakefile, readme.md]
+exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, config.ru, Rakefile, readme.md, start.sh ]
 
 name: sergey
 pygments: false
@@ -50,5 +50,6 @@ meta:
             id: UA-37914961-1
             domain: makoveev.info
         qrcode: //chart.googleapis.com/chart?chs=150x150&cht=qr&chl=
-        qrcode-big: //chart.googleapis.com/chart?chs=500x550&cht=qr&chl=
+        qrcode-middle: //chart.googleapis.com/chart?chs=300x300&cht=qr&chl=
+        qrcode-big: //chart.googleapis.com/chart?chs=500x500&cht=qr&chl=
         disqus: sergeymakoveev

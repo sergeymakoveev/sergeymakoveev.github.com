@@ -337,12 +337,15 @@ body[data-layout=categories] main > section > article time {
     }
 
 body[data-layout=presentation] > nav.navbar {
-    padding-right:170px;
+    padding-right:15px;
     }
 body[data-layout=presentation] > .qr-code {
+    display: none;
+    /*
     position:fixed;
     right:0;
     z-index: 1031;
+    */
     }
 body[data-layout=presentation] > nav {
     overflow: hidden;

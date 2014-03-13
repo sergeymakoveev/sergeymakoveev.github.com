@@ -170,6 +170,13 @@ pre.prettyprint li.L9 {
     text-align:left;
     display:block;
     }
+    
+.reveal .slide-number {
+    color: gold;
+    opacity: 1;
+    font-size: 25px;
+    line-height: 25px;
+    }
 .reveal.overview .slides section.present {
     box-shadow: 0 0 100px #000;
     }

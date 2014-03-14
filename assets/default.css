@@ -80,7 +80,10 @@ pre.prettyprint li.L9 {
 .reveal em {
     color: gold;
     }
-
+.reveal .fragment.highlight-current-blue.current-fragment,
+.reveal .fragment.highlight-current-blue.current-fragment * {
+    color: #f00!important;
+    }
 .reveal h1,
 .reveal h2,
 .reveal h3,

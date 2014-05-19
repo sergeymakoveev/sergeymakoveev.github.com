@@ -5,29 +5,31 @@
 
 {% assign sections = '' %}
 {% assign section  = '' %}
-{% assign post_year  = '' %}
 
 {% for post in site.posts %}
 
     {% assign post-allow = false %}
 
-    {% for category in page.categories %}
-        {% if post.categories contains category %}
-            {% assign post-allow = true %}
-        {% endif %}
-    {% endfor %}
+    {% if page.categories == empty %}
+        {% assign post-allow = true %}
+    {% else %}
+        {% for category in page.categories %}
+            {% if post.categories contains category %}
+                {% assign post-allow = true %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 
-    {% assign post_year_prev = post_year %}
     {% assign post_year = post.date | date:'%Y' %}
-    {% assign post_content = '' %}
-    {% assign post-append  = false %}
+    {% assign post_year_next = post.previous.date | date:'%Y' %}
 
-    {% if page.categories == empty or post-allow %}
-        {% capture post_content %}
+    {% if post-allow %}
+        {% capture section %}
+            {{ section }}
             <article class="post" data-tags="{{ post.tags | join:',' | replace:' ','_' | replace:',',' ' }}">
                 <h2><time datetime ="{{ post.date }}"
-                      pubdate  ="{{ post.date }}"
-                      title    ="{{ post.date }}"><small>{{ post.date | date:'%b' }}</small><br />{{ post.date | date:'%d' }}</time>
+                          pubdate  ="{{ post.date }}"
+                          title    ="{{ post.date }}"><small>{{ post.date | date:'%b' }}</small><br />{{ post.date | date:'%d' }}</time>
                     <a class="title"
                        rel  ="bookmark"
                        href ="{{ post.url }}"
@@ -56,42 +58,15 @@
         {% endcapture %}
     {% endif %}
 
-    {% if post_content != '' or forloop.last %}
-
-        {% if post_year_prev == '' or post_year_prev == post_year %}
-            {% assign post-append = true %}
-        {% endif %}
-
-        {% if post-append %}
-            {% assign section = section | append:post_content %}
-        {% endif %}
-
-        {% if post-append == false or forloop.last %}
-
-            {% if section %}
-                {% capture sections %}
-                    {{ sections }}
-                    <section id="toc-{{ post_year_prev }}">
-                        <h1>{{ post_year_prev }}</h1>
-                        {{ section }}
-                    </section>
-                {% endcapture %}
-            {% endif %}
-
-            {% if forloop.last and post_content != '' and post-append == false %}
-                {% capture sections %}
-                    {{ sections }}
-                    <section id="toc-{{ post_year }}">
-                        <h1>{{ post_year }}</h1>
-                        {{ post_content }}
-                    </section>
-                {% endcapture %}
-            {% else %}
-                {% assign section = post_content %}
-            {% endif %}
-
-        {% endif %}
-
+    {% if section != '' and post_year != post_year_next %}
+        {% capture sections %}
+            {{ sections }}
+            <section id="toc-{{ post_year }}">
+                <h1>{{ post_year }}</h1>
+                {{ section }}
+            </section>
+        {% endcapture %}
+        {% assign section = '' %}
     {% endif %}
 
 {% endfor %}
@@ -99,13 +74,14 @@
 <header class="page-header container">
     <div class="row">
         <div class="col-md-2">
-            {% include body.qr.html %}
-        </div>
-        <h1 class="col-md-9 col-md-offset-1">
             <i class="fa icon-category-{{ page.categories[0] }}"></i>
-            <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a><br/>
-            <small>{{ page.description }}</small>
-        </h1>
+        </div>
+        <div class="col-md-9 col-md-offset-1">
+            <h1>
+                <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a><br/>
+                <small>{{ page.description }}</small>
+            </h1>
+        </div>
     </div>
 </header>
 
@@ -138,7 +114,7 @@
                               .filter( function(tag){ return !!tag; }):
                         [];
 
-        $('[data-tag] > .label')
+        $('.label[data-tag]')
             .removeClass('active');
         if( tags.length )
             $('main [data-tags]')
@@ -148,8 +124,8 @@
                 .show();
 
         tags.forEach( function(tag){
-            $('[data-tag="'+tag+'"] > .label')
-                .addClass('active'),
+            $('.label[data-tag="'+tag+'"]')
+                .addClass('active');
             $('main [data-tags~="'+tag+'"]')
                 .show();
         });

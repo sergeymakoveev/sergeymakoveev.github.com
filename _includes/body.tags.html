@@ -23,7 +23,7 @@
                         .on( 'mouseover mouseout',
                              function(e){
                                  $tags.filter('[data-tag="'+$(this).data('tag')+'"]')
-                                      .toggleClass('active', e.type == 'mouseover');
+                                      .toggleClass('hover', e.type == 'mouseover');
                                  }
                             );
     });

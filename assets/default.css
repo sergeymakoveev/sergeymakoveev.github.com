@@ -192,15 +192,20 @@ pre.prettyprint li.L9 {
     content: "\f015";
     }
 .icon-category-presentations::before {
-    content: "\f152";
+    /*content: "\f152";*/
+    content: "\f008";
     }
 .icon-category-blog::before {
     content: "\f040";
     }
 .icon-category-examples::before {
+    content: "\f0eb";
+    }
+.icon-category-lab::before {
     content: "\f0c3";
     }
 
+.label.hover,
 .label.active {
     background-color: #428BCA!important;
     }
@@ -252,17 +257,18 @@ body > nav.navbar li > a {
     }
 
 body > header.page-header {
-    margin-top: 70px;
+    margin-top: 78px;
     padding-bottom: 18px;
+    border: none;
     }
-body > header h1 > i {
-    margin-left: -45px;
-    position: absolute;
+body > header h1 {
+    margin-left: -50px;
     }
-body > header .qr-code {
+body > header i {
     position: absolute;
-    right: 15px;
-    border: 1px solid #ccc;
+    right: 0;
+    font-size: 140px;
+    text-shadow: 2px 4px 0 #ccc;
     }
 
 body aside > ul.nav > li.toc > a {

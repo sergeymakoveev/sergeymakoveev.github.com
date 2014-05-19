@@ -1,7 +1,7 @@
 ---
     layout: html.default.categories
-    title: Presentations
-    description: All my presentations...
+    title: Презентации
+    description: к статьям и докладам
     categories: [presentations]
     permalink: /
 ---

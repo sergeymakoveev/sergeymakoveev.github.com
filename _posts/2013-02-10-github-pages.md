@@ -4,7 +4,6 @@
     title: Github Pages
     categories: [blog]
     tags: [service, github, github pages, blog, markdown, maruku, jekyll, yaml]
-    date: 2013.02.10
 ---
 
 [GitHub]: http://github.com "GitHub"

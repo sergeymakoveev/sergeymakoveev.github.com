@@ -3,5 +3,4 @@
     title: Примеры
     description: для демонстрации
     categories: [examples]
-    permalink: /
 ---

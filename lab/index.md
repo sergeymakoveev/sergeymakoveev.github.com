@@ -3,5 +3,4 @@
     title: Лаборатория
     description: Разрабатываю, экспериментирую ...
     categories: [lab]
-    permalink: /
 ---

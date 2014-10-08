@@ -1,7 +1,6 @@
 ---
     layout: html.default.categories
-    title: Home
-    description: Welcome...
+    title: Главная
+    description: Добро пожаловать!
     categories: []
-    permalink: /
 ---

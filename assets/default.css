@@ -49,6 +49,11 @@ main .h4 {
     }
 
 /* google-code-prettify */
+
+pre.prettyprint {
+    width: 100%!important;
+    }
+
 pre.prettyprint li {
     cursor: default;
     }
@@ -215,13 +220,14 @@ pre.prettyprint li.L9 {
 
 a { outline: 0 none!important; }
 
+nav { cursor: default; }
+
 blockquote.example {
     font-size:inherit;
     border-radius: 8px;
     background-color: #555;
     margin: 1em auto;
     padding: 1em;
-    width: 95%;
     border: 0 none;
     color: #fff;
     }
@@ -247,28 +253,33 @@ p.screenshot > img:first-child {
 
 body > nav.navbar {
     padding-right:15px;
-    }
-body > nav.navbar li.active > a {
-    box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 10px;
     }
 body > nav.navbar li > a {
     text-decoration: none;
     cursor: pointer;
     }
+body > nav.navbar li.active > a {
+    box-shadow: 0 0 50px #ccc;
+    }
+body > nav.navbar   li.active
+                  + li.active > a {
+    box-shadow: 10px 0 55px #ccc;
+    }
 
 body > header.page-header {
-    margin-top: 78px;
-    padding-bottom: 18px;
+    margin-top: 90px;
+    padding-bottom: 0;
     border: none;
     }
 body > header h1 {
-    margin-left: -50px;
+    display: inline-block;
+    line-height: 0.9;
     }
-body > header i {
-    position: absolute;
-    right: 0;
+body > header i[class*="icon-category-"] {
     font-size: 140px;
     text-shadow: 2px 4px 0 #ccc;
+    cursor: default;
     }
 
 body aside > ul.nav > li.toc > a {
@@ -300,14 +311,24 @@ body aside > ul.nav > li.toc.toc-h5 a::before {
 
 body aside > nav {
     text-align: right;
+    display: inline-block;
     }
 
-body aside > section.yashare {
-    clear: both;
-    padding: 2em 0;
+body aside  section,
+body aside .section {
+    padding-bottom: 2em;
+    display: inline-block;
     text-align: right;
     }
 
+body aside section.yashare {
+    padding-top: 20px;
+    clear: both;
+    text-align: right;
+    }
+body aside section.yashare .b-share {
+    padding: 0!important;
+    }
 
 body main * {
     word-wrap: break-word;
@@ -322,12 +343,20 @@ body > footer {
     }
 body > footer > .links {
     position: fixed;
-    bottom: 10px;
-    right: 14px;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 10px 0 0;
+    box-shadow: 0 0 10px;
+    padding: 10px;
     }
 body > footer > .links > a {
     display: block;
     text-decoration: none !important;
+    }
+
+body main section:first-of-type h1 {
+    margin-top: 0;
     }
 
 /* categories */
@@ -336,25 +365,28 @@ body[data-layout=categories] main > section
                                   + section {
     margin-top: 6em;
     }
+body[data-layout=categories] main > section h1 {
+    font-size: 50px;
+    }
 body[data-layout=categories] main > section > article {
     margin-top: 3em;
     }
 body[data-layout=categories] main > section > article time {
     margin-left: -50px;
     position: absolute;
-    text-align: center;
+    text-align: right;
     }
+
+body[data-layout=post] header {
+    margin-bottom: 50px;
+    }
+body > header.page-header {
 
 body[data-layout=presentation] > nav.navbar {
     padding-right:15px;
     }
 body[data-layout=presentation] > .qr-code {
     display: none;
-    /*
-    position:fixed;
-    right:0;
-    z-index: 1031;
-    */
     }
 body[data-layout=presentation] > nav {
     overflow: hidden;
@@ -362,119 +394,3 @@ body[data-layout=presentation] > nav {
 body[data-layout=presentation] > nav:not(:hover) {
     opacity:0;
     }
-
-/*
-body nav .label{
-    text-shadow: 0 1px 3px  rgba(0,0,0,.4);
-    outline: 0 none;
-    }
-body nav > a > .label:not(:active):target,
-body nav > a > .label:not(:active):hover,
-body nav > a > .label:not(:active).hover,
-body nav > a > .label:not(:active).active {
-    background-color:#0088cc;
-    }
-body > header nav > a > .label:hover {
-    box-shadow: 0 0 0 1px #fff;
-    }
-body .label.label-inverse{
-    box-shadow: 0 0 2px 0 #fff;
-    }
-
-body > header > .container {
-    min-height:150px;
-}
-body > header > .container > *:not(.qr-code) {
-    margin-left: 80px!important;
-    margin-right: 150px!important;
-    }
-
-body > header > .container > h1 > i {
-    position: absolute;
-    left: 0;
-    }
-body > header > .container > h1 > a {
-    text-decoration: none;
-    }
-body > header > .container > .qr-code {
-    right:0;
-    margin:0;
-    }
-body > header > .container > .qr-code:not(.affix) {
-    position:absolute;
-    }
-
-body > .container aside > ul.nav {
-    box-shadow: 0 0  5px  0px #000;
-    width: 156px;
-    z-index: 1;
-    }
-body > .container aside > ul.nav > li.qr {
-    text-align:center;
-    }
-body > .container aside > ul.nav > li > a {
-    overflow:hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    }
-body > .container aside > ul.nav > li.qr > a:hover {
-    background-color: inherit;
-    }
-body > .container aside > ul.nav:not(.affix) > li.qr {
-    display:none;
-    }
-body > .container aside > ul.nav > li:last-child:first-child > a {
-    border-radius: 6px;
-}
-body > .container aside > ul.nav > li.qr > a {
-    margin:0;
-    padding:0;
-    }
-body > .container aside > ul.nav:not(.affix) > li.qr + li > a {
-    border-radius: 6px 6px 0 0;
-    }
-
-@media (min-width: 768px) {
-body > .container aside > section,
-body > .container aside > section > nav {
-    clear: both;
-    }
-body > .container aside > section > nav > a {
-    float:left;
-    clear:both;
-    }
-}
-
-body > .container nav > a > .label:hover {
-    box-shadow: 0 0 1px 0 #000;
-    }
-
-body #main-content [data-tags].notactive:not(:hover){
-    opacity:0.1;
-    }
-body[data-layout=categories] > .container aside > ul.nav {
-    width: 100px;
-    }
-body[data-layout=categories] > .container #main-content section:first-child {
-    padding-top:0;
-    }
-body[data-layout=categories] > .container #main-content h1 {
-    color: #999;
-    margin-bottom:40px;
-    margin-top:0;
-    }
-body[data-layout=categories] > .container #main-content article {
-    margin-left: 70px;
-    margin-bottom: 40px;
-    }
-body[data-layout=categories] > .container #main-content article > h2 {
-    margin:0;
-    }
-body[data-layout=categories] > .container #main-content article > p {
-    margin-bottom:5px;
-    }
-
-body > footer a:hover {
-    text-decoration:none
-    }
-*/

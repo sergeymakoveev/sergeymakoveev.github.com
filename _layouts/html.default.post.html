@@ -4,17 +4,16 @@
 ---
 <header class="page-header container">
     <div class="row">
-        <div class="col-md-2">
-            {% include body.qr.html %}
+        <div class="col-md-3 text-center">
+            <i class="fa icon-category-{{ page.categories[0] }}"></i>
         </div>
-        <div class="col-md-9 col-md-offset-1">
+        <div class="col-md-9">
             <h1>
-                <i class="fa icon-category-{{ page.categories[0] }}"></i>
                 <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a>
                 <br />
                 <small>{{ page.description }}</small>
             </h1>
-            <nav role="navigation">
+            <nav role="navigation cursor default">
 
                 <span class="label label-primary">
                     <i class='fa fa-time'></i>
@@ -45,13 +44,16 @@
 
 <div class="container">
     <div class="row">
-        <aside class="col-md-2">
+        <aside class="col-md-3">
 
-            {% include body.social.html %}
-            {% include body.tags.html %}
+                <section>
+                {% include body.social.html %}
+                <br/>
+                {% include body.tags.html %}
+                </section>
 
         </aside>
-        <main class="col-md-9 col-md-offset-1" role="main">
+        <main class="col-md-9" role="main">
 
             <article>
                 {{ content }}

@@ -73,10 +73,10 @@
 
 <header class="page-header container">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3 text-center">
             <i class="fa icon-category-{{ page.categories[0] }}"></i>
         </div>
-        <div class="col-md-9 col-md-offset-1">
+        <div class="col-md-9">
             <h1>
                 <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a><br/>
                 <small>{{ page.description }}</small>
@@ -87,7 +87,7 @@
 
 <div class="container">
     <div class="row">
-        <aside class="col-md-2">
+        <aside class="col-md-2 text-right">
 
             {% include body.social.html %}
             {% include body.tags.html %}

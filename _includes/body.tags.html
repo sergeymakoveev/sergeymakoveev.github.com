@@ -6,7 +6,7 @@
 {% endfor %}
 {% assign tags = tags | split:';' | sort  %}
 
-<nav role="navigation">
+<nav role="navigation section">
     {% for tag in tags %}
         {% assign t = tag | split:','  %}
         <a rel="bookmarks"

@@ -30,6 +30,15 @@
 .del {
     text-decoration:line-through!important;
     }
+.-invisible {
+    visibility: hidden;
+    }
+.-width-0 {
+    width: 0;
+    }
+.-va-middle {
+    vertical-align: middle;
+    }
 
 /* bootstrap */
 
@@ -269,12 +278,14 @@ body > nav.navbar   li.active
 
 body > header.page-header {
     margin-top: 90px;
+    margin-bottom: 50px;
     padding-bottom: 0;
     border: none;
     }
 body > header h1 {
     display: inline-block;
     line-height: 0.9;
+    margin: 0;
     }
 body > header i[class*="icon-category-"] {
     font-size: 140px;
@@ -376,11 +387,6 @@ body[data-layout=categories] main > section > article time {
     position: absolute;
     text-align: right;
     }
-
-body[data-layout=post] header {
-    margin-bottom: 50px;
-    }
-body > header.page-header {
 
 body[data-layout=presentation] > nav.navbar {
     padding-right:15px;

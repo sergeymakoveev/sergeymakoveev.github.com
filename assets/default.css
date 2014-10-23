@@ -391,9 +391,6 @@ body[data-layout=categories] main > section > article time {
 body[data-layout=presentation] > nav.navbar {
     padding-right:15px;
     }
-body[data-layout=presentation] > .qr-code {
-    display: none;
-    }
 body[data-layout=presentation] > nav {
     overflow: hidden;
     }

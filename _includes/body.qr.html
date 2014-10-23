@@ -1,13 +1,24 @@
 <!-- <body.qr.html> -->
+
 <div class="modal fade" id="modal-qr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <img src="{{ site.meta.services.qrcode-big }}{{ site.meta.host }}{{ page.url | escape }}"
-             title="QR-code for this page: {{ page.title | strip_html }} ({{ site.meta.host }}{{ page.url }})" />
+      <div id="qrcode"
+           class="modal-body text-center">
       </div>
     </div>
   </div>
 </div>
+
+<script>
+$(function(){
+console.log(1);
+new Qrcodesvg( "{{ site.meta.host }}{{ page.url | escape }}", "qrcode", 550 )
+             .draw({ "method":"classic",
+                     "fill-colors":["#000000","#2D2D2D"],
+                     "fill-colors-scope":"square"},
+                   { "stroke-width":0 });
+});
+</script>
+
 <!-- </body.qr.html> -->

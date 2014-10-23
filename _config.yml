@@ -49,7 +49,4 @@ meta:
         google-analytics:
             id: UA-37914961-1
             domain: makoveev.info
-        qrcode: //chart.googleapis.com/chart?chs=150x150&cht=qr&chl=
-        qrcode-middle: //chart.googleapis.com/chart?chs=300x300&cht=qr&chl=
-        qrcode-big: //chart.googleapis.com/chart?chs=500x500&cht=qr&chl=
         disqus: sergeymakoveev

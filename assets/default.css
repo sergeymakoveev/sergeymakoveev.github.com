@@ -275,7 +275,19 @@ body > nav.navbar   li.active
                   + li.active > a {
     box-shadow: 10px 0 55px #ccc;
     }
-
+body > nav.navbar a.fa-share-alt {
+    font-size: 2em;
+    white-space: nowrap;
+    }
+body > nav.navbar a.fa-share-alt > .b-share_link {
+    display: inline-block;
+    height: 50px;
+    margin-left: -35px;
+    margin-top: -15px;
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    }
 body > header.page-header {
     margin-top: 90px;
     margin-bottom: 50px;
@@ -370,6 +382,20 @@ body main section:first-of-type h1 {
     margin-top: 0;
     }
 
+body .b-share-popup-wrap {
+    margin-left: -56px;
+    margin-top: 29px;
+    }
+body .b-share-popup .b-share-popup__i {
+    width: 164px;
+    }
+body .b-share-popup .b-share-popup__i .b-share-popup_shorter {
+    cursor: pointer;
+    }
+body .b-share-popup .b-share-popup__i .b-share-popup__yandex {
+    display: none!important;
+    }
+
 /* categories */
 
 body[data-layout=categories] main > section
@@ -391,9 +417,11 @@ body[data-layout=categories] main > section > article time {
 body[data-layout=presentation] > nav.navbar {
     padding-right:15px;
     }
-body[data-layout=presentation] > nav {
+body[data-layout=presentation] > nav.navbar {
     overflow: hidden;
     }
-body[data-layout=presentation] > nav:not(:hover) {
+body[data-layout=presentation] > nav.navbar:not(:hover),
+body[data-layout=presentation] > nav.navbar:not(:hover)
+                               ~ .b-share-popup-wrap .b-share-popup__tail {
     opacity:0;
     }

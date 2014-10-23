@@ -12,12 +12,13 @@
 
 <script>
 $(function(){
-console.log(1);
+
 new Qrcodesvg( "{{ site.meta.host }}{{ page.url | escape }}", "qrcode", 550 )
              .draw({ "method":"classic",
                      "fill-colors":["#000000","#2D2D2D"],
                      "fill-colors-scope":"square"},
                    { "stroke-width":0 });
+
 });
 </script>
 

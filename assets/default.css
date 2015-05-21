@@ -33,11 +33,17 @@
 .-invisible {
     visibility: hidden;
     }
-.-width-0 {
+.-width-0,
+.-width-0::after,
+.-width-0::before {
     width: 0;
+    /* content: initial!important; */
     }
 .-va-middle {
     vertical-align: middle;
+    }
+.-nowrap {
+    white-space: nowrap;
     }
 
 /* bootstrap */
@@ -187,7 +193,7 @@ pre.prettyprint li.L9 {
     text-align:left;
     display:block;
     }
-    
+
 .reveal .slide-number {
     color: gold;
     opacity: 1;
@@ -298,6 +304,12 @@ body > header h1 {
     display: inline-block;
     line-height: 0.9;
     margin: 0;
+    white-space: normal;
+    margin-left: -5px;
+    }
+body > header h1 > small {
+    display: block;
+    margin: 11px 0;
     }
 body > header i[class*="icon-category-"] {
     font-size: 140px;

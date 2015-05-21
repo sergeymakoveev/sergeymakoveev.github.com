@@ -7,11 +7,10 @@
         <div class="col-md-3 text-center">
             <i class="fa icon-category-{{ page.categories[0] }}"></i>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 -nowrap">
             <i class="fa icon-category-{{ page.categories[0] }} -invisible -width-0 -va-middle"></i>
             <h1 class="-va-middle">
                 <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a>
-                <br />
                 <small>{{ page.description }}</small>
             </h1>
             <nav role="navigation cursor default">

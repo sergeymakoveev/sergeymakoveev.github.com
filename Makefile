@@ -3,6 +3,9 @@
 DIR="${PWD}"
 HOST="blog.home"
 
+start:
+	jekyll serve --host ${HOST} --watch --unpublished --future
+
 develop:
 	@gnome-terminal --tab-with-profile="tab"\
 			--title="server"\
@@ -11,9 +14,6 @@ develop:
 			--tab-with-profile="tab"\
 			--title="terminal"\
 			--working-directory="${DIR}"
-
-start:
-	jekyll serve --host ${HOST} --watch --unpublished --future
 
 kill:
 	kill `ps ax -o pid,cmd | grep jekyll | awk '{ print $1 }'`

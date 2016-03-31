@@ -11,7 +11,8 @@
 
 ##The Open Graph protocol
 
-* [The Open Graph protocol](http://opengraphprotocol.org/)
+* [The Open Graph protocol](http://ogp.me/)
+* [Протокол Open Graph](http://ruogp.me/)
 
 ##Facebook
 
@@ -38,3 +39,7 @@
 * [О микроданных](http://support.google.com/webmasters/bin/answer.py?hl=ru&answer=176035)
 * [Сведения об авторе в результатах поиска](http://support.google.com/webmasters/bin/answer.py?hl=ru&answer=1408986)
 * [Использование разметки schema.org для логотипов организаций](http://habrahabr.ru/company/google/blog/178877)
+
+##OExchange
+
+* [OExchange is an open protocol for sharing any URL with any service on the web.](http://www.oexchange.org/)

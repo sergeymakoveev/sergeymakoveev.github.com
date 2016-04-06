@@ -11,6 +11,7 @@
 ## Intro
 *   [GitHub Pages - Websites for you and your projects](https://pages.github.com/)
 *   [GitHub Pages Basics](https://help.github.com/categories/github-pages-basics/)
+*   [Customizing GitHub Pages](https://help.github.com/categories/customizing-github-pages/)
 
 ## Github pages as blog engine
 
@@ -20,7 +21,7 @@
 
 ### yaml
 
-* https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter
+* <https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter>
 
 ## Markdown posts
 

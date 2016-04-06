@@ -9,7 +9,8 @@
 [GitHub]: http://github.com "GitHub"
 
 ## Intro
-Любой репозиторий в [GitHub][]
+*   [GitHub Pages - Websites for you and your projects](https://pages.github.com/)
+*   [GitHub Pages Basics](https://help.github.com/categories/github-pages-basics/)
 
 ## Github pages as blog engine
 

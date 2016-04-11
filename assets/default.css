@@ -86,7 +86,7 @@ pre.prettyprint li.L6,
 pre.prettyprint li.L7,
 pre.prettyprint li.L8,
 pre.prettyprint li.L9 {
-        list-style-type: inherit!important;
+    list-style-type: inherit!important;
     }
 
 /* reveal */
@@ -97,12 +97,17 @@ pre.prettyprint li.L9 {
     font-family: sans-serif;
     }
 
-.reveal em {
+.reveal a:hover {
     color: gold;
     }
-.reveal .fragment.highlight-current-blue.current-fragment,
-.reveal .fragment.highlight-current-blue.current-fragment * {
-    color: #1b91ff!important;
+.reveal em {
+    color: gold;
+    font-style: inherit;
+    }
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+    background-color: rgba(255,255,255,0.2);
+    outline: 22px solid rgba(255,255,255,0.2);
+    color: inherit;
     }
 .reveal h1,
 .reveal h2,
@@ -179,7 +184,10 @@ pre.prettyprint li.L9 {
     box-shadow:none;
     margin: 0 auto;
     }
-
+.reveal section img {
+     border: 0 none;
+     box-shadow: none;
+    }
 .reveal .label {
     padding: 2px 5px;
     }

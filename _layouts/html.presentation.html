@@ -6,25 +6,31 @@
 
     {% include head.html %}
 
-    <link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/css/reveal.min.css"
-          rel ="stylesheet" type="text/css" media="screen" / >
-    <link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/css/theme/default.css"
-          rel ="stylesheet" type="text/css" media="screen" / >
-
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
           rel ="stylesheet" type="text/css" media="screen" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
           rel ="stylesheet" type="text/css" media="screen" />
+    <link href="//cdn.jsdelivr.net/reveal.js/3/css/reveal.min.css"
+          rel ="stylesheet" type="text/css" media="screen" / >
+    <link href="//cdn.jsdelivr.net/reveal.js/3/css/theme/league.css"
+          rel ="stylesheet" type="text/css" media="screen" / >
 
     <link href="/assets/default.css"
           rel ="stylesheet" type="text/css" media="screen" />
 
     <script src ="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
             type="text/javascript"></script>
-    <script src ="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/js/reveal.min.js"
+    <script src ="//cdn.jsdelivr.net/reveal.js/3/js/reveal.min.js"
             type="text/javascript"></script>
 
     {% include body.codehighlighter.html %}
+
+    <style>
+        body {
+            background: #111;
+            background-color: #111;
+            }
+    </style>
 
 </head>
 <body data-layout="{{ page.layout-current }}">
@@ -38,19 +44,21 @@
 
         </div>
     </main>
-    
+
     <script>
 
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
+        width: 1350,
+        height: 900,
         controls: true,
         progress: true,
         history: true,
         center: true,
         slideNumber: true
     });
-    
+
     </script>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"

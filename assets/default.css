@@ -373,6 +373,9 @@ body aside section.yashare .b-share {
     padding: 0!important;
     }
 
+body main {
+    background-color: transparent;
+    }
 body main * {
     word-wrap: break-word;
     }

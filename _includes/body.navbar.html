@@ -34,6 +34,9 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
+            <li title="full screen" data-toggle="tooltip" data-placement="bottom">
+                <a id="button_fullscreen" class="fa fa-2x fa-arrows-alt"></a>
+            </li>
             <li title="Share this page"
                 data-toggle="tooltip"
                 data-placement="bottom">
@@ -52,5 +55,23 @@
     </div>
 </nav>
 
+<script>
+$(function(){
+    var main = $('main').get(0);
+    $('#button_fullscreen')
+        .click(function(){
+            if( main.requestFullscreen )
+                main.requestFullscreen();
+            else if( main.webkitRequestFullscreen )
+                     main.webkitRequestFullscreen();
+            else if( main.mozRequestFullScreen )
+                     main.mozRequestFullScreen();
+            else if( main.msRequestFullscreen )
+                     main.msRequestFullscreen();
+            });
+    });
+</script>
+
 {% include body.qr.html %}
+
 <!-- /body.navbar.html -->

@@ -15,5 +15,8 @@ develop:
 			--title="terminal"\
 			--working-directory="${DIR}"
 
+install:
+	bundle install
+
 kill:
 	kill `ps ax -o pid,cmd | grep jekyll | awk '{ print $1 }'`

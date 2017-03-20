@@ -1,7 +1,8 @@
 .PHONY: start kill develop
 
 DIR="${PWD}"
-HOST="blog.home"
+# HOST="blog.home"
+HOST="0.0.0.0"
 
 start:
 	jekyll serve --host ${HOST} --watch --unpublished --future

@@ -106,7 +106,7 @@ pre.prettyprint li.L9 {
     }
 .reveal .slides section .fragment.highlight-current-blue.current-fragment {
     background-color: rgba(255,255,255,0.2);
-    outline: 22px solid rgba(255,255,255,0.2);
+    outline: 5px solid rgba(255,255,255,0.2);
     color: inherit;
     }
 .reveal h1,

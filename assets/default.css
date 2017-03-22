@@ -131,6 +131,9 @@ pre.prettyprint li.L9 {
 .reveal ol + p {
     margin-top:20px!important;
     }
+.reveal li + li {
+    margin-top:20px;
+    }
 .reveal dl > dd {
     text-align: left;
     }

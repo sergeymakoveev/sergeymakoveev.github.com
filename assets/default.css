@@ -63,6 +63,11 @@ main .h4 {
     margin-top: 40px;
     }
 
+table.no-border th,
+table.no-border td {
+    border: 0 none!important;
+}
+
 /* google-code-prettify */
 
 pre.prettyprint {
@@ -203,6 +208,11 @@ pre.prettyprint li.L9 {
 .reveal > .slides  ol:not([class^=text-]) {
     text-align:left;
     display:block;
+    }
+.reveal > .slides i.badge {
+    font-size: inherit;
+    font-style: normal;
+    font-weight: normal;
     }
 
 .reveal .slide-number {

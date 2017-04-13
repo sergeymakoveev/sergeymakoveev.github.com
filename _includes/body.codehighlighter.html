@@ -1,12 +1,21 @@
-<script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"
+<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"
         type="text/javascript"></script>
 <script type="text/javascript">
     $(function() {
-        $('pre > code[class^="language-"]')
-            .parent()
-            .addClass('prettyprint linenums');
-        window.prettyPrint &&
-               prettyPrint();
+        $('main [class^="language-"]')
+            .each(function(n,el){
+                var $el = $(el);
+                    c = $el.attr('class')
+                           .split(' ')
+                           .filter(function(c){ return /^language/.test(c) })
+                           .join(' ');
+                $el.find('pre')
+                   .addClass('prettyprint linenums')
+                   .find('code')
+                        .addClass(c);
+            })
+        // window.prettyPrint &&
+        //        prettyPrint();
         $(document).on( 'click',
                         'pre.prettyprint li',
                         function(e){ $(this).toggleClass('hover'); } );

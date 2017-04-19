@@ -1,6 +1,6 @@
 ---
     layout: html.default.categories
-    title: Blog
-    description: Here you'll see all my posts...
+    title: Статьи
+    description: Публикации и заметки
     categories: [blog]
 ---

@@ -1,0 +1,89 @@
+---
+    layout: html.default
+    layout-current: post
+---
+<header class="page-header container">
+    <i class="fa icon-category-{{ page.categories[0] }} -invisible -width-0 -va-middle"></i>
+    <h1 class="-va-middle">
+        <a href="{{ page.url }}" title="{{ page.title | strip_html }}" rel="bookmark">{{ page.title }}</a>
+        <small>{{ page.description }}</small>
+    </h1>
+    <nav role="navigation cursor default">
+
+        <span class="label label-primary">
+            <i class='fa fa-time'></i>
+            <time datetime ="{{ page.date }}"
+                    pubdate  ="{{ page.date }}"
+                    title    ="{{ page.date }}">{{ page.date | date:'%d.%m.%Y' }}</time>
+        </span>&nbsp;
+
+        {% for category in page.categories %}
+            <a rel="category"
+                class="label label-default"
+                href="/{{ category }}"
+                title="category: {{ category }}"><i class='fa fa-bookmark'></i> {{ category }}</a>
+        {% endfor %}
+        {% assign tags = page.tags | sort %}
+        {% for tag in tags %}
+            <a rel="tag"
+                class="label label-default"
+                data-tag="{{ tag }}"
+                href="/tags#[{{ tag }}]"
+                title="tag: {{ tag }}"><i class='fa fa-tag'></i> {{ tag }}</a>
+        {% endfor %}
+
+    </nav>
+</header>
+
+<div class="container">
+    <main>
+
+        <article>
+            {{ content }}
+        </article>
+
+        <section>
+            {% include body.disqus.html %}
+        </section>
+
+    </main>
+<script>
+/*
+$((function($aside, $content){
+
+    $aside   = $($aside);
+    $content = $($content);
+
+    var $section,
+        $toc     = $('<ul>').addClass("nav nav-pills nav-stacked"),
+        hquery = 'h1[id], h2[id], h3[id], h4[id], h5[id]';
+
+    $content
+        .children()
+        .each(function(){
+            var $this = $(this);
+            if( $this.is(hquery) )
+                $toc.append(
+                    $('<li />')
+                        .attr({ title:$this.text() })
+                        .addClass( 'toc toc-' +
+                                   this.nodeName
+                                       .toLowerCase() )
+                        .append(
+                            $('<a />').attr({ href:'#'+this.id })
+                                      .html( $this.html() )
+                         )
+                 ),
+                $section = $this.wrap( $('<section />')
+                                            .attr({ id:this.id }) )
+                                .removeAttr('id')
+                                .parent();
+            else if( $section )
+                     $section.append($this);
+         });
+      $aside.prepend($toc);
+
+})( 'aside',
+    'main > article' ));
+*/
+</script>

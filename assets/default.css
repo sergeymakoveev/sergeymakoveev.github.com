@@ -257,6 +257,7 @@ body aside section.yashare .b-share {
 
 body main {
     background-color: transparent;
+    font-size: 19px;
     }
 body main * {
     word-wrap: break-word;

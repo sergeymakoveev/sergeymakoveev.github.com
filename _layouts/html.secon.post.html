@@ -36,7 +36,7 @@
 </header>
 
 <div class="container">
-    <main>
+    <main class="col-md-9" role="main">
 
         <article>
             {{ content }}
@@ -47,43 +47,4 @@
         </section>
 
     </main>
-<script>
-/*
-$((function($aside, $content){
-
-    $aside   = $($aside);
-    $content = $($content);
-
-    var $section,
-        $toc     = $('<ul>').addClass("nav nav-pills nav-stacked"),
-        hquery = 'h1[id], h2[id], h3[id], h4[id], h5[id]';
-
-    $content
-        .children()
-        .each(function(){
-            var $this = $(this);
-            if( $this.is(hquery) )
-                $toc.append(
-                    $('<li />')
-                        .attr({ title:$this.text() })
-                        .addClass( 'toc toc-' +
-                                   this.nodeName
-                                       .toLowerCase() )
-                        .append(
-                            $('<a />').attr({ href:'#'+this.id })
-                                      .html( $this.html() )
-                         )
-                 ),
-                $section = $this.wrap( $('<section />')
-                                            .attr({ id:this.id }) )
-                                .removeAttr('id')
-                                .parent();
-            else if( $section )
-                     $section.append($this);
-         });
-      $aside.prepend($toc);
-
-})( 'aside',
-    'main > article' ));
-*/
-</script>
+</div>

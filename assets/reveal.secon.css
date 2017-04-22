@@ -1,6 +1,6 @@
 .reveal {
     letter-spacing: inherit;
-    font-size: 31px;
+    font-size: 35px;
     background: #222;
     background: -moz-radial-gradient(center, circle cover, #626262 0%, #222 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #626262), color-stop(100%, #222));

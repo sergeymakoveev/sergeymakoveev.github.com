@@ -11,6 +11,13 @@
 
 ## [Web Components](http://w3c.github.io/webcomponents/explainer/)
 
+Давайте внимательно прочитаем название: "вебКОМПОНЕНТЫ".
+Не "веброутер" или "вебфреймворк", а "вебкомпоненты".
+Название "говорящее".
+
+Стек стандартов в первую очередь предназначен решить задачи компонентного подхода
+- разработки независимых пользовательских компонент.
+
 {: .text-center }
 [Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/),
 [Custom Elements](http://w3c.github.io/webcomponents/spec/custom/),

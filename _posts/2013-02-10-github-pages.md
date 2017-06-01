@@ -29,10 +29,11 @@
 *   [GFM](http://github.github.com/github-flavored-markdown/ "GitHub Flavored Markdown")
 *   [Maruku](http://maruku.rubyforge.org/maruku.html "Maruku - интерпретатор markdown-разметки")
 *   [Maruku/Basik Markdown](http://maruku.rubyforge.org/markdown_syntax.html "Basic Markdown syntax")
-*   [kramdown Syntax](http://kramdown.gettalong.org/syntax.html)
-*   [Особенности синтаксиса kramdown: часть 1](http://prgssr.ru/articles/osobennosti-sintaksisa-kramdown-chast-1.html)
-*   [Особенности синтаксиса kramdown: часть 2](http://prgssr.ru/articles/osobennosti-sintaksisa-kramdown-chast-2.html)
-*   [Дополнительные возможности kramdown](http://prgssr.ru/articles/osobennosti-sintaksisa-kramdown.html)
+*   [kramdown Syntax](http://kramdown.gettalong.org/syntax.html)  
+    — Особенности синтаксиса kramdown:
+    [часть 1(http://prgssr.ru/articles/osobennosti-sintaksisa-kramdown-chast-1.html)
+    [часть 2](http://prgssr.ru/articles/osobennosti-sintaksisa-kramdown-chast-2.html)  
+    — [Дополнительные возможности kramdown](http://prgssr.ru/articles/dopolnitelnye-vozmozhnosti-kramdown.html)  
 
 ### On/Off markdown for HTML-elements
 `markdown="0|1"`

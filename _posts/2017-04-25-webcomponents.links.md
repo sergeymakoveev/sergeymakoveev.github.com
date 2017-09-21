@@ -50,3 +50,4 @@
 
 ## [Polymer](https://www.polymer-project.org)
 *   [Polymer 3.0 preview: npm and ES6 Modules](https://www.polymer-project.org/blog/2017-08-22-npm-modules)
+*   [Hands-on with the Polymer 3.0 preview](https://www.polymer-project.org/blog/2017-08-23-hands-on-30-preview)

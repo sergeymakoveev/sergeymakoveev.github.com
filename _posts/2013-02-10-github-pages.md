@@ -15,9 +15,10 @@
 
 ## Github pages as blog engine
 
-## Jekyll site engine
+## Jekyll
 
-* [Jekyll: basic site structure](https://github.com/mojombo/jekyll/wiki/usage)
+*   [Jekyll: basic site structure](https://github.com/mojombo/jekyll/wiki/usage)
+*   [Продвинутый Jekyll](https://habrahabr.ru/post/336266/)
 
 ### yaml
 

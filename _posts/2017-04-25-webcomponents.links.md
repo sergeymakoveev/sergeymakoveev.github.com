@@ -45,6 +45,7 @@
 
 ### Web Components: примеры
 *   [`<time>` element extensions](https://github.com/github/time-elements)
+*   [`<lazy-image>`](https://meowni.ca/lazy-image/)
 *   [Learn how to build web components using the next version of JavaScript and reap the rewards](https://github.com/RevillWeb/es2015-web-component-tutorial)
 
 

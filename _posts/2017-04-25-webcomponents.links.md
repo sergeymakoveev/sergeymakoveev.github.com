@@ -7,8 +7,11 @@
     tags: [web components, polymer, react, angular, vue]
 ---
 
-## [Web Components](http://w3c.github.io/webcomponents/explainer/)
 
+<https://youtu.be/HRlSn8qqD-M?t=1h48m40s>
+
+## [Web Components](http://w3c.github.io/webcomponents/explainer/)
+*   [Веб-компоненты: долгая игра](http://css-live.ru/articles/veb-komponenty-dolgaya-igra.html)
 
 ### [Custom Elements](http://w3c.github.io/webcomponents/spec/custom/)
 

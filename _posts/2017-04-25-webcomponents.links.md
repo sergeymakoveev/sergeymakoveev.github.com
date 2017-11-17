@@ -34,7 +34,7 @@
 *   [Component Interop With React And Custom Elements](https://addyosmani.com/blog/component-interop-with-react-and-custom-elements/)
 
 
-### Web Components && Angular
+#### Web Components && Angular
 *   [Using Polymer WebComponents with Angular.js](https://jcrowther.io/2015/05/26/using-polymer-webcomponents-with-angular-js/)
     ([пример](http://jshcrowthe.github.io/polymer-angular-demo/index.html))
 *   [View encapsulation in angular](https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html)
@@ -43,7 +43,7 @@
 
 
 ### Web Component - based frameworks
-*   [Vaadin](https://vaadin.com)
+*   [Stencil: A Compiler for Web Components](https://stenciljs.com/docs/intro)
 
 
 ### Web Components: примеры
@@ -55,3 +55,6 @@
 ## [Polymer](https://www.polymer-project.org)
 *   [Polymer 3.0 preview: npm and ES6 Modules](https://www.polymer-project.org/blog/2017-08-22-npm-modules)
 *   [Hands-on with the Polymer 3.0 preview](https://www.polymer-project.org/blog/2017-08-23-hands-on-30-preview)
+
+### Polymer Component - based frameworks
+*   [Vaadin](https://vaadin.com)

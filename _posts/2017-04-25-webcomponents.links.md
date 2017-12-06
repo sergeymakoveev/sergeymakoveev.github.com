@@ -1,5 +1,5 @@
 ---
-    published: true
+    published: false
     layout: html.default.post
     title: Веб-компоненты&#58; 4 года спустя
     description: SECON'2017. Ссылки к докладу

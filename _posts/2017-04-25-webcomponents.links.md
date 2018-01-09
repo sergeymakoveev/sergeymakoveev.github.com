@@ -12,6 +12,8 @@
 
 ## [Web Components](http://w3c.github.io/webcomponents/explainer/)
 *   [Веб-компоненты: долгая игра](http://css-live.ru/articles/veb-komponenty-dolgaya-igra.html)
+*   [MDN: Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+*   [Web Platform Working Group/Web Components specifications](https://www.w3.org/WebPlatform/WG/PubStatus#webcomps)
 
 ### [Custom Elements](http://w3c.github.io/webcomponents/spec/custom/)
 

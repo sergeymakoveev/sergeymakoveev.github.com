@@ -16,6 +16,7 @@
 *   [Web Platform Working Group/Web Components specifications](https://www.w3.org/WebPlatform/WG/PubStatus#webcomps)
 
 ### [Custom Elements](http://w3c.github.io/webcomponents/spec/custom/)
+*   [Веб-компоненты: обзор и использование в продакшне](https://habrahabr.ru/post/346670/)
 
 ### [Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/)
 
@@ -24,7 +25,6 @@
 ### [HTML Templates](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html)
 
 ### Web Components && frameworks
-
 *   [Custom Elements Everywhere](https://custom-elements-everywhere.com/)  
     Совместимость фреймворков с технологиями стека WebComponents
 

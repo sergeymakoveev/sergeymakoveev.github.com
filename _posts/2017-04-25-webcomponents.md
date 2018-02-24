@@ -377,6 +377,10 @@ Polymer предоставляет возможность использоват
     (входил в состав elements.polymer-project.org)
 *   [Vaadin](https://www.webcomponents.org/author/vaadin)
 
+*   https://www.ag-grid.com/  
+    https://github.com/ag-grid/ag-grid-webcomponent-example  
+    https://github.com/ag-grid/ag-grid-webcomponent
+
 ### Кто использует вебкомпоненты/Polymer?
 
 *   Google  

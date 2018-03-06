@@ -17,6 +17,7 @@
 
 ### [Custom Elements](http://w3c.github.io/webcomponents/spec/custom/)
 *   [Веб-компоненты: обзор и использование в продакшне](https://habrahabr.ru/post/346670/)
+*   [Веб компоненты. Часть 1: Пользовательские элементы](https://habrahabr.ru/post/349366/)
 
 ### [Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/)
 

@@ -17,7 +17,7 @@
 *   [Shower Presentation Engine](https://shwr.me/)
     [![GitHub stars](https://img.shields.io/github/stars/shower/shower.svg)](https://github.com/shower/shower)
     [![npm](https://img.shields.io/npm/v/shower.svg) ![npm](https://img.shields.io/npm/dm/shower.svg)](https://www.npmjs.com/package/shower)  
-    shower-remote-control
+    Remote control for Shower
     [![GitHub stars](https://img.shields.io/github/stars/lahmatiy/shower-remote-control.svg)](https://github.com/lahmatiy/shower-remote-control)
     [![npm](https://img.shields.io/npm/v/shower-remote-control.svg) ![npm](https://img.shields.io/npm/dm/shower-remote-control.svg)](https://www.npmjs.com/package/shower-remote-control)
 

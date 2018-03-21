@@ -13,6 +13,15 @@
 *   [GitHub Pages Basics](https://help.github.com/categories/github-pages-basics/)
 *   [Customizing GitHub Pages](https://help.github.com/categories/customizing-github-pages/)
 
+## Presentations
+*   [Shower Presentation Engine](https://shwr.me/)
+    [![GitHub stars](https://img.shields.io/github/stars/shower/shower.svg)](https://github.com/shower/shower)
+    [![npm](https://img.shields.io/npm/v/shower.svg) ![npm](https://img.shields.io/npm/dm/shower.svg)](https://www.npmjs.com/package/shower)  
+    shower-remote-control
+    [![GitHub stars](https://img.shields.io/github/stars/lahmatiy/shower-remote-control.svg)](https://github.com/lahmatiy/shower-remote-control)
+    [![npm](https://img.shields.io/npm/v/shower-remote-control.svg) ![npm](https://img.shields.io/npm/dm/shower-remote-control.svg)](https://www.npmjs.com/package/shower-remote-control)
+
+
 ## Github pages as blog engine
 
 ## Jekyll

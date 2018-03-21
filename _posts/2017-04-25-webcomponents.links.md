@@ -11,6 +11,9 @@
 <https://youtu.be/HRlSn8qqD-M?t=1h48m40s>
 
 ## [Web Components](http://w3c.github.io/webcomponents/explainer/)
+*   Веб-компоненты:  
+    — [Часть 1: Пользовательские элементы](https://habrahabr.ru/post/349366/)  
+    — [Часть 2: теневой DOM](https://habrahabr.ru/post/350872/)
 *   [Веб-компоненты: долгая игра](http://css-live.ru/articles/veb-komponenty-dolgaya-igra.html)
 *   [MDN: Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 *   [Web Platform Working Group/Web Components specifications](https://www.w3.org/WebPlatform/WG/PubStatus#webcomps)

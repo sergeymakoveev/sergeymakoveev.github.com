@@ -27,4 +27,4 @@ https://webpack.js.org/configuration/dev-server/#devserver-before
 
 https://webpack.js.org/configuration/dev-server/#devserver-proxy
 
-<script src="https://gist.github.com/sergeymakoveev/cc453586a59896c7605c22382d181bb7.js"></script>
+<script src="https://gist.github.com/sergeymakoveev/cc453586a59896c7605c22382d181bb7.js?file="></script>

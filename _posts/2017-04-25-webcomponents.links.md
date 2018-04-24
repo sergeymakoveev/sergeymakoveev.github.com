@@ -19,6 +19,7 @@
 *   [Web Platform Working Group/Web Components specifications](https://www.w3.org/WebPlatform/WG/PubStatus#webcomps)
 
 ### [Custom Elements](http://w3c.github.io/webcomponents/spec/custom/)
+*   [Extending Native DOM Elements with Web Components](https://blog.revillweb.com/extending-native-dom-elements-with-web-components-233350c8e86a)
 *   [Веб-компоненты: обзор и использование в продакшне](https://habrahabr.ru/post/346670/)
 *   [Веб компоненты. Часть 1: Пользовательские элементы](https://habrahabr.ru/post/349366/)
 

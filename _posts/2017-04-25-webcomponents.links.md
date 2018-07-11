@@ -50,7 +50,12 @@
 
 
 ### Web Component - based frameworks
+*   [Исчезающие фреймворки](https://habr.com/post/414869/)
+*   [Магически исчезающий JS фреймворк](https://habr.com/post/345028/)
+*   [Svelte: The magical disappearing UI framework](https://svelte.technology/)
 *   [Stencil: A Compiler for Web Components](https://stenciljs.com/docs/intro)
+*   [Angular Elements](https://angular.io/guide/elements)  
+    > Angular elements are Angular components packaged as custom elements, a web standard for defining new HTML elements in a framework-agnostic way.
 
 
 ### Web Components: примеры

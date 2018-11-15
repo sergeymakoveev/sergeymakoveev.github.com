@@ -50,6 +50,7 @@
 
 
 ### Web Component - based frameworks
+*   [Next generation web framework in 4kb JavaScript (Web Components + JSX + Proxy + Store + Path Updating)](http://omijs.org)
 *   [Исчезающие фреймворки](https://habr.com/post/414869/)
 *   [Магически исчезающий JS фреймворк](https://habr.com/post/345028/)
 *   [Svelte: The magical disappearing UI framework](https://svelte.technology/)

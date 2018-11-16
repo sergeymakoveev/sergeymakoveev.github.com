@@ -11,6 +11,7 @@
 <https://youtu.be/HRlSn8qqD-M?t=1h48m40s>
 
 ## [Web Components](http://w3c.github.io/webcomponents/explainer/)
+*   [Web Components v2 Wish List](https://tbranyen.com/post/web-components-v2-wish-list)
 *   Веб-компоненты:  
     — [Часть 1: Пользовательские элементы](https://habrahabr.ru/post/349366/)  
     — [Часть 2: теневой DOM](https://habrahabr.ru/post/350872/)
@@ -34,6 +35,7 @@
     Совместимость фреймворков с технологиями стека WebComponents
 
 #### React
+*   [Why the React community is missing the point about Web Components](https://dev.to/ben/why-the-react-community-is-missing-the-point-about-web-components-1ic3)
 *   [React. Using Web Components in React. Using React in your Web Components](https://facebook.github.io/react/docs/webcomponents.html)
 *   [Complementarity of React and Web Components](http://webcomponents.org/presentations/complementarity-of-react-and-web-components-at-reactjs-conf/)
 *   [React Integration](https://github.com/webcomponents/react-integration)

@@ -52,6 +52,7 @@
 
 
 ### Web Component - based frameworks
+*   [Bruck, набор примитовов для прототипирования на основе веб-компонентов со встроенной адаптивностью, доступностью и без зависимостей](https://github.com/Heydon/bruck)
 *   [Next generation web framework in 4kb JavaScript (Web Components + JSX + Proxy + Store + Path Updating)](http://omijs.org)
 *   [Исчезающие фреймворки](https://habr.com/post/414869/)
 *   [Магически исчезающий JS фреймворк](https://habr.com/post/345028/)

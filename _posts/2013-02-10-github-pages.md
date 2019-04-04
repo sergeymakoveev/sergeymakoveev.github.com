@@ -24,6 +24,8 @@
 
 ## Github pages as blog engine
 
+*   [Google Drive как хранилище для веб-приложения](https://habr.com/ru/post/440844/)
+
 ## Jekyll
 
 *   [Jekyll: basic site structure](https://github.com/mojombo/jekyll/wiki/usage)

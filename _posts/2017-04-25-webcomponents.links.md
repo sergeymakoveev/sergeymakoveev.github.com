@@ -11,6 +11,7 @@
 <https://youtu.be/HRlSn8qqD-M?t=1h48m40s>
 
 ## [Web Components](http://w3c.github.io/webcomponents/explainer/)
+*   [Веб-компоненты: взгляд в будущее / javascript.ru](https://learn.javascript.ru/webcomponents)
 *   [Web Components v2 Wish List](https://tbranyen.com/post/web-components-v2-wish-list)
 *   Веб-компоненты:  
     — [Часть 1: Пользовательские элементы](https://habrahabr.ru/post/349366/)  

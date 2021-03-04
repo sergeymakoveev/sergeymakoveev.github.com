@@ -1,56 +1,56 @@
 /* helpers */
 
 .inline-block {
-    display: inline-block!important;
-    width:auto!important;
-    }
+    display: inline-block !important;
+    width: auto !important;
+}
 .absolute {
     position: absolute;
-    }
+}
 .fg-white {
-    color: #fff!important;
-    }
+    color: #fff !important;
+}
 .fg-red {
-    color: #c7254e!important;
-    }
+    color: #c7254e !important;
+}
 .b,
 .bold,
 .strong {
-    font-weight:bold!important;
-    }
+    font-weight: bold !important;
+}
 .u,
 .underline {
-    text-decoration:underline!important;
-    }
+    text-decoration: underline !important;
+}
 .o,
 .overline {
-    text-decoration:overline!important;
-    }
+    text-decoration: overline !important;
+}
 .d,
 .del {
-    text-decoration:line-through!important;
-    }
+    text-decoration: line-through !important;
+}
 .-invisible {
     visibility: hidden;
-    }
+}
 .-width-0,
 .-width-0::after,
 .-width-0::before {
     width: 0;
     /* content: initial!important; */
-    }
+}
 .-va-middle {
     vertical-align: middle;
-    }
+}
 .-nowrap {
     white-space: nowrap;
-    }
+}
 
 /* bootstrap */
 
 blockquote.alert {
-    font-size:inherit;
-    }
+    font-size: inherit;
+}
 
 main h1,
 main .h1,
@@ -61,26 +61,26 @@ main .h3,
 main h4,
 main .h4 {
     margin-top: 40px;
-    }
+}
 
 table.no-border th,
 table.no-border td {
-    border: 0 none!important;
+    border: 0 none !important;
 }
 
 /* google-code-prettify */
 
 pre.prettyprint {
-    width: 100%!important;
-    }
+    width: 100% !important;
+}
 
 pre.prettyprint li {
     cursor: default;
-    }
+}
 pre.prettyprint li:hover,
 pre.prettyprint li.hover {
-    background-color: rgba(255,255,255,0.3);
-    }
+    background-color: rgba(255, 255, 255, 0.3);
+}
 pre.prettyprint li.L0,
 pre.prettyprint li.L1,
 pre.prettyprint li.L2,
@@ -91,59 +91,62 @@ pre.prettyprint li.L6,
 pre.prettyprint li.L7,
 pre.prettyprint li.L8,
 pre.prettyprint li.L9 {
-    list-style-type: inherit!important;
-    }
-
+    list-style-type: inherit !important;
+}
 
 /* site */
 
 .icon-category-::before,
 .icon-category-home::before {
     content: "\f015";
-    }
+}
 .icon-category-presentations::before {
     /*content: "\f152";*/
     content: "\f008";
-    }
+}
 .icon-category-blog::before {
     content: "\f040";
-    }
+}
 .icon-category-examples::before {
     content: "\f0eb";
-    }
+}
 .icon-category-lab::before {
     content: "\f0c3";
-    }
+}
 
 .label.hover,
 .label.active {
-    background-color: #428BCA!important;
-    }
-.label[rel=category]:not(:hover) {
+    background-color: #428bca !important;
+}
+.label[rel="category"]:not(:hover) {
     background-color: #333;
-    }
+}
 
-a { outline: 0 none!important; }
+a {
+    outline: 0 none !important;
+}
 
-nav { cursor: default; }
+nav {
+    cursor: default;
+}
 
 blockquote.example {
-    font-size:inherit;
+    font-size: inherit;
     border-radius: 8px;
     background-color: #555;
     margin: 1em auto;
     padding: 1em;
     border: 0 none;
     color: #fff;
-    }
+}
 blockquote.example * {
-    max-width:100%;
-    }
+    max-width: 100%;
+}
 blockquote.example input,
 blockquote.example textarea,
 blockquote.example button {
     color: #000;
-    }
+}
 
 p.screenshot > img {
     box-shadow: 0 0 10px;
@@ -151,30 +154,29 @@ p.screenshot > img {
     display: inline-block;
     max-width: 100%;
     vertical-align: top;
-    }
+}
 p.screenshot > img:first-child {
-    margin-left:2.5%;
-    }
+    margin-left: 2.5%;
+}
 
 body > nav.navbar {
-    padding-right:15px;
+    padding-right: 15px;
     box-shadow: 0 0 10px;
-    }
+}
 body > nav.navbar li > a {
     text-decoration: none;
     cursor: pointer;
-    }
+}
 body > nav.navbar li.active > a {
     box-shadow: 0 0 50px #ccc;
-    }
-body > nav.navbar   li.active
-                  + li.active > a {
+}
+body > nav.navbar li.active + li.active > a {
     box-shadow: 10px 0 55px #ccc;
-    }
+}
 body > nav.navbar a.fa-share-alt {
     font-size: 2em;
     white-space: nowrap;
-    }
+}
 body > nav.navbar a.fa-share-alt > .b-share_link {
     display: inline-block;
     height: 50px;
@@ -183,29 +185,29 @@ body > nav.navbar a.fa-share-alt > .b-share_link {
     opacity: 0;
     position: absolute;
     width: 50px;
-    }
+}
 body > header.page-header {
     margin-top: 90px;
     margin-bottom: 50px;
     padding-bottom: 0;
     border: none;
-    }
+}
 body > header h1 {
     display: inline-block;
     line-height: 0.9;
     margin: 0;
     white-space: normal;
     margin-left: -5px;
-    }
+}
 body > header h1 > small {
     display: block;
     margin: 11px 0;
-    }
+}
 body > header i[class*="icon-category-"] {
     font-size: 140px;
     text-shadow: 2px 4px 0 #ccc;
     cursor: default;
-    }
+}
 
 body aside > ul.nav > li.toc > a {
     font-size: 16px;
@@ -213,63 +215,63 @@ body aside > ul.nav > li.toc > a {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 5px 10px;
-    }
+}
 body aside > ul.nav > li.toc a::before {
     padding-right: 5px;
     color: #c7254e;
-    }
+}
 body aside > ul.nav > li.toc.toc-h1 {
     font-weight: bolder;
-    }
+}
 body aside > ul.nav > li.toc.toc-h2 a::before {
-    content:'»';
-    }
+    content: "»";
+}
 body aside > ul.nav > li.toc.toc-h3 a::before {
-    content:'»»';
-    }
+    content: "»»";
+}
 body aside > ul.nav > li.toc.toc-h4 a::before {
-    content:'»»»';
-    }
+    content: "»»»";
+}
 body aside > ul.nav > li.toc.toc-h5 a::before {
-    content:'»»»»';
-    }
+    content: "»»»»";
+}
 
 body aside > nav {
     text-align: right;
     display: inline-block;
-    }
+}
 
-body aside  section,
+body aside section,
 body aside .section {
     padding-bottom: 2em;
     display: inline-block;
     text-align: right;
-    }
+}
 
 body aside section.yashare {
     padding-top: 20px;
     clear: both;
     text-align: right;
-    }
+}
 body aside section.yashare .b-share {
-    padding: 0!important;
-    }
+    padding: 0 !important;
+}
 
 body main {
     background-color: transparent;
     font-size: 19px;
-    }
+}
 body main * {
     word-wrap: break-word;
-    }
+}
 body main > section > #disqus_thread {
     margin-top: 7em;
-    }
+}
 
 body > footer {
     padding-bottom: 1em;
     padding-top: 5em;
-    }
+}
 body > footer > .links {
     position: fixed;
     bottom: 0;
@@ -278,56 +280,57 @@ body > footer > .links {
     border-radius: 10px 0 0;
     box-shadow: 0 0 10px;
     padding: 10px;
-    }
+}
 body > footer > .links > a {
     display: block;
     text-decoration: none !important;
-    }
+}
 
 body main section:first-of-type h1 {
     margin-top: 0;
-    }
+}
 
 body .b-share-popup-wrap {
     margin-left: -56px;
     margin-top: 29px;
-    }
+}
 body .b-share-popup .b-share-popup__i {
     width: 164px;
-    }
+}
 body .b-share-popup .b-share-popup__i .b-share-popup_shorter {
     cursor: pointer;
-    }
+}
 body .b-share-popup .b-share-popup__i .b-share-popup__yandex {
-    display: none!important;
-    }
+    display: none !important;
+}
 
 /* categories */
 
-body[data-layout=categories] main > section
-                                  + section {
+body[data-layout="categories"] main > section + section {
     margin-top: 6em;
-    }
-body[data-layout=categories] main > section h1 {
+}
+body[data-layout="categories"] main > section h1 {
     font-size: 50px;
-    }
-body[data-layout=categories] main > section > article {
+}
+body[data-layout="categories"] main > section > article {
     margin-top: 3em;
-    }
-body[data-layout=categories] main > section > article time {
+}
+body[data-layout="categories"] main > section > article time {
     margin-left: -50px;
     position: absolute;
     text-align: right;
-    }
+}
 
-body[data-layout=presentation] > nav.navbar {
-    padding-right:15px;
-    }
-body[data-layout=presentation] > nav.navbar {
+body[data-layout="presentation"] > nav.navbar {
+    padding-right: 15px;
+}
+body[data-layout="presentation"] > nav.navbar {
     overflow: hidden;
-    }
-body[data-layout=presentation] > nav.navbar:not(:hover),
-body[data-layout=presentation] > nav.navbar:not(:hover)
-                               ~ .b-share-popup-wrap .b-share-popup__tail {
-    opacity:0;
-    }
+}
+body[data-layout="presentation"] > nav.navbar:not(:hover),
+body[data-layout="presentation"]
+    > nav.navbar:not(:hover)
+    ~ .b-share-popup-wrap
+    .b-share-popup__tail {
+    opacity: 0;
+}

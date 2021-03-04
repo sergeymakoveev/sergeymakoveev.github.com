@@ -24,7 +24,7 @@
 }
 .o,
 .overline {
-    text-decoration: overline !important;
+    text-decoration: overline;
 }
 .d,
 .del {

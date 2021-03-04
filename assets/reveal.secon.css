@@ -83,6 +83,15 @@
     color: gold;
     background-color: #000;
 }
+
+.reveal code .o {
+    text-decoration: initial;
+}
+.reveal code[class^="language-"] {
+    padding: initial;
+    background-color: transparent;
+}
+
 .reveal code:not([class^="language-"]) {
     background-color: transparent;
     padding: 2px 8px 0;
@@ -115,6 +124,14 @@
     overflow-y: auto;
     margin: 0.5em auto;
 }
+
+.reveal pre.prettyprint li {
+    padding: 5px;
+}
+.reveal pre.prettyprint li + li {
+    margin-top: 0;
+}
+
 .reveal pre.prettyprint ol {
     margin-left: 2.5em;
 }

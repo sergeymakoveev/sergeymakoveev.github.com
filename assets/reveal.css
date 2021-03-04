@@ -49,6 +49,12 @@
     color: gold;
     background-color: #000;
 }
+
+.reveal pre code[class^="language-"] {
+    background: transparent;
+    padding: initial;
+}
+
 .reveal code:not([class^="language-"]) {
     background-color: #000;
     padding: 2px 8px 0;
